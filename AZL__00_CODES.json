@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "updated": "2026-01-11",
+  "codes": {
+    "9M3R": {
+      "folder": "Сюжет кампании",
+      "parent": null
+    },
+    "6K8N": {
+      "folder": "Общая",
+      "parent": "9M3R"
+    },
+    "2T7P": {
+      "folder": "Арка-1",
+      "parent": "9M3R"
+    }
+  }
+}
