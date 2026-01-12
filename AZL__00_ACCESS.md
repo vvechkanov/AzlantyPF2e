@@ -4,8 +4,8 @@
 GitHub используется **только для ассистента (read-only)**. Obsidian — основной источник для человека.
 
 ## Точка входа (читать первым)
-- RAW Index (самая свежая версия):
-  https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/AZL_ASSISTANT_INDEX.md
+- ROOT SUMMARY (точка входа):
+  https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/00__SUMMARY.md
 
 ## Правила
 - Всегда открывай файлы по **RAW-ссылкам** (`raw.githubusercontent.com`), не по `github.com/.../blob/...`.
