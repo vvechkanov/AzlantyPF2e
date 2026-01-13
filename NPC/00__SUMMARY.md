@@ -9,6 +9,8 @@
 
 ## Файлы в этой папке
 
+- `00__TEMPLATE.md` — шаблон карточки NPC (структура секций).
+- raw: https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/00__TEMPLATE.md
 ### Орден Азланти — «семёрка» (ядро KAERETHAL)
 - `Валастир Каэрваль.md` — лидер Ордена, архитектура структуры, сделок и курса.  
   - raw: https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/%D0%92%D0%B0%D0%BB%D0%B0%D1%81%D1%82%D0%B8%D1%80%20%D0%9A%D0%B0%D1%8D%D1%80%D0%B2%D0%B0%D0%BB%D1%8C.md
