@@ -8,6 +8,8 @@
 import os
 import re
 import urllib.parse
+import urllib.request
+import urllib.error
 import sys
 from pathlib import Path
 
@@ -16,6 +18,21 @@ if sys.platform == 'win32':
     import codecs
     sys.stdout = codecs.getwriter('utf-8')(sys.stdout.buffer)
     sys.stderr = codecs.getwriter('utf-8')(sys.stderr.buffer)
+
+def check_url_accessibility(url):
+    """Проверяет доступность URL в сети"""
+    try:
+        request = urllib.request.Request(url)
+        request.add_header('User-Agent', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36')
+        
+        with urllib.request.urlopen(request, timeout=10) as response:
+            return response.status == 200
+    except urllib.error.HTTPError as e:
+        return False
+    except urllib.error.URLError as e:
+        return False
+    except Exception as e:
+        return False
 
 def get_files_in_directory(directory_path):
     """Возвращает список .md файлов в директории, исключая SUMMARY файлы"""
@@ -86,6 +103,24 @@ def extract_raw_urls_from_summary(summary_path):
     
     return matches
 
+def extract_subdirectory_raw_urls(summary_path):
+    """Извлекает raw URL для поддиректорий из SUMMARY файла"""
+    if not os.path.exists(summary_path):
+        return []
+    
+    with open(summary_path, 'r', encoding='utf-8') as f:
+        content = f.read()
+    
+    # Ищем raw URL для поддиректорий (строки вида - `Папка/` — raw: URL)
+    urls = []
+    pattern = r'-\s*`([^`]+/)`\s*—\s*raw:\s*(https://raw\.githubusercontent\.com/vvechkanov/AzlantyPF2e/(?:refs/heads/)?master/[^\s]+)'
+    matches = re.findall(pattern, content)
+    
+    for match in matches:
+        urls.append(match[1])  # URL это второй элемент в кортеже
+    
+    return urls
+
 def validate_directory(directory_path, relative_path=""):
     """Валидирует директорию и её SUMMARY файл"""
     errors = []
@@ -150,6 +185,24 @@ def validate_directory(directory_path, relative_path=""):
         if normalized_url != expected_url:
             warnings.append(f"Некорректный raw URL для '{file}': {url}")
             warnings.append(f"   Ожидается: {expected_url}")
+        
+        # Проверяем доступность URL в сети
+        print(f"Проверка доступности: {file}...", end=' ')
+        if check_url_accessibility(url):
+            print("✓ Доступно")
+        else:
+            print("✗ Недоступно")
+            errors.append(f"Raw URL недоступен: {url}")
+    
+    # Проверяем доступность URL для поддиректорий
+    summary_subdir_urls = extract_subdirectory_raw_urls(summary_path)
+    for subdir, url in zip(summary_subdirs, summary_subdir_urls):
+        print(f"Проверка доступности: {subdir}/...", end=' ')
+        if check_url_accessibility(url):
+            print("✓ Доступно")
+        else:
+            print("✗ Недоступно")
+            errors.append(f"Raw URL для поддиректории недоступен: {url}")
     
     # Рекурсивно проверяем поддиректории
     if os.path.exists(directory_path):
