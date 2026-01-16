@@ -34,6 +34,177 @@ def check_url_accessibility(url):
     except Exception as e:
         return False
 
+def list_markdown_files(base_path):
+    md_files = []
+    for root, _, files in os.walk(base_path):
+        for name in files:
+            if name.endswith('.md'):
+                md_files.append(os.path.join(root, name))
+    return md_files
+
+def strip_obisidian_links_and_code(text):
+    text = re.sub(r'```[\s\S]*?```', '', text)
+    text = re.sub(r'`[^`]*`', '', text)
+    text = re.sub(r'\[\[[^\]]+\]\]', '', text)
+    return text
+
+def build_note_basename_index(base_path):
+    """Index markdown files by their basename (without .md)."""
+    idx = {}
+    for fp in list_markdown_files(base_path):
+        name = os.path.splitext(os.path.basename(fp))[0]
+        idx.setdefault(name, []).append(fp)
+    return idx
+
+def parse_glossary_entries(glossary_path):
+    if not os.path.exists(glossary_path):
+        return []
+
+    with open(glossary_path, 'r', encoding='utf-8') as f:
+        content = f.read()
+
+    entries = []
+    for line in content.splitlines():
+        if not line.lstrip().startswith('- **'):
+            continue
+
+        m_term = re.search(r'-\s*\*\*([^*]+)\*\*', line)
+        if not m_term:
+            continue
+        term = m_term.group(1).strip()
+
+        aliases = []
+        m_alias = re.search(r'\*\(([^)]+)\)\*', line)
+        if m_alias:
+            aliases = [a.strip() for a in m_alias.group(1).split(',') if a.strip()]
+
+        m_local = re.search(r'local:\s*\[\[([^\]|]+)', line)
+        target = m_local.group(1).strip() if m_local else None
+
+        tokens = [term] + aliases
+        entries.append({
+            'term': term,
+            'aliases': aliases,
+            'tokens': tokens,
+            'target': target,
+        })
+
+    return entries
+
+def parse_npc_names(npc_dir):
+    names = []
+    if not os.path.isdir(npc_dir):
+        return names
+
+    for name in os.listdir(npc_dir):
+        if not name.endswith('.md'):
+            continue
+        if name.startswith('00__SUMMARY'):
+            continue
+        if name in ('00__TEMPLATE.md', '00__NPC_без_портретов.md'):
+            continue
+        names.append(os.path.splitext(name)[0])
+    return sorted(names)
+
+def find_unlinked_token_occurrences(file_path, tokens):
+    with open(file_path, 'r', encoding='utf-8') as f:
+        raw_lines = f.read().splitlines()
+
+    matches = []
+    for idx, line in enumerate(raw_lines, start=1):
+        if not tokens:
+            continue
+        stripped_line = line.strip()
+        if stripped_line.startswith('```'):
+            continue
+
+        # Не требуем ссылок внутри заголовков (там обычно естественные названия)
+        if stripped_line.startswith('#'):
+            continue
+
+        # Не требуем ссылок в строках-якорях/тегах (#tag), где это мешает поиску.
+        if '#' in stripped_line and stripped_line.lstrip().startswith('-'):
+            # типичный формат anchors: "- #tag1 #tag2"
+            continue
+
+        # Не требуем ссылок внутри HTML-кусков (Obsidian wikilinks там нестабильны)
+        if '<' in stripped_line and '>' in stripped_line:
+            continue
+
+        stripped = strip_obisidian_links_and_code(line)
+        for token in tokens:
+            if not token:
+                continue
+
+            # Границы токена: чтобы не ловить подстроки внутри других слов.
+            # Учитываем кириллицу и латиницу.
+            token_re = re.compile(
+                r'(?<![0-9A-Za-zА-Яа-яЁё_])' + re.escape(token) + r'(?![0-9A-Za-zА-Яа-яЁё_])'
+            )
+            if token_re.search(stripped):
+                matches.append((idx, token, stripped_line))
+    return matches
+
+def validate_crosslinks(base_path):
+    errors = []
+    warnings = []
+
+    npc_dir = os.path.join(base_path, 'NPC')
+    glossary_path = os.path.join(base_path, 'Glossary', '00__GLOSSARY.md')
+
+    npc_names = parse_npc_names(npc_dir)
+    glossary_entries = parse_glossary_entries(glossary_path)
+    note_index = build_note_basename_index(base_path)
+
+    # Список каноничных страниц глоссария, внутри которых не требуем ссылок на сам термин
+    glossary_target_paths = set()
+    for e in glossary_entries:
+        target = e.get('target')
+        if not target:
+            continue
+        for fp in note_index.get(target, []):
+            glossary_target_paths.add(os.path.normpath(fp))
+
+    md_files = list_markdown_files(base_path)
+
+    max_reports = 200
+    report_count = 0
+
+    for fp in md_files:
+        rel = os.path.relpath(fp, base_path)
+        if rel.startswith('NPC' + os.sep):
+            continue
+        if rel.startswith('Glossary' + os.sep):
+            continue
+
+        norm_fp = os.path.normpath(fp)
+
+        for line_no, token, line in find_unlinked_token_occurrences(fp, npc_names):
+            errors.append(f"NPC без obsidian-ссылки '{token}' в {rel}:{line_no}: {line}")
+            report_count += 1
+            if report_count >= max_reports:
+                errors.append(f"(дальше не показываем, лимит {max_reports} совпадений)")
+                return errors, warnings
+
+        for entry in glossary_entries:
+            target = entry.get('target')
+            tokens = entry.get('tokens') or []
+            if not target:
+                continue
+
+            # Не требуем, чтобы термин сам себя линковал внутри своей каноничной страницы
+            if norm_fp in glossary_target_paths:
+                continue
+
+            for line_no, token, line in find_unlinked_token_occurrences(fp, tokens):
+                errors.append(f"Glossary без obsidian-ссылки '{token}' (target '{target}') в {rel}:{line_no}: {line}")
+                report_count += 1
+                if report_count >= max_reports:
+                    errors.append(f"(дальше не показываем, лимит {max_reports} совпадений)")
+                    return errors, warnings
+
+    return errors, warnings
+
 def get_files_in_directory(directory_path):
     """Возвращает список .md файлов в директории, исключая SUMMARY файлы"""
     files = []
@@ -293,6 +464,10 @@ def main():
                 sub_errors, sub_warnings = validate_directory(item_path, item)
                 errors.extend(sub_errors)
                 warnings.extend(sub_warnings)
+
+    cross_errors, cross_warnings = validate_crosslinks(base_path)
+    errors.extend(cross_errors)
+    warnings.extend(cross_warnings)
     
     if not errors and not warnings:
         print("Все проверки пройдены успешно!")
