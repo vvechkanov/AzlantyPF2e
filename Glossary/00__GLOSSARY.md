@@ -73,6 +73,26 @@
 
 - **Ши’Ранна Тенеслух** *(Ширанна Тенеслух, Ширанна, Ши’Ранна)* — жрица-ритуалистка калигни, лидер анклава и хранитель табу → local: [[Ширанна Тенеслух|Ши’Ранна Тенеслух]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/%D0%A8%D0%B8%D1%80%D0%B0%D0%BD%D0%BD%D0%B0%20%D0%A2%D0%B5%D0%BD%D0%B5%D1%81%D0%BB%D1%83%D1%85.md)
 
+- **Курзаир** *(Курзаир)* — вождь рейдов калигни и контакт с поверхностью; линия давления/схем против табу Ши’Ранны → local: [[Курзаир|Курзаир]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/%D0%9A%D1%83%D1%80%D0%B7%D0%B0%D0%B8%D1%80.md)
+
+- **Варх’Кет** *(Варх Кет, Варх’Кет)* — старший авангард, «колокол тишины»; держит линию у запретной зоны (смена A) → local: [[Варх Кет|Варх’Кет]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/%D0%92%D0%B0%D1%80%D1%85%20%D0%9A%D0%B5%D1%82.md)
+
+- **Иш’Сарра** *(Иш Сарра, Иш’Сарра)* — авангард, «граница» у ритуальных узлов; личная тень Ши’Ранны (смена B) → local: [[Иш Сарра|Иш’Сарра]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/%D0%98%D1%88%20%D0%A1%D0%B0%D1%80%D1%80%D0%B0.md)
+
+- **Лиш’Тен** *(Лиш Тен, Лиш’Тен)* — слейер/контрразведка; ищет утечки и «лишние языки» (смена B) → local: [[Лиш Тен|Лиш’Тен]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/%D0%9B%D0%B8%D1%88%20%D0%A2%D0%B5%D0%BD.md)
+
+- **Сай’Мор** *(Сай Мор, Сай’Мор)* — слейер, внутренняя безопасность и точечные устранения (смена A) → local: [[Сай Мор|Сай’Мор]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/%D0%A1%D0%B0%D0%B9%20%D0%9C%D0%BE%D1%80.md)
+
+- **Кур’Джек** *(Кур Джек, Кур’Джек)* — калигни гвардии Ши’Ранны (смена C); карточка пока TBA → local: [[Кур Джек|Кур’Джек]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/%D0%9A%D1%83%D1%80%20%D0%94%D0%B6%D0%B5%D0%BA.md)
+
+- **Нур’Вайл** *(Нур Вайл, Нур’Вайл)* — калигни-авангард, «детектор странностей» у двери/пульта (смена C); карточка пока TBA → local: [[Нур Вайл|Нур’Вайл]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/%D0%9D%D1%83%D1%80%20%D0%92%D0%B0%D0%B9%D0%BB.md)
+
+- **Освальд Меррик** *(Освальд)* — заведующий складами и переправой Greenford; узел логистики и эскалации набегов → local: [[Освальд Меррик|Освальд Меррик]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/%D0%9E%D1%81%D0%B2%D0%B0%D0%BB%D1%8C%D0%B4%20%D0%9C%D0%B5%D1%80%D1%80%D0%B8%D0%BA.md)
+
+- **Гаррен Кинсуик** *(Гаррен)* — жрец Эрастила в Greenford; похищение сына — эмоциональная «точка невозврата» → local: [[Гаррен Кинсуик|Гаррен Кинсуик]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/%D0%93%D0%B0%D1%80%D1%80%D0%B5%D0%BD%20%D0%9A%D0%B8%D0%BD%D1%81%D1%83%D0%B8%D0%BA.md)
+
+- **Лиам Кинсуик** *(Лиам)* — сын Гаррена; похищение запускает кризис в Greenford → local: [[Лиам Кинсуик|Лиам Кинсуик]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/%D0%9B%D0%B8%D0%B0%D0%BC%20%D0%9A%D0%B8%D0%BD%D1%81%D1%83%D0%B8%D0%BA.md)
+
 ## PC
 
 - (пока нет)
