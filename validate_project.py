@@ -97,8 +97,9 @@ def extract_raw_urls_from_summary(summary_path):
     with open(summary_path, 'r', encoding='utf-8') as f:
         content = f.read()
     
-    # Ищем raw URL (поддерживаем оба формата: с refs/heads/master и без)
-    pattern = r'raw:\s*(https://raw\.githubusercontent\.com/vvechkanov/AzlantyPF2e/(?:refs/heads/)?master/[^\s]+)'
+    # Ищем raw URL (поддерживаем оба формата: с refs/heads/master и без).
+    # Важно: URL может быть как "raw: https://...", так и "raw: [RAW](https://...)".
+    pattern = r'raw:\s*(?:\[[^\]]+\]\()?(https://raw\.githubusercontent\.com/vvechkanov/AzlantyPF2e/(?:refs/heads/)?master/[^\s\)]+)'
     matches = re.findall(pattern, content)
 
     return matches
@@ -119,7 +120,7 @@ def extract_file_raw_urls_from_summary(summary_path):
     urls_by_file = {}
 
     raw_pattern = re.compile(
-        r'(https://raw\.githubusercontent\.com/vvechkanov/AzlantyPF2e/(?:refs/heads/)?master/[^\s]+)'
+        r'(https://raw\.githubusercontent\.com/vvechkanov/AzlantyPF2e/(?:refs/heads/)?master/[^\s\)]+)'
     )
 
     # Проходим построчно: когда встречаем строку, содержащую `file.md`,
@@ -165,7 +166,7 @@ def extract_subdirectory_raw_urls(summary_path):
     
     # Ищем raw URL для поддиректорий (строки вида - `Папка/` — raw: URL)
     urls = []
-    pattern = r'-\s*`([^`]+/)`\s*—\s*raw:\s*(https://raw\.githubusercontent\.com/vvechkanov/AzlantyPF2e/(?:refs/heads/)?master/[^\s]+)'
+    pattern = r'-\s*`([^`]+/)`\s*—\s*raw:\s*(?:\[[^\]]+\]\()?(https://raw\.githubusercontent\.com/vvechkanov/AzlantyPF2e/(?:refs/heads/)?master/[^\s\)]+)'
     matches = re.findall(pattern, content)
     
     for match in matches:
