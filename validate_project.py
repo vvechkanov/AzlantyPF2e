@@ -11,6 +11,7 @@ import urllib.parse
 import urllib.request
 import urllib.error
 import sys
+import argparse
 from pathlib import Path
 
 # Устанавливаем кодировку для Windows
@@ -197,13 +198,116 @@ def validate_crosslinks(base_path):
                 continue
 
             for line_no, token, line in find_unlinked_token_occurrences(fp, tokens):
-                errors.append(f"Glossary без obsidian-ссылки '{token}' (target '{target}') в {rel}:{line_no}: {line}")
+                errors.append(
+                    f"Glossary без obsidian-ссылки '{token}' (target '{target}') в {rel}:{line_no}: {line}"
+                )
                 report_count += 1
                 if report_count >= max_reports:
                     errors.append(f"(дальше не показываем, лимит {max_reports} совпадений)")
                     return errors, warnings
 
     return errors, warnings
+
+def should_skip_crosslink_line(stripped_line):
+    if stripped_line.startswith('```'):
+        return True
+    if stripped_line.startswith('#'):
+        return True
+    if '#' in stripped_line and stripped_line.lstrip().startswith('-'):
+        return True
+    if '<' in stripped_line and '>' in stripped_line:
+        return True
+    return False
+
+def autofix_crosslinks_in_line(line, npc_names, glossary_entries):
+    stripped_line = line.strip()
+    if should_skip_crosslink_line(stripped_line):
+        return line
+
+    # Никогда не трогаем строки с обратными кавычками: там часто имена файлов и raw-индексы,
+    # и автофикс ломает `Имя файла.md`.
+    if '`' in line:
+        return line
+
+    if '[[`' in line:
+        return line
+
+    updated = line
+
+    npc_tokens = sorted([n for n in npc_names if n], key=len, reverse=True)
+    for token in npc_tokens:
+        token_re = re.compile(
+            r'(?<!\[\[)(?<![0-9A-Za-zА-Яа-яЁё_])' + re.escape(token) + r'(?![0-9A-Za-zА-Яа-яЁё_])(?!\]\])'
+        )
+        updated = token_re.sub(f'[[{token}]]', updated)
+
+    glossary_items = []
+    for entry in glossary_entries:
+        target = entry.get('target')
+        if not target:
+            continue
+        for t in entry.get('tokens') or []:
+            if t:
+                glossary_items.append((t, target))
+
+    glossary_items.sort(key=lambda x: len(x[0]), reverse=True)
+    for token, target in glossary_items:
+        token_re = re.compile(
+            r'(?<!\[\[)(?<![0-9A-Za-zА-Яа-яЁё_])' + re.escape(token) + r'(?![0-9A-Za-zА-Яа-яЁё_])(?!\]\])'
+        )
+        if token == target:
+            repl = f'[[{target}]]'
+        else:
+            repl = f'[[{target}|{token}]]'
+        updated = token_re.sub(repl, updated)
+
+    return updated
+
+def autofix_crosslinks(base_path):
+    errors = []
+    npc_dir = os.path.join(base_path, 'NPC')
+    glossary_path = os.path.join(base_path, 'Glossary', '00__GLOSSARY.md')
+
+    npc_names = parse_npc_names(npc_dir)
+    glossary_entries = parse_glossary_entries(glossary_path)
+
+    md_files = list_markdown_files(base_path)
+    for fp in md_files:
+        rel = os.path.relpath(fp, base_path)
+        if rel.startswith('Glossary' + os.sep):
+            continue
+        if os.path.basename(fp) == '00__GLOSSARY.md':
+            continue
+
+        try:
+            with open(fp, 'r', encoding='utf-8') as f:
+                lines = f.read().splitlines(True)
+        except UnicodeDecodeError:
+            continue
+
+        in_fence = False
+        changed = False
+        out_lines = []
+        for line in lines:
+            stripped = line.strip()
+            if stripped.startswith('```'):
+                in_fence = not in_fence
+                out_lines.append(line)
+                continue
+            if in_fence:
+                out_lines.append(line)
+                continue
+
+            new_line = autofix_crosslinks_in_line(line, npc_names, glossary_entries)
+            if new_line != line:
+                changed = True
+            out_lines.append(new_line)
+
+        if changed:
+            with open(fp, 'w', encoding='utf-8', newline='') as f:
+                f.writelines(out_lines)
+
+    return errors
 
 def get_files_in_directory(directory_path):
     """Возвращает список .md файлов в директории, исключая SUMMARY файлы"""
@@ -449,6 +553,13 @@ def main():
     """Основная функция валидации"""
     base_path = r"c:\DND\sync\Sync\Obsidian\PF2e\Кампейны\Азланти"
     
+    parser = argparse.ArgumentParser(add_help=True)
+    parser.add_argument('--fix', action='store_true')
+    args = parser.parse_args()
+
+    if args.fix:
+        autofix_crosslinks(base_path)
+
     print("Валидация проекта AzlantyPF2e")
     print("=" * 50)
     

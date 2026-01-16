@@ -51,10 +51,9 @@
   - raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/%D0%9A%D1%83%D1%80%20%D0%94%D0%B6%D0%B5%D0%BA.md)
 - `Нур Вайл.md` — (TBA).  
   - raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/%D0%9D%D1%83%D1%80%20%D0%92%D0%B0%D0%B9%D0%BB.md)
-- `Шаблон NPC.md` — черновой шаблон/заглушка NPC (если не нужен — удалить файл).  
-  - raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/%D0%A8%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD%20NPC.md)
+
 ## Поисковые якоря
-Азланти, Орден, KAERETHAL, Continuum, шесть догматов, резонанс, узлы, допуски, печати, матрицы, автоматоны, големы, прокси, экспедиции, Greenford, калигни, набеги, похищение, дверь, пульт, запретная зона.
+Азланти, [[Контекст_ордена_Азланти|Орден]], [[Проект_KAERETHAL__Continuum|KAERETHAL]], [[Проект_KAERETHAL__Continuum|Continuum]], шесть догматов, резонанс, узлы, допуски, печати, матрицы, автоматоны, големы, прокси, экспедиции, Greenford, калигни, набеги, похищение, дверь, пульт, запретная зона.
 
 ## Что читать первым (entry points)
 - Если нужно понять **политику калигни и финальную точку Арки 1** → `Ширанна Тенеслух.md`
