@@ -100,8 +100,60 @@ def extract_raw_urls_from_summary(summary_path):
     # Ищем raw URL (поддерживаем оба формата: с refs/heads/master и без)
     pattern = r'raw:\s*(https://raw\.githubusercontent\.com/vvechkanov/AzlantyPF2e/(?:refs/heads/)?master/[^\s]+)'
     matches = re.findall(pattern, content)
-    
+
     return matches
+
+def extract_file_raw_urls_from_summary(summary_path):
+    """Извлекает raw URL для файлов из SUMMARY файла.
+
+    Важно: исключаем raw-ссылки, которые относятся к подпапкам (строки с `Папка/`).
+    Возвращает список URL в том же порядке, что и extract_links_from_summary().
+    """
+    if not os.path.exists(summary_path):
+        return []
+
+    with open(summary_path, 'r', encoding='utf-8') as f:
+        lines = f.read().splitlines()
+
+    file_links = extract_links_from_summary(summary_path)
+    urls_by_file = {}
+
+    raw_pattern = re.compile(
+        r'(https://raw\.githubusercontent\.com/vvechkanov/AzlantyPF2e/(?:refs/heads/)?master/[^\s]+)'
+    )
+
+    # Проходим построчно: когда встречаем строку, содержащую `file.md`,
+    # пытаемся вытащить raw URL из:
+    # - этой же строки (часто формат "→ raw: ...")
+    # - следующих 1-3 строк, пока не началась следующая запись
+    for idx, line in enumerate(lines):
+        for filename in file_links:
+            if filename in urls_by_file:
+                continue
+
+            if f'`{filename}`' not in line:
+                continue
+
+            # 1) inline raw
+            m = raw_pattern.search(line)
+            if m:
+                urls_by_file[filename] = m.group(1)
+                continue
+
+            # 2) raw на следующих строках
+            for j in range(1, 4):
+                if idx + j >= len(lines):
+                    break
+                next_line = lines[idx + j]
+                # если начинается новая запись на файл/папку — дальше не ищем
+                if next_line.lstrip().startswith('- `'):
+                    break
+                m2 = raw_pattern.search(next_line)
+                if m2:
+                    urls_by_file[filename] = m2.group(1)
+                    break
+
+    return [urls_by_file.get(f) for f in file_links if urls_by_file.get(f)]
 
 def extract_subdirectory_raw_urls(summary_path):
     """Извлекает raw URL для поддиректорий из SUMMARY файла"""
@@ -150,8 +202,8 @@ def validate_directory(directory_path, relative_path=""):
     # Получаем ссылки на поддиректории из SUMMARY
     summary_subdirs = extract_subdirectories_from_summary(summary_path)
     
-    # Получаем raw URL из SUMMARY
-    raw_urls = extract_raw_urls_from_summary(summary_path)
+    # Получаем raw URL из SUMMARY (только для файлов, не для директорий)
+    raw_urls = extract_file_raw_urls_from_summary(summary_path)
     
     # Проверяем, что все файлы в директории упомянуты в SUMMARY
     for file in actual_files:
@@ -178,14 +230,20 @@ def validate_directory(directory_path, relative_path=""):
         warnings.append(f"Количество raw URL ({len(raw_urls)}) не соответствует количеству файлов ({len(actual_files)}): {summary_path}")
     
     # Проверяем корректность raw URL
-    for i, (file, url) in enumerate(zip(summary_links, raw_urls)):
+    urls_by_file = dict(zip(summary_links, raw_urls))
+    for file in summary_links:
+        url = urls_by_file.get(file)
+        if not url:
+            warnings.append(f"Отсутствует raw URL для '{file}': {summary_path}")
+            continue
+
         expected_url = generate_raw_url("", os.path.join(relative_path, file))
-        # Нормализуем оба URL для сравнения (убираем refs/heads/master если есть)
+        # Нормализуем URL для сравнения (убираем refs/heads/master если есть)
         normalized_url = url.replace('refs/heads/master/', 'master/')
         if normalized_url != expected_url:
             warnings.append(f"Некорректный raw URL для '{file}': {url}")
             warnings.append(f"   Ожидается: {expected_url}")
-        
+
         # Проверяем доступность URL в сети
         print(f"Проверка доступности: {file}...", end=' ')
         if check_url_accessibility(url):
@@ -217,12 +275,23 @@ def validate_directory(directory_path, relative_path=""):
 
 def main():
     """Основная функция валидации"""
-    base_path = r"c:\DND\sync\Sync\Obsidian\PF2e\Кампейны\Азланти\Сюжет кампании"
+    base_path = r"c:\DND\sync\Sync\Obsidian\PF2e\Кампейны\Азланти"
     
     print("Валидация проекта AzlantyPF2e")
     print("=" * 50)
     
-    errors, warnings = validate_directory(base_path, "Сюжет кампании")
+    errors = []
+    warnings = []
+
+    # Валидируем все подпапки, которые являются контентными ветками (имеют 00__SUMMARY.md).
+    for item in os.listdir(base_path):
+        item_path = os.path.join(base_path, item)
+        if os.path.isdir(item_path):
+            summary_path = os.path.join(item_path, '00__SUMMARY.md')
+            if os.path.exists(summary_path):
+                sub_errors, sub_warnings = validate_directory(item_path, item)
+                errors.extend(sub_errors)
+                warnings.extend(sub_warnings)
     
     if not errors and not warnings:
         print("Все проверки пройдены успешно!")

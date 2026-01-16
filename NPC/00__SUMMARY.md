@@ -11,6 +11,8 @@
 
 - `00__TEMPLATE.md` — шаблон карточки NPC (структура секций).
 - raw: https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/00__TEMPLATE.md
+- `00__NPC_без_портретов.md` — список NPC, у которых отсутствуют портреты.
+- raw: https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/00__NPC_%D0%B1%D0%B5%D0%B7_%D0%BF%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82%D0%BE%D0%B2.md
 ### Орден Азланти — «семёрка» (ядро KAERETHAL)
 - `Валастир Каэрваль.md` — лидер Ордена, архитектура структуры, сделок и курса.  
   - raw: https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/%D0%92%D0%B0%D0%BB%D0%B0%D1%81%D1%82%D0%B8%D1%80%20%D0%9A%D0%B0%D1%8D%D1%80%D0%B2%D0%B0%D0%BB%D1%8C.md
@@ -30,12 +32,28 @@
 ### Арка 1 — Greenford / калигни / набеги
 - `Ширанна Тенеслух.md` — лидер анклава калигни; табу, дисциплина, запретная зона у двери/пульта.  
   - raw: https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/%D0%A8%D0%B8%D1%80%D0%B0%D0%BD%D0%BD%D0%B0%20%D0%A2%D0%B5%D0%BD%D0%B5%D1%81%D0%BB%D1%83%D1%85.md
+- `Курзаир.md` — полевой командир/координатор набегов калигни; «административная» сторона силы анклава.  
+  - raw: https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/%D0%9A%D1%83%D1%80%D0%B7%D0%B0%D0%B8%D1%80.md
+- `Варх Кет.md` — авангард, старший страж запретной зоны; «колокол тишины».  
+  - raw: https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/%D0%92%D0%B0%D1%80%D1%85%20%D0%9A%D0%B5%D1%82.md
+- `Иш Сарра.md` — авангард, «граница» у ритуальных узлов; личная тень Ши’Ранны.  
+  - raw: https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/%D0%98%D1%88%20%D0%A1%D0%B0%D1%80%D1%80%D0%B0.md
+- `Лиш Тен.md` — авангард/караул смены; напарник Иш’Сарры (смена B).  
+  - raw: https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/%D0%9B%D0%B8%D1%88%20%D0%A2%D0%B5%D0%BD.md
+- `Сай Мор.md` — авангард/караул смены; напарник Варх’Кета (смена A).  
+  - raw: https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/%D0%A1%D0%B0%D0%B9%20%D0%9C%D0%BE%D1%80.md
 - `Освальд Меррик.md` — заведующий складами и переправой Greenford; узел логистики и эскалации набегов.  
   - raw: https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/%D0%9E%D1%81%D0%B2%D0%B0%D0%BB%D1%8C%D0%B4%20%D0%9C%D0%B5%D1%80%D1%80%D0%B8%D0%BA.md
 - `Гаррен Кинсуик.md` — жрец Эрастила в Greenford; похищение сына — эмоциональная «точка невозврата».  
   - raw: https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/%D0%93%D0%B0%D1%80%D1%80%D0%B5%D0%BD%20%D0%9A%D0%B8%D0%BD%D1%81%D1%83%D0%B8%D0%BA.md
 - `Лиам Кинсуик.md` — сын Гаррена; похищение запускает кризис в деревне.  
   - raw: https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/%D0%9B%D0%B8%D0%B0%D0%BC%20%D0%9A%D0%B8%D0%BD%D1%81%D1%83%D0%B8%D0%BA.md
+- `Кур Джек.md` — (TBA).  
+  - raw: https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/%D0%9A%D1%83%D1%80%20%D0%94%D0%B6%D0%B5%D0%BA.md
+- `Нур Вайл.md` — (TBA).  
+  - raw: https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/%D0%9D%D1%83%D1%80%20%D0%92%D0%B0%D0%B9%D0%BB.md
+- `Шаблон NPC.md` — черновой шаблон/заглушка NPC (если не нужен — удалить файл).  
+  - raw: https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/%D0%A8%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD%20NPC.md
 
 ## Поисковые якоря
 Азланти, Орден, KAERETHAL, Continuum, шесть догматов, резонанс, узлы, допуски, печати, матрицы, автоматоны, големы, прокси, экспедиции, Greenford, калигни, набеги, похищение, дверь, пульт, запретная зона.
