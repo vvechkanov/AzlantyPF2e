@@ -116,6 +116,10 @@ def find_unlinked_token_occurrences(file_path, tokens):
         if not tokens:
             continue
         stripped_line = line.strip()
+
+        # Не требуем ссылок в raw-строках (там URL и служебные индексы)
+        if 'raw:' in stripped_line.lower():
+            continue
         if stripped_line.startswith('```'):
             continue
 
@@ -212,6 +216,8 @@ def should_skip_crosslink_line(stripped_line):
     if stripped_line.startswith('```'):
         return True
     if stripped_line.startswith('#'):
+        return True
+    if 'raw:' in stripped_line.lower():
         return True
     if '#' in stripped_line and stripped_line.lstrip().startswith('-'):
         return True

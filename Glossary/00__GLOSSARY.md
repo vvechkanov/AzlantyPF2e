@@ -29,6 +29,14 @@
 
 - **Божественный Дождь Годзраин** *(«капли» Годзраин)* — источник редких «капель/фрагментов» для мифик-трека Ордена → local: [[Контекст_ордена_Азланти|Божественный Дождь Годзраин]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/%D0%A1%D1%8E%D0%B6%D0%B5%D1%82%20%D0%BA%D0%B0%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B8/%D0%9E%D0%B1%D1%89%D0%B0%D1%8F/%D0%9A%D0%BE%D0%BD%D1%82%D0%B5%D0%BA%D1%81%D1%82_%D0%BE%D1%80%D0%B4%D0%B5%D0%BD%D0%B0_%D0%90%D0%B7%D0%BB%D0%B0%D0%BD%D1%82%D0%B8.md)
 
+- **Greenford (Гринфорд)** *(Greenford, Гринфорд)* — стартовая деревня у переправы, складов и леса; точка входа Арки 1 → local: [[Greenford__деревня|Greenford (Гринфорд)]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/%D0%A1%D1%8E%D0%B6%D0%B5%D1%82%20%D0%BA%D0%B0%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B8/%D0%90%D1%80%D0%BA%D0%B0-1/Greenford__%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D0%BD%D1%8F.md)
+
+- **Набеги калигни на Гринфорд (канон)** *(набеги, рейды калигни)* — хронология и логика эскалации набегов, включая роль Освальда и похищение ребёнка жреца → local: [[Greenford__набеги__канон|Набеги калигни на Гринфорд (канон)]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/%D0%A1%D1%8E%D0%B6%D0%B5%D1%82%20%D0%BA%D0%B0%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B8/%D0%90%D1%80%D0%BA%D0%B0-1/Greenford__%D0%BD%D0%B0%D0%B1%D0%B5%D0%B3%D0%B8__%D0%BA%D0%B0%D0%BD%D0%BE%D0%BD.md)
+
+- **Калигни (анклав Ши’Ранны)** *(калигни, анклав калигни)* — скрытный подземный анклав под Greenford; численность, роли, конфликт лидеров и гвардия запретной зоны → local: [[Калигни__численность_и_гвардия_Ширанны|Калигни (анклав Ши’Ранны)]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/%D0%A1%D1%8E%D0%B6%D0%B5%D1%82%20%D0%BA%D0%B0%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B8/%D0%90%D1%80%D0%BA%D0%B0-1/%D0%9A%D0%B0%D0%BB%D0%B8%D0%B3%D0%BD%D0%B8__%D1%87%D0%B8%D1%81%D0%BB%D0%B5%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D1%8C_%D0%B8_%D0%B3%D0%B2%D0%B0%D1%80%D0%B4%D0%B8%D1%8F_%D0%A8%D0%B8%D1%80%D0%B0%D0%BD%D0%BD%D1%8B.md)
+
+- **The Life and the Forest** *(гостиница Greenford)* — спокойная маленькая гостиница в Greenford (в отличие от шумной таверны) → local: [[The Life and the Forest|The Life and the Forest]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/%D0%A1%D1%8E%D0%B6%D0%B5%D1%82%20%D0%BA%D0%B0%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B8/%D0%90%D1%80%D0%BA%D0%B0-1/Greenford%20Locations/The%20Life%20and%20the%20Forest.md)
+
 ## NPC
 
 - **Валастир Каэрваль** *(Валастир)* — лидер Ордена, архитектор структуры, сделок и стратегии трёх треков → local: [[Валастир Каэрваль|Валастир Каэрваль]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/%D0%92%D0%B0%D0%BB%D0%B0%D1%81%D1%82%D0%B8%D1%80%20%D0%9A%D0%B0%D1%8D%D1%80%D0%B2%D0%B0%D0%BB%D1%8C.md)
