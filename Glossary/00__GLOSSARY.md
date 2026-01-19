@@ -108,3 +108,83 @@
 ## PC
 
 - (пока нет)
+
+### NPC Луж (Апсалом)
+
+- **Хайген Топкик** *(Хайген)* — фактический правитель Луж, глава Гильдии спасателей, требует процент с salvage operations → local: [[Хайген Топкик|Хайген Топкик]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/%D0%A5%D0%B0%D0%B9%D0%B3%D0%B5%D0%BD_%D0%A2%D0%BE%D0%BF%D0%BA%D0%B8%D0%BA.md)
+
+- **Леди Сейчия из дома Тевинег** *(Леди Сейчия)* — владелица "Брина" (частная тюрьма) и "Солевого картеля" (незаконная работорговля) → local: [[Леди Сейчия|Леди Сейчия]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/%D0%9B%D0%B5%D0%B4%D0%B8_%D0%A1%D0%B5%D0%B9%D1%87%D0%B8%D1%8F.md)
+
+- **Зусгут** *(Король гоблинов)* — самопровозглашенный Король гоблинов Абсалома, лидер общины в Королевском дворе Гоблина → local: [[Зусгут|Зусгут]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/%D0%97%D1%83%D1%81%D0%B3%D1%83%D1%82.md)
+
+- **Рыбоголовая Королева** *(Fish-Head Queen)* — владелица Цирка Айсепира, проклятая русалка (женское тело, голова рыбы) → local: [[Рыбоголовая Королева|Рыбоголовая Королева]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/%D0%A0%D1%8B%D0%B1%D0%BE%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%B0%D1%8F_%D0%9A%D0%BE%D1%80%D0%BE%D0%BB%D0%B5%D0%B2%D0%B0.md)
+
+- **Хоуп** *(Hope)* — женщина-аасимар, управляющая Приюта Чистой Воды, лидер Firebrands, бывшая преступница → local: [[Хоуп|Хоуп]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/%D0%A5%D0%BE%D1%83%D0%BF.md)
+
+- **Анкор** *(Anchor)* — азаркети-карманник с фиолетовыми глазами, использует водные пути для побега → local: [[Анкор|Анкор]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/%D0%90%D0%BD%D0%BA%D0%BE%D1%80.md)
+
+- **Маркет-Мастер Аннави** *(Market Master Annavi)* — плавающий торговец у Малого Внутреннего Моря → local: [[Торговцы_Малого_Внутреннего_Моря|Маркет-Мастер Аннави]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/%D0%A2%D0%BE%D1%80%D0%B3%D0%BE%D0%B2%D1%86%D1%8B_%D0%9C%D0%B0%D0%BB%D0%BE%D0%B3%D0%BE_%D0%92%D0%BD%D1%83%D1%82%D1%80%D0%B5%D0%BD%D0%BD%D0%B5%D0%B3%D0%BE_%D0%9C%D0%BE%D1%80%D1%8F.md)
+
+- **Джосси Слимфин** *(Jossie Slimfin)* — торговец хламом, связанный с Приютом Чистой Воды → local: [[Торговцы_Малого_Внутреннего_Моря|Джосси Слимфин]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/%D0%A2%D0%BE%D1%80%D0%B3%D0%BE%D0%B2%D1%86%D1%8B_%D0%9C%D0%B0%D0%BB%D0%BE%D0%B3%D0%BE_%D0%92%D0%BD%D1%83%D1%82%D1%80%D0%B5%D0%BD%D0%BD%D0%B5%D0%B3%D0%BE_%D0%9C%D0%BE%D1%80%D1%8F.md)
+
+- **Мурно Блосс** *(Murno Bloss)* — агент Гильдии спасателей, собирает проценты для Хайгена → local: [[Торговцы_Малого_Внутреннего_Моря|Мурно Блосс]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/%D0%A2%D0%BE%D1%80%D0%B3%D0%BE%D0%B2%D1%86%D1%8B_%D0%9C%D0%B0%D0%BB%D0%BE%D0%B3%D0%BE_%D0%92%D0%BD%D1%83%D1%82%D1%80%D0%B5%D0%BD%D0%BD%D0%B5%D0%B3%D0%BE_%D0%9C%D0%BE%D1%80%D1%8F.md)
+
+- **Траккус Клугфут** *(Trakkus Clawfoot)* — лидер патруля Muckrucker, обеспечивает безопасность вокруг моря → local: [[Торговцы_Малого_Внутреннего_Моря|Траккус Клугфут]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/%D0%A2%D0%BE%D1%80%D0%B3%D0%BE%D0%B2%D1%86%D1%8B_%D0%9C%D0%B0%D0%BB%D0%BE%D0%B3%D0%BE_%D0%92%D0%BD%D1%83%D1%82%D1%80%D0%B5%D0%BD%D0%BD%D0%B5%D0%B3%D0%BE_%D0%9C%D0%BE%D1%80%D1%8F.md)
+
+- **Доракото** *(Dorakotho)* — ищет детей с пророческими способностями в Приюте Чистой Воды → local: [[Хоуп|Доракото]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/%D0%A5%D0%BE%D1%83%D0%BF.md)
+
+- **Унави** *(Unavi)* — житель Приюта Чистой Воды → local: [[Хоуп|Унави]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/%D0%A5%D0%BE%D1%83%D0%BF.md)
+
+- **Элигир Келм** *(Элигир)* — мирской жрец Саренрэ на Плавучем Храме, основной медицинский работник в Лужах → local: [[Элигир Келм|Элигир Келм]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/%D0%A1%D1%8E%D0%B6%D0%B5%D1%82%20%D0%BA%D0%B0%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B8/%D0%90%D0%BF%D1%81%D0%B0%D0%BB%D0%BE%D0%BC/%D0%A0%D0%B0%D0%B9%D0%BE%D0%BD%D1%8B/Puddles/%D0%9B%D0%BE%D0%BA%D0%B0%D1%86%D0%B8%D0%B8/190__%D0%9F%D0%BB%D0%B0%D0%B2%D1%83%D1%87%D0%B8%D0%B9_%D0%A5%D1%80%D0%B0%D0%BC.md)
+
+- **Хонсур-Ро** *(Khonsu-Rho)* — верховный жрец Консульства Платиновой Полосы, храма бога добрых драконов Апсу → local: [[Хонсур-Ро|Хонсур-Ро]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/%D0%A1%D1%8E%D0%B6%D0%B5%D1%82%20%D0%BA%D0%B0%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B8/%D0%90%D0%BF%D1%81%D0%B0%D0%BB%D0%BE%D0%BC/%D0%A0%D0%B0%D0%B9%D0%BE%D0%BD%D1%8B/Puddles/%D0%9B%D0%BE%D0%BA%D0%B0%D1%86%D0%B8%D0%B8/188__%D0%9A%D0%BE%D0%BD%D1%81%D1%83%D0%BB%D1%8C%D1%81%D1%82%D0%B2%D0%BE_%D0%9F%D0%BB%D0%B0%D1%82%D0%B8%D0%BD%D0%BE%D0%B2%D0%BE%D0%B9_%D0%9F%D0%BE%D0%BB%D0%BE%D1%81%D1%8B.md)
+
+## Термины Луж (Апсалом)
+
+- **Лужи (Puddles)** *(Лужи)* — самый нищий и затопленный район Абсалома, центр криминала, болезней и выживания → local: [[Puddles_Общая_информация|Лужи]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/%D0%A1%D1%8E%D0%B6%D0%B5%D1%82%20%D0%BA%D0%B0%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B8/%D0%90%D0%BF%D1%81%D0%B0%D0%BB%D0%BE%D0%BC/%D0%A0%D0%B0%D0%B9%D0%BE%D0%BD%D1%8B/Puddles/00__Puddles_%D0%9E%D0%B1%D1%89%D0%B0%D1%8F_%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D1%8F.md)
+
+- **Цирк Айсепира (Aysepir's Astounded Abyss)** *(Цирк Айсепира)* — мрачный цирк монстров и мутантов под управлением Рыбоголовой Королевы → local: [[Цирк_Айсепира|Цирк Айсепира]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/%D0%A1%D1%8E%D0%B6%D0%B5%D1%82%20%D0%BA%D0%B0%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B8/%D0%90%D0%BF%D1%81%D0%B0%D0%BB%D0%BE%D0%BC/%D0%A0%D0%B0%D0%B9%D0%BE%D0%BD%D1%8B/Puddles/%D0%9B%D0%BE%D0%BA%D0%B0%D1%86%D0%B8%D0%B8/184__%D0%A6%D0%B8%D1%80%D0%BA_%D0%90%D0%B9%D1%81%D0%B5%D0%BF%D0%B8%D1%80%D0%B0.md)
+
+- **Малое Внутреннее Море (Little Inner Sea)** *(Малое Внутреннее Море)* — затопленный парк, источник ценностей и опасностей, контролируется Хайгеном → local: [[Малое_Внутреннее_Море|Малое Внутреннее Море]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/%D0%A1%D1%8E%D0%B6%D0%B5%D1%82%20%D0%BA%D0%B0%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B8/%D0%90%D0%BF%D1%81%D0%B0%D0%BB%D0%BE%D0%BC/%D0%A0%D0%B0%D0%B9%D0%BE%D0%BD%D1%8B/Puddles/%D0%9B%D0%BE%D0%BA%D0%B0%D1%86%D0%B8%D0%B8/191__%D0%9C%D0%B0%D0%BB%D0%BE%D0%B5_%D0%92%D0%BD%D1%83%D1%82%D1%80%D0%B5%D0%BD%D0%BD%D0%B5%D0%B5_%D0%9C%D0%BE%D1%80%D0%B5.md)
+
+- **Королевский двор Гоблина (The Goblin King's Court)** *(Королевский двор Гоблина)* — штаб-квартира Короля гоблинов Зусгута, центр гоблинской власти → local: [[Королевский_двор_Гоблина|Королевский двор Гоблина]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/%D0%A1%D1%8E%D0%B6%D0%B5%D1%82%20%D0%BA%D0%B0%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B8/%D0%90%D0%BF%D1%81%D0%B0%D0%BB%D0%BE%D0%BC/%D0%A0%D0%B0%D0%B9%D0%BE%D0%BD%D1%8B/Puddles/%D0%9B%D0%BE%D0%BA%D0%B0%D1%86%D0%B8%D0%B8/189__%D0%9A%D0%BE%D1%80%D0%BE%D0%BB%D0%B5%D0%B2%D1%81%D0%BA%D0%B8%D0%B9_%D0%B4%D0%B2%D0%BE%D1%80_%D0%93%D0%BE%D0%B1%D0%BB%D0%B8%D0%BD%D0%B0.md)
+
+- **Плавучий Храм (Healing Raft)** *(Плавучий Храм)* — передвижной храм Саренрэ, оказывающий медицинскую помощь жителям Луж → local: [[Плавучий_Храм|Плавучий Храм]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/%D0%A1%D1%8E%D0%B6%D0%B5%D1%82%20%D0%BA%D0%B0%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B8/%D0%90%D0%BF%D1%81%D0%B0%D0%BB%D0%BE%D0%BC/%D0%A0%D0%B0%D0%B9%D0%BE%D0%BD%D1%8B/Puddles/%D0%9B%D0%BE%D0%BA%D0%B0%D1%86%D0%B8%D0%B8/190__%D0%9F%D0%BB%D0%B0%D0%B2%D1%83%D1%87%D0%B8%D0%B9_%D0%A5%D1%80%D0%B0%D0%BC.md)
+
+- **Консульство Платиновой Полосы (Consulate of the Platinum Band)** *(Консульство Платиновой Полосы)* — храм бога добрых драконов Апсу в Лужах → local: [[Консульство_Платиновой_Полосы|Консульство Платиновой Полосы]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/%D0%A1%D1%8E%D0%B6%D0%B5%D1%82%20%D0%BA%D0%B0%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B8/%D0%90%D0%BF%D1%81%D0%B0%D0%BB%D0%BE%D0%BC/%D0%A0%D0%B0%D0%B9%D0%BE%D0%BD%D1%8B/Puddles/%D0%9B%D0%BE%D0%BA%D0%B0%D1%86%D0%B8%D0%B8/188__%D0%9A%D0%BE%D0%BD%D1%81%D1%83%D0%BB%D1%8C%D1%81%D1%82%D0%B2%D0%BE_%D0%9F%D0%BB%D0%B0%D1%82%D0%B8%D0%BD%D0%BE%D0%B2%D0%BE%D0%B9_%D0%9F%D0%BE%D0%BB%D0%BE%D1%81%D1%8B.md)
+
+- **Солевой картель (The Salt Cartel)** *(Солевой картель)* — незаконная работорговля, принадлежащая леди Сейчии из дома Тевинег → local: [[Леди Сейчия|Солевой картель]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/%D0%A1%D1%8E%D0%B6%D0%B5%D1%82%20%D0%BA%D0%B0%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B8/%D0%90%D0%BF%D1%81%D0%B0%D0%BB%D0%BE%D0%BC/%D0%A0%D0%B0%D0%B9%D0%BE%D0%BD%D1%8B/Puddles/NPC/%D0%9B%D0%B5%D0%B4%D0%B8_%D0%A1%D0%B5%D0%B9%D1%87%D0%B8%D1%8F.md)
+
+- **Брин (The Brine)** *(Брин)* — частная тюрьма, принадлежащая леди Сейчии из дома Тевинег → local: [[Леди Сейчия|Брин]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/%D0%A1%D1%8E%D0%B6%D0%B5%D1%82%20%D0%BA%D0%B0%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B8/%D0%90%D0%BF%D1%81%D0%B0%D0%BB%D0%BE%D0%BC/%D0%A0%D0%B0%D0%B9%D0%BE%D0%BD%D1%8B/Puddles/NPC/%D0%9B%D0%B5%D0%B4%D0%B8_%D0%A1%D0%B5%D0%B9%D1%87%D0%B8%D1%8F.md)
+
+- **Soddenhouse Shankers** *(Soddenhouse Shankers)* — гоблинская милиция под командованием Короля гоблинов Зусгута → local: [[Зусгут|Soddenhouse Shankers]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/%D0%A1%D1%8E%D0%B6%D0%B5%D1%82%20%D0%BA%D0%B0%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B8/%D0%90%D0%BF%D1%81%D0%B0%D0%BB%D0%BE%D0%BC/%D0%A0%D0%B0%D0%B9%D0%BE%D0%BD%D1%8B/Puddles/NPC/%D0%97%D1%83%D1%81%D0%B3%D1%83%D1%82.md)
+
+- **Культ Кожаного Топора (Skinsaw Cult)** *(Культ Кожаного Топора)* — местная глава культа, отмеченная жестокими убийствами и ритуалами → local: [[Puddles_Общая_информация|Культ Кожаного Топора]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/%D0%A1%D1%8E%D0%B6%D0%B5%D1%82%20%D0%BA%D0%B0%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B8/%D0%90%D0%BF%D1%81%D0%B0%D0%BB%D0%BE%D0%BC/%D0%A0%D0%B0%D0%B9%D0%BE%D0%BD%D1%8B/Puddles/00__Puddles_%D0%9E%D0%B1%D1%89%D0%B0%D1%8F_%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D1%8F.md)
+
+- **Гильдия спасателей (Salvagers' Guild)** *(Гильдия спасателей)* — организация под контролем Хайгена Топкика, занимающаяся salvage operations → local: [[Хайген Топкик|Гильдия спасателей]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/%D0%A1%D1%8E%D0%B6%D0%B5%D1%82%20%D0%BA%D0%B0%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B8/%D0%90%D0%BF%D1%81%D0%B0%D0%BB%D0%BE%D0%BC/%D0%A0%D0%B0%D0%B9%D0%BE%D0%BD%D1%8B/Puddles/NPC/%D0%A5%D0%B0%D0%B9%D0%B3%D0%B5%D0%BD_%D0%A2%D0%BE%D0%BF%D0%BA%D0%B8%D0%BA.md)
+
+- **Бег по крышам (Rooftop Runners)** *(Бег по крышам)* — опасный вид спорта в Лужах, возникший из-за затопленных улиц → local: [[Puddles_Общая_информация|Бег по крышам]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/%D0%A1%D1%8E%D0%B6%D0%B5%D1%82%20%D0%BA%D0%B0%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B8/%D0%90%D0%BF%D1%81%D0%B0%D0%BB%D0%BE%D0%BC/%D0%A0%D0%B0%D0%B9%D0%BE%D0%BD%D1%8B/Puddles/00__Puddles_%D0%9E%D0%B1%D1%89%D0%B0%D1%8F_%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D1%8F.md)
+
+- **Приют Чистой Воды (Purewater Home)** *(Приют Чистой Воды)* — сиротский приют Хоуп, тайная база Firebrands, относительно безопасное место → local: [[Приют_Чистой_Воды|Приют Чистой Воды]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/%D0%A1%D1%8E%D0%B6%D0%B5%D1%82%20%D0%BA%D0%B0%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B8/%D0%90%D0%BF%D1%81%D0%B0%D0%BB%D0%BE%D0%BC/%D0%A0%D0%B0%D0%B9%D0%BE%D0%BD%D1%8B/Puddles/%D0%9B%D0%BE%D0%BA%D0%B0%D1%86%D0%B8%D0%B8/192__%D0%9F%D1%80%D0%B8%D1%8E%D1%82_%D0%A7%D0%B8%D1%81%D1%82%D0%BE%D0%B9_%D0%92%D0%BE%D0%B4%D1%8B.md)
+
+- **Зал Бритв (Razorhall)** *(Зал Бритв)* — бывший суд, превращенный Культом Кожаного Топора в храм ритуалов и казней → local: [[Зал_Бритв|Зал Бритв]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/%D0%A1%D1%8E%D0%B6%D0%B5%D1%82%20%D0%BA%D0%B0%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B8/%D0%90%D0%BF%D1%81%D0%B0%D0%BB%D0%BE%D0%BC/%D0%A0%D0%B0%D0%B9%D0%BE%D0%BD%D1%8B/Puddles/%D0%9B%D0%BE%D0%BA%D0%B0%D1%86%D0%B8%D0%B8/193__%D0%97%D0%B0%D0%BB_%D0%91%D1%80%D0%B8%D1%82%D0%B2.md)
+
+- **Firebrands** *(Firebrands)* — политическая организация, борющаяся за реформы, использует Приют Чистой Воды как базу → local: [[Хоуп|Firebrands]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/%D0%A1%D1%8E%D0%B6%D0%B5%D1%82%20%D0%BA%D0%B0%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B8/%D0%90%D0%BF%D1%81%D0%B0%D0%BB%D0%BE%D0%BC/%D0%A0%D0%B0%D0%B9%D0%BE%D0%BD%D1%8B/Puddles/%D0%9B%D0%BE%D0%BA%D0%B0%D1%86%D0%B8%D0%B8/192__%D0%9F%D1%80%D0%B8%D1%8E%D1%82_%D0%A7%D0%B8%D1%81%D1%82%D0%BE%D0%B9_%D0%92%D0%BE%D0%B4%D1%8B.md)
+
+- **Muckruckers** *(Muckruckers)* — местные силы патрулирования, боятся Культа Кожаного Топора, избегают расследований → local: [[Зал_Бритв|Muckruckers]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/%D0%A1%D1%8E%D0%B6%D0%B5%D1%82%20%D0%BA%D0%B0%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B8/%D0%90%D0%BF%D1%81%D0%B0%D0%BB%D0%BE%D0%BC/%D0%A0%D0%B0%D0%B9%D0%BE%D0%BD%D1%8B/Puddles/%D0%9B%D0%BE%D0%BA%D0%B0%D1%86%D0%B8%D0%B8/193__%D0%97%D0%B0%D0%BB_%D0%91%D1%80%D0%B8%D1%82%D0%B2.md)
+
+- **Азаркети (Azarketi)** *(Азаркети)* — водная раса, способная дышать под водой, пример - Анкор-карманник → local: [[Анкор|Азаркети]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/%D0%A1%D1%8E%D0%B6%D0%B5%D1%82%20%D0%BA%D0%B0%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B8/%D0%90%D0%BF%D1%81%D0%B0%D0%BB%D0%BE%D0%BC/%D0%A0%D0%B0%D0%B9%D0%BE%D0%BD%D1%8B/Puddles/NPC/%D0%90%D0%BD%D0%BA%D0%BE%D1%80.md)
+
+## Болезни Луж (Апсалом)
+
+- **Ракушка гниль (Barnacles Rot)** *(Ракушка гниль)* — инфекционное заболевание стоп и лодыжек от загрязненной воды → local: [[Ракушка_гниль|Ракушка гниль]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/%D0%91%D0%BE%D0%BB%D0%B5%D0%B7%D0%BD%D0%B8/%D0%A0%D0%B0%D0%BA%D1%83%D1%88%D0%BA%D0%B0_%D0%B3%D0%BD%D0%B8%D0%BB%D1%8C.md)
+
+- **Бредовая плесень (Delirium Mold)** *(Бредовая плесень)* — грибковая инфекция, вызывающая галлюцинации и приступы ярости → local: [[Бредовая_плесень|Бредовая плесень]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/%D0%91%D0%BE%D0%BB%D0%B5%D0%B7%D0%BD%D0%B8/%D0%91%D1%80%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D1%8F_%D0%BF%D0%BB%D0%B5%D1%81%D0%B5%D0%BD%D1%8C.md)
+
+- **Грязная лихорадка (Filth Fever)** *(Грязная лихорадка)* — потенциально смертельная болезнь от грязной воды и комаров → local: [[Грязная_лихорадка|Грязная лихорадка]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/%D0%91%D0%BE%D0%BB%D0%B5%D0%B7%D0%BD%D0%B8/%D0%93%D1%80%D1%8F%D0%B7%D0%BD%D0%B0%D1%8F_%D0%BB%D0%B8%D1%85%D0%BE%D1%80%D0%B0%D0%B4%D0%BA%D0%B0.md)
+
+- **Призрачная пыль (Haunt Dust)** *(Призрачная пыль)* — фосфоресцирующая плесень, вызывающая окоченелый сон и смерть → local: [[Призрачная_пыль|Призрачная пыль]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/%D0%91%D0%BE%D0%BB%D0%B5%D0%B7%D0%BD%D0%B8/%D0%9F%D1%80%D0%B8%D0%B7%D1%80%D0%B0%D1%87%D0%BD%D0%B0%D1%8F_%D0%BF%D1%8B%D0%BB%D1%8C.md)
+
+## PC
+
+- (пока нет)
