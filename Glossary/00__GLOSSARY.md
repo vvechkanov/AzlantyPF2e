@@ -121,6 +121,8 @@
 
 - **Рыбоголовая Королева** *(Fish-Head Queen)* — владелица Цирка Айсепира, проклятая русалка (женское тело, голова рыбы) → local: [[Рыбоголовая Королева|Рыбоголовая Королева]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/%D0%A0%D1%8B%D0%B1%D0%BE%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%B0%D1%8F_%D0%9A%D0%BE%D1%80%D0%BE%D0%BB%D0%B5%D0%B2%D0%B0.md)
 
+- **Fish-Head Queen** *(Fish-Head Queen)* — альтернативное название Рыбоголовой Королевы → local: [[Рыбоголовая Королева|Fish-Head Queen]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/%D0%A0%D1%8B%D0%B1%D0%BE%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%B0%D1%8F_%D0%9A%D0%BE%D1%80%D0%BE%D0%BB%D0%B5%D0%B2%D0%B0.md)
+
 - **Хоуп** *(Hope)* — женщина-аасимар, управляющая Приюта Чистой Воды, лидер Firebrands, бывшая преступница → local: [[Хоуп|Хоуп]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/%D0%A5%D0%BE%D1%83%D0%BF.md)
 
 - **Анкор** *(Anchor)* — азаркети-карманник с фиолетовыми глазами, использует водные пути для побега → local: [[Анкор|Анкор]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/%D0%90%D0%BD%D0%BA%D0%BE%D1%80.md)
@@ -140,6 +142,8 @@
 - **Элигир Келм** *(Элигир)* — мирской жрец Саренрэ на Плавучем Храме, основной медицинский работник в Лужах → local: [[Элигир Келм|Элигир Келм]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/%D0%A1%D1%8E%D0%B6%D0%B5%D1%82%20%D0%BA%D0%B0%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B8/%D0%90%D0%BF%D1%81%D0%B0%D0%BB%D0%BE%D0%BC/%D0%A0%D0%B0%D0%B9%D0%BE%D0%BD%D1%8B/Puddles/%D0%9B%D0%BE%D0%BA%D0%B0%D1%86%D0%B8%D0%B8/190__%D0%9F%D0%BB%D0%B0%D0%B2%D1%83%D1%87%D0%B8%D0%B9_%D0%A5%D1%80%D0%B0%D0%BC.md)
 
 - **Хонсур-Ро** *(Khonsu-Rho)* — верховный жрец Консульства Платиновой Полосы, храма бога добрых драконов Апсу → local: [[Хонсур-Ро|Хонсур-Ро]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/%D0%A1%D1%8E%D0%B6%D0%B5%D1%82%20%D0%BA%D0%B0%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B8/%D0%90%D0%BF%D1%81%D0%B0%D0%BB%D0%BE%D0%BC/%D0%A0%D0%B0%D0%B9%D0%BE%D0%BD%D1%8B/Puddles/%D0%9B%D0%BE%D0%BA%D0%B0%D1%86%D0%B8%D0%B8/188__%D0%9A%D0%BE%D0%BD%D1%81%D1%83%D0%BB%D1%8C%D1%81%D1%82%D0%B2%D0%BE_%D0%9F%D0%BB%D0%B0%D1%82%D0%B8%D0%BD%D0%BE%D0%B2%D0%BE%D0%B9_%D0%9F%D0%BE%D0%BB%D0%BE%D1%81%D1%8B.md)
+
+- **Khonsu-Rho** *(Khonsu-Rho)* — альтернативное написание имени Хонсур-Ро → local: [[Хонсур-Ро|Khonsu-Rho]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/%D0%A1%D1%8E%D0%B6%D0%B5%D1%82%20%D0%BA%D0%B0%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B8/%D0%90%D0%BF%D1%81%D0%B0%D0%BB%D0%BE%D0%BC/%D0%A0%D0%B0%D0%B9%D0%BE%D0%BD%D1%8B/Puddles/%D0%9B%D0%BE%D0%BA%D0%B0%D1%86%D0%B8%D0%B8/188__%D0%9A%D0%BE%D0%BD%D1%81%D1%83%D0%BB%D1%8C%D1%81%D1%82%D0%B2%D0%BE_%D0%9F%D0%BB%D0%B0%D1%82%D0%B8%D0%BD%D0%BE%D0%B2%D0%BE%D0%B9_%D0%9F%D0%BE%D0%BB%D0%BE%D1%81%D1%8B.md)
 
 ## Термины Луж (Апсалом)
 
