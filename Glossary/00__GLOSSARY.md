@@ -117,6 +117,8 @@
 
 - **Зусгут** *(Король гоблинов)* — самопровозглашенный Король гоблинов Абсалома, лидер общины в Королевском дворе Гоблина → local: [[Зусгут|Зусгут]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/%D0%97%D1%83%D1%81%D0%B3%D1%83%D1%82.md)
 
+- **Король гоблинов** *(Король гоблинов)* — титул Зусгута, самопровозглашенного монарха гоблинов Луж → local: [[Зусгут|Король гоблинов]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/%D0%97%D1%83%D1%81%D0%B3%D1%83%D1%82.md)
+
 - **Рыбоголовая Королева** *(Fish-Head Queen)* — владелица Цирка Айсепира, проклятая русалка (женское тело, голова рыбы) → local: [[Рыбоголовая Королева|Рыбоголовая Королева]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/%D0%A0%D1%8B%D0%B1%D0%BE%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%B0%D1%8F_%D0%9A%D0%BE%D1%80%D0%BE%D0%BB%D0%B5%D0%B2%D0%B0.md)
 
 - **Хоуп** *(Hope)* — женщина-аасимар, управляющая Приюта Чистой Воды, лидер Firebrands, бывшая преступница → local: [[Хоуп|Хоуп]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/%D0%A5%D0%BE%D1%83%D0%BF.md)
