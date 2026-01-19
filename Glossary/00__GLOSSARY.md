@@ -41,11 +41,11 @@
 
 - **Божественный Дождь Годзраин** *(«капли» Годзраин)* — источник редких «капель/фрагментов» для мифик-трека Ордена → local: [[Контекст_ордена_Азланти|Божественный Дождь Годзраин]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/%D0%A1%D1%8E%D0%B6%D0%B5%D1%82%20%D0%BA%D0%B0%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B8/%D0%9E%D0%B1%D1%89%D0%B0%D1%8F/%D0%9A%D0%BE%D0%BD%D1%82%D0%B5%D0%BA%D1%81%D1%82_%D0%BE%D1%80%D0%B4%D0%B5%D0%BD%D0%B0_%D0%90%D0%B7%D0%BB%D0%B0%D0%BD%D1%82%D0%B8.md)
 
-- **Greenford (Гринфорд)** *(Greenford, Гринфорд)* — стартовая деревня у переправы, складов и леса; точка входа Арки 1 → local: [[Greenford__деревня|Greenford (Гринфорд)]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/%D0%A1%D1%8E%D0%B6%D0%B5%D1%82%20%D0%BA%D0%B0%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B8/%D0%90%D1%80%D0%BA%D0%B0-1/Greenford__%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D0%BD%D1%8F.md)
+- **Greenford (Гринфорд)** *(Greenford, Гринфорд)* — стартовая деревня у переправы, складов и леса; точка входа Арки 1 → local: [[Greenford__деревня|Greenford (Гринфорд)]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/Golarion/Greenford/Greenford__%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D0%BD%D1%8F.md)
 
-- **Набеги калигни на Гринфорд (канон)** *(набеги, рейды калигни)* — хронология и логика эскалации набегов, включая роль Освальда и похищение ребёнка жреца → local: [[Greenford__набеги__канон|Набеги калигни на Гринфорд (канон)]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/%D0%A1%D1%8E%D0%B6%D0%B5%D1%82%20%D0%BA%D0%B0%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B8/%D0%90%D1%80%D0%BA%D0%B0-1/Greenford__%D0%BD%D0%B0%D0%B1%D0%B5%D0%B3%D0%B8__%D0%BA%D0%B0%D0%BD%D0%BE%D0%BD.md)
+- **Набеги калигни на Гринфорд (канон)** *(набеги, рейды калигни)* — хронология и логика эскалации набегов, включая роль Освальда и похищение ребёнка жреца → local: [[Greenford__набеги__канон|Набеги калигни на Гринфорд (канон)]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/Golarion/Greenford/Greenford__%D0%BD%D0%B0%D0%B1%D0%B5%D0%B3%D0%B8__%D0%BA%D0%B0%D0%BD%D0%BE%D0%BD.md)
 
-- **Калигни (анклав Ши’Ранны)** *(калигни, анклав калигни)* — скрытный подземный анклав под Greenford; численность, роли, конфликт лидеров и гвардия запретной зоны → local: [[Калигни__численность_и_гвардия_Ширанны|Калигни (анклав Ши’Ранны)]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/%D0%A1%D1%8E%D0%B6%D0%B5%D1%82%20%D0%BA%D0%B0%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B8/%D0%90%D1%80%D0%BA%D0%B0-1/%D0%9A%D0%B0%D0%BB%D0%B8%D0%B3%D0%BD%D0%B8__%D1%87%D0%B8%D1%81%D0%BB%D0%B5%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D1%8C_%D0%B8_%D0%B3%D0%B2%D0%B0%D1%80%D0%B4%D0%B8%D1%8F_%D0%A8%D0%B8%D1%80%D0%B0%D0%BD%D0%BD%D1%8B.md)
+- **Калигни (анклав Ши’Ранны)** *(калигни, анклав калигни)* — скрытный подземный анклав под Greenford; численность, роли, конфликт лидеров и гвардия запретной зоны → local: [[Шараны_численность_и_гвардия_Ширанны|Калигни (анклав Ши’Ранны)]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/Golarion/Greenford/%D0%A8%D0%B0%D1%80%D0%B0%D0%BD%D1%8B_%D1%87%D0%B8%D1%81%D0%BB%D0%B5%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D1%8C_%D0%B8_%D0%B3%D0%B2%D0%B0%D1%80%D0%B4%D0%B8%D1%8F_%D0%A8%D0%B8%D1%80%D0%B0%D0%BD%D0%BD%D1%8B.md)
 
 - **OWB** *(OWB)* — триггер/сущность запретной зоны у азлантийской двери/пульта; даёт легитимность власти Ши’Ранны и отвечает на вмешательство → local: [[Калигни__численность_и_гвардия_Ширанны|OWB]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/%D0%A1%D1%8E%D0%B6%D0%B5%D1%82%20%D0%BA%D0%B0%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B8/%D0%90%D1%80%D0%BA%D0%B0-1/%D0%9A%D0%B0%D0%BB%D0%B8%D0%B3%D0%BD%D0%B8__%D1%87%D0%B8%D1%81%D0%BB%D0%B5%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D1%8C_%D0%B8_%D0%B3%D0%B2%D0%B0%D1%80%D0%B4%D0%B8%D1%8F_%D0%A8%D0%B8%D1%80%D0%B0%D0%BD%D0%BD%D1%8B.md)
 
@@ -83,7 +83,7 @@
 
 - **Лисера Кетхарин** *(Лисера)* — ускоритель операций Ордена: темп, инициативность, риск радикализации и «жёстких предложений» → local: [[Лисера Кетхарин|Лисера Кетхарин]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/%D0%9B%D0%B8%D1%81%D0%B5%D1%80%D0%B0%20%D0%9A%D0%B5%D1%82%D1%85%D0%B0%D1%80%D0%B8%D0%BD.md)
 
-- **Ши’Ранна Тенеслух** *(Ширанна Тенеслух, Ширанна, Ши’Ранна)* — жрица-ритуалистка калигни, лидер анклава и хранитель табу → local: [[Ширанна Тенеслух|Ши’Ранна Тенеслух]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/%D0%A8%D0%B8%D1%80%D0%B0%D0%BD%D0%BD%D0%B0%20%D0%A2%D0%B5%D0%BD%D0%B5%D1%81%D0%BB%D1%83%D1%85.md)
+- **Ши’Ранна Тенеслух** *(Ширанна Тенеслух, Ширанна, Ши’Ранна)* — жрица-ритуалистка калигни, лидер анклава и хранитель табу → local: [[Ширанна Тенеслух|Ши’Ранна Тенеслух]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/Golarion/Greenford/%D0%A8%D0%B0%D1%80%D0%B0%D0%BD%D1%8B_%D1%87%D0%B8%D1%81%D0%BB%D0%B5%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D1%8C_%D0%B8_%D0%B3%D0%B2%D0%B0%D1%80%D0%B4%D0%B8%D1%8F_%D0%A8%D0%B8%D1%80%D0%B0%D0%BD%D0%BD%D1%8B.md)
 
 - **Курзаир** *(Курзаир)* — вождь рейдов калигни и контакт с поверхностью; линия давления/схем против табу Ши’Ранны → local: [[Курзаир|Курзаир]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/%D0%9A%D1%83%D1%80%D0%B7%D0%B0%D0%B8%D1%80.md)
 
@@ -95,9 +95,9 @@
 
 - **Сай’Мор** *(Сай Мор, Сай’Мор)* — слейер, внутренняя безопасность и точечные устранения (смена A) → local: [[Сай Мор|Сай’Мор]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/%D0%A1%D0%B0%D0%B9%20%D0%9C%D0%BE%D1%80.md)
 
-- **Кур’Джек** *(Кур Джек, Кур’Джек)* — калигни гвардии Ши’Ранны (смена C); карточка пока TBA → local: [[Кур Джек|Кур’Джек]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/%D0%9A%D1%83%D1%80%20%D0%94%D0%B6%D0%B5%D0%BA.md)
+- **Кур’Джек** *(Кур Джек, Кур’Джек)* — слейер гвардии Ши’Ранны (смена C); оперативник, самый быстрый переход от наблюдения к действию → local: [[Кур Джек|Кур’Джек]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/%D0%9A%D1%83%D1%80%20%D0%94%D0%B6%D0%B5%D0%BA.md)
 
-- **Нур’Вайл** *(Нур Вайл, Нур’Вайл)* — калигни-авангард, «детектор странностей» у двери/пульта (смена C); карточка пока TBA → local: [[Нур Вайл|Нур’Вайл]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/%D0%9D%D1%83%D1%80%20%D0%92%D0%B0%D0%B9%D0%BB.md)
+- **Нур’Вайл** *(Нур Вайл, Нур’Вайл)* — калигни-авангард, «детектор странностей» у двери/пульта (смена C) → local: [[Нур Вайл|Нур’Вайл]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/%D0%9D%D1%83%D1%80%20%D0%92%D0%B0%D0%B9%D0%BB.md)
 
 - **Освальд Меррик** *(Освальд)* — заведующий складами и переправой Greenford; узел логистики и эскалации набегов → local: [[Освальд Меррик|Освальд Меррик]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/%D0%9E%D1%81%D0%B2%D0%B0%D0%BB%D1%8C%D0%B4%20%D0%9C%D0%B5%D1%80%D1%80%D0%B8%D0%BA.md)
 
