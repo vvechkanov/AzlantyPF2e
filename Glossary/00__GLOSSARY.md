@@ -43,6 +43,14 @@
 
 - **Greenford (Гринфорд)** *(Greenford, Гринфорд)* — стартовая деревня у переправы, складов и леса; точка входа Арки 1 → local: [[Greenford__деревня|Greenford (Гринфорд)]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/Golarion/Greenford/Greenford__%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D0%BD%D1%8F.md)
 
+- **Pathfinder Society** *(Pathfinder Society)* — глобальная организация исследователей и авантюристов; конкурирует с Орденом за артефактами → local: [[Pathfinder Society|Pathfinder Society]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/Golarion/%D0%9E%D0%B0%D0%B2%D0%B8%D0%B8/Pathfinder%20Society.md)
+
+- **The Life and the Forest** *(The Life and the Forest)* — спокойная маленькая гостиница в Greenford (в отличие от шумной таверны) → local: [[The Life and the Forest|The Life and the Forest]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/%D0%A1%D1%8E%D0%B6%D0%B5%D1%82%20%D0%BA%D0%B0%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B8/%D0%90%D1%80%D0%BA%D0%B0-1/The%20Life%20and%20the%20Forest.md)
+
+- **Continuum** *(Continuum)* — аспект проекта KAERETHAL, связанный с перемещением во времени и пространстве; ключевая концепция выживших → local: [[Проект_KAERETHAL__Continuum|Continuum]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/%D0%A1%D1%8E%D0%B6%D0%B5%D1%82%20%D0%BA%D0%B0%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B8/%D0%9E%D0%B1%D1%89%D0%B0%D1%8F/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82_KAERETHAL__Continuum.md)
+
+- **набеги** *(рейды, нападения)* — военные действия по захвату ресурсов или территории; часто используются калигни против Greenford → local: [[Greenford__набеги__канон|набеги]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/Golarion/Greenford/Greenford__%D0%BD%D0%B0%D0%B1%D0%B5%D0%B3%D0%B8__%D0%BA%D0%B0%D0%BD%D0%BE%D0%BD.md)
+
 - **Набеги калигни на Гринфорд (канон)** *(набеги, рейды калигни)* — хронология и логика эскалации набегов, включая роль Освальда и похищение ребёнка жреца → local: [[Greenford__набеги__канон|Набеги калигни на Гринфорд (канон)]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/Golarion/Greenford/Greenford__%D0%BD%D0%B0%D0%B1%D0%B5%D0%B3%D0%B8__%D0%BA%D0%B0%D0%BD%D0%BE%D0%BD.md)
 
 - **Калигни (анклав Ши’Ранны)** *(калигни, анклав калигни)* — скрытный подземный анклав под Greenford; численность, роли, конфликт лидеров и гвардия запретной зоны → local: [[Шараны_численность_и_гвардия_Ширанны|Калигни (анклав Ши’Ранны)]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/Golarion/Greenford/%D0%A8%D0%B0%D1%80%D0%B0%D0%BD%D1%8B_%D1%87%D0%B8%D1%81%D0%BB%D0%B5%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D1%8C_%D0%B8_%D0%B3%D0%B2%D0%B0%D1%80%D0%B4%D0%B8%D1%8F_%D0%A8%D0%B8%D1%80%D0%B0%D0%BD%D0%BD%D1%8B.md)

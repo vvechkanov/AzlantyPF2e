@@ -1,4 +1,4 @@
-# Шесть догматов KAERETHAL
+# Шесть догматов [[KAERETHAL]] ([[Continuum]])
 
 > [!summary]- Summary
 > - Это не «религия», а набор принципов допуска и выживания, встроенных в [[Проект_KAERETHAL__Continuum|KAERETHAL]].

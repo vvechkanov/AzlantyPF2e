@@ -17,8 +17,19 @@ from pathlib import Path
 # Устанавливаем кодировку для Windows
 if sys.platform == 'win32':
     import codecs
-    sys.stdout = codecs.getwriter('utf-8')(sys.stdout.buffer)
-    sys.stderr = codecs.getwriter('utf-8')(sys.stderr.buffer)
+    import locale
+    # Получаем системную локаль и устанавливаем UTF-8
+    try:
+        locale.setlocale(locale.LC_ALL, 'Russian_Russia.UTF8')
+    except locale.Error:
+        try:
+            locale.setlocale(locale.LC_ALL, 'C.UTF8')
+        except locale.Error:
+            pass
+    
+    # Перенаправляем stdout/stderr в UTF-8
+    sys.stdout = codecs.getwriter('utf-8')(sys.stdout.buffer, errors='replace')
+    sys.stderr = codecs.getwriter('utf-8')(sys.stderr.buffer, errors='replace')
 
 def check_url_accessibility(url):
     """Проверяет доступность URL в сети"""
@@ -333,9 +344,9 @@ def extract_links_from_summary(summary_path):
     with open(summary_path, 'r', encoding='utf-8') as f:
         content = f.read()
     
-    # Ищем строки вида - `filename.md` — description
+    # Ищем строки вида - `filename.md` — description (с пробелом после дефиса)
     links = []
-    pattern = r'-\s*`([^`]+\.md)`'
+    pattern = r'-\s*`([^`]*\.md)`'
     matches = re.findall(pattern, content)
     
     for match in matches:
@@ -380,10 +391,18 @@ def extract_raw_urls_from_summary(summary_path):
     
     # Ищем raw URL (поддерживаем оба формата: с refs/heads/master и без).
     # Важно: URL может быть как "raw: https://...", так и "raw: [RAW](https://...)".
-    pattern = r'raw:\s*(?:\[[^\]]+\]\()?(https://raw\.githubusercontent\.com/vvechkanov/AzlantyPF2e/(?:refs/heads/)?master/[^\s\)]+)'
-    matches = re.findall(pattern, content)
-
-    return matches
+    # Также поддерживаем отступы перед "raw:" для формата в NPC файлах
+    # И формат "→ [raw](https://...)" для Assistant Guides
+    pattern1 = r'^\s*-?\s*raw:\s*(?:\[[^\]]+\]\()?)(https://raw\.githubusercontent\.com/vvechkanov/AzlantyPF2e/(?:refs/heads/)?master/[^\s\)]+)'
+    pattern2 = r'→\s*\s*\[raw\]\((https://raw\.githubusercontent\.com/vvechkanov/AzlantyPF2e/(?:refs/heads/)?master/[^\s\)]+)'
+    
+    matches1 = re.findall(pattern1, content, re.MULTILINE)
+    matches2 = re.findall(pattern2, content, re.MULTILINE)
+    
+    # Объединяем результаты
+    raw_urls = matches1 + matches2
+    
+    return raw_urls
 
 def extract_file_raw_urls_from_summary(summary_path):
     """Извлекает raw URL для файлов из SUMMARY файла.
@@ -395,44 +414,42 @@ def extract_file_raw_urls_from_summary(summary_path):
         return []
 
     with open(summary_path, 'r', encoding='utf-8') as f:
-        lines = f.read().splitlines()
+        content = f.read()
 
     file_links = extract_links_from_summary(summary_path)
     urls_by_file = {}
 
-    raw_pattern = re.compile(
-        r'(https://raw\.githubusercontent\.com/vvechkanov/AzlantyPF2e/(?:refs/heads/)?master/[^\s\)]+)'
-    )
-
-    # Проходим построчно: когда встречаем строку, содержащую `file.md`,
-    # пытаемся вытащить raw URL из:
-    # - этой же строки (часто формат "→ raw: ...")
-    # - следующих 1-3 строк, пока не началась следующая запись
-    for idx, line in enumerate(lines):
-        for filename in file_links:
-            if filename in urls_by_file:
-                continue
-
-            if f'`{filename}`' not in line:
-                continue
-
-            # 1) inline raw
-            m = raw_pattern.search(line)
-            if m:
-                urls_by_file[filename] = m.group(1)
-                continue
-
-            # 2) raw на следующих строках
-            for j in range(1, 4):
-                if idx + j >= len(lines):
-                    break
-                next_line = lines[idx + j]
-                # если начинается новая запись на файл/папку — дальше не ищем
-                if next_line.lstrip().startswith('- `'):
-                    break
-                m2 = raw_pattern.search(next_line)
-                if m2:
-                    urls_by_file[filename] = m2.group(1)
+    # Ищем raw URL во всем содержимом файла, а не только рядом с именами файлов
+    # Поддерживаем форматы: "raw: [RAW](url)", "raw: url", "  - raw: [RAW](url)", "→ [raw](url)"
+    pattern1 = r'^\s*-?\s*raw:\s*(?:\[[^\]]+\]\()?(https://raw\.githubusercontent\.com/vvechkanov/AzlantyPF2e/(?:refs/heads/)?master/[^\s\)]+)'
+    pattern2 = r'→\s*\s*\[raw\]\((https://raw\.githubusercontent\.com/vvechkanov/AzlantyPF2e/(?:refs/heads/)?master/[^\s\)]+)'
+    
+    raw_pattern1 = re.compile(pattern1, re.MULTILINE)
+    raw_pattern2 = re.compile(pattern2, re.MULTILINE)
+    
+    # Находим все совпадения для обоих шаблонов
+    matches1 = raw_pattern1.finditer(content)
+    matches2 = raw_pattern2.finditer(content)
+    
+    # Проходим по всем найденным raw ссылкам
+    for match in list(matches1) + list(matches2):
+        # Выбираем подходящую группу
+        raw_url = match.group(1)
+        
+        if not raw_url:
+            continue
+        
+        # Пробуем найти имя файла в URL
+        filename_match = re.search(r'/([^/]+\.md)$', raw_url)
+        if filename_match:
+            filename = filename_match.group(1)
+            # Декодируем URL-encoded имя файла
+            decoded_filename = urllib.parse.unquote(filename)
+            
+            # Ищем соответствующий файл в списке файлов (без расширения .md)
+            for file_link in file_links:
+                if file_link.replace('.md', '') == decoded_filename.replace('.md', ''):
+                    urls_by_file[file_link] = raw_url
                     break
 
     return [urls_by_file.get(f) for f in file_links if urls_by_file.get(f)]

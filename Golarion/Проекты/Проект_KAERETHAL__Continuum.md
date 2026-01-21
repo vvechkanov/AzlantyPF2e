@@ -1,4 +1,4 @@
-# Проект KAERETHAL (Continuum)
+# Проект [[KAERETHAL]] ([[Continuum]])
 
 > [!summary]- Summary
 > - [[Проект_KAERETHAL__Continuum|KAERETHAL]] — азлантийский проект «нить через века»: попытка пережить Землепад через резонансное перемещение вперёд.
