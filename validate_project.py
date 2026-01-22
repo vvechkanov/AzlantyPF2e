@@ -464,22 +464,62 @@ def extract_file_raw_urls_from_summary(summary_path):
     return [urls_by_file.get(f) for f in file_links if urls_by_file.get(f)]
 
 def extract_subdirectory_raw_urls(summary_path):
-    """Извлекает raw URL для поддиректорий из SUMMARY файла"""
+    """Извлекает raw URL для поддиректорий из SUMMARY файла.
+
+    Поддерживаем:
+    - 2-строчный формат (каноничный):
+        - `Папка/` — описание
+          - raw: [RAW](https://...)
+    - 1-строчный legacy формат:
+        - `Папка/` — raw: https://...
+
+    Возвращает dict: { "Папка": "https://..." } (без слэша на конце).
+    """
     if not os.path.exists(summary_path):
-        return []
-    
+        return {}
+
     with open(summary_path, 'r', encoding='utf-8') as f:
-        content = f.read()
-    
-    # Ищем raw URL для поддиректорий (строки вида - `Папка/` — raw: URL)
-    urls = []
-    pattern = r'-\s*`([^`]+/)`\s*—\s*raw:\s*(?:\[[^\]]+\]\()?(https://raw\.githubusercontent\.com/vvechkanov/AzlantyPF2e/(?:refs/heads/)?master/[^\s\)]+)'
-    matches = re.findall(pattern, content)
-    
-    for match in matches:
-        urls.append(match[1])  # URL это второй элемент в кортеже
-    
-    return urls
+        lines = f.read().splitlines()
+
+    urls_by_subdir = {}
+
+    # 1-строчный legacy формат: - `Папка/` — ... raw: (https://...)
+    one_line_re = re.compile(
+        r'^\s*-\s*`([^`]+/)`\s*—.*?\braw:\s*(?:\[[^\]]+\]\()?(https://raw\.githubusercontent\.com/vvechkanov/AzlantyPF2e/(?:refs/heads/)?master/[^\s\)]+)',
+        re.IGNORECASE,
+    )
+
+    # Строка-объявление подпапки: - `Папка/` — описание
+    subdir_line_re = re.compile(r'^\s*-\s*`([^`]+/)`')
+
+    # Raw-строка:   - raw: [RAW](https://...)
+    raw_line_re = re.compile(
+        r'^\s*-\s*raw:\s*(?:\[[^\]]+\]\()?(https://raw\.githubusercontent\.com/vvechkanov/AzlantyPF2e/(?:refs/heads/)?master/[^\s\)]+)',
+        re.IGNORECASE,
+    )
+
+    current_subdir = None
+    for line in lines:
+        m_one = one_line_re.match(line)
+        if m_one:
+            subdir = m_one.group(1).rstrip('/')
+            url = m_one.group(2)
+            urls_by_subdir[subdir] = url
+            current_subdir = None
+            continue
+
+        m_subdir = subdir_line_re.match(line)
+        if m_subdir:
+            current_subdir = m_subdir.group(1).rstrip('/')
+            continue
+
+        if current_subdir:
+            m_raw = raw_line_re.match(line)
+            if m_raw:
+                urls_by_subdir[current_subdir] = m_raw.group(1)
+                current_subdir = None
+
+    return urls_by_subdir
 
 def validate_directory(directory_path, relative_path=""):
     """Валидирует директорию и её SUMMARY файл"""
@@ -561,9 +601,26 @@ def validate_directory(directory_path, relative_path=""):
                 print("✗ Недоступно")
                 errors.append(f"Raw URL недоступен: {url}")
     
-    # Проверяем доступность URL для поддиректорий
-    summary_subdir_urls = extract_subdirectory_raw_urls(summary_path)
-    for subdir, url in zip(summary_subdirs, summary_subdir_urls):
+    # Проверяем raw URL для поддиректорий (по аналогии с файлами)
+    subdir_urls_by_name = extract_subdirectory_raw_urls(summary_path)
+    if len(subdir_urls_by_name) != len(summary_subdirs):
+        warnings.append(
+            f"Количество raw URL для поддиректорий ({len(subdir_urls_by_name)}) "
+            f"не соответствует количеству поддиректорий ({len(summary_subdirs)}): {summary_path}"
+        )
+
+    for subdir in summary_subdirs:
+        url = subdir_urls_by_name.get(subdir)
+        if not url:
+            warnings.append(f"Отсутствует raw URL для поддиректории '{subdir}/': {summary_path}")
+            continue
+
+        expected_url = generate_raw_url("", os.path.join(relative_path, subdir, "00__SUMMARY.md"))
+        normalized_url = url.replace('refs/heads/master/', 'master/')
+        if normalized_url != expected_url:
+            warnings.append(f"Некорректный raw URL для поддиректории '{subdir}/': {url}")
+            warnings.append(f"   Ожидается: {expected_url}")
+
         if CHECK_URLS:
             print(f"Проверка доступности: {subdir}/...", end=' ')
             if check_url_accessibility(url):
