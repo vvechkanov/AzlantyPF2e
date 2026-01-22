@@ -14,6 +14,10 @@ import sys
 import argparse
 from pathlib import Path
 
+# Глобальный флаг: проверять доступность raw URL (сетевые запросы).
+# По умолчанию выключено: это медленно и может флапать из-за сети/лимитов.
+CHECK_URLS = False
+
 # Устанавливаем кодировку для Windows
 if sys.platform == 'win32':
     import codecs
@@ -131,6 +135,9 @@ def find_unlinked_token_occurrences(file_path, tokens):
         # Не требуем ссылок в raw-строках (там URL и служебные индексы)
         if 'raw:' in stripped_line.lower():
             continue
+        # И не требуем ссылок в markdown-raw ссылках (иначе токены ловятся внутри URL)
+        if 'raw.githubusercontent.com' in stripped_line.lower():
+            continue
         if stripped_line.startswith('```'):
             continue
 
@@ -229,6 +236,8 @@ def should_skip_crosslink_line(stripped_line):
     if stripped_line.startswith('#'):
         return True
     if 'raw:' in stripped_line.lower():
+        return True
+    if 'raw.githubusercontent.com' in stripped_line.lower():
         return True
     if '#' in stripped_line and stripped_line.lstrip().startswith('-'):
         return True
@@ -543,23 +552,25 @@ def validate_directory(directory_path, relative_path=""):
             warnings.append(f"Некорректный raw URL для '{file}': {url}")
             warnings.append(f"   Ожидается: {expected_url}")
 
-        # Проверяем доступность URL в сети
-        print(f"Проверка доступности: {file}...", end=' ')
-        if check_url_accessibility(url):
-            print("✓ Доступно")
-        else:
-            print("✗ Недоступно")
-            errors.append(f"Raw URL недоступен: {url}")
+        # Проверяем доступность URL в сети (опционально, может быть медленно/флапать)
+        if CHECK_URLS:
+            print(f"Проверка доступности: {file}...", end=' ')
+            if check_url_accessibility(url):
+                print("✓ Доступно")
+            else:
+                print("✗ Недоступно")
+                errors.append(f"Raw URL недоступен: {url}")
     
     # Проверяем доступность URL для поддиректорий
     summary_subdir_urls = extract_subdirectory_raw_urls(summary_path)
     for subdir, url in zip(summary_subdirs, summary_subdir_urls):
-        print(f"Проверка доступности: {subdir}/...", end=' ')
-        if check_url_accessibility(url):
-            print("✓ Доступно")
-        else:
-            print("✗ Недоступно")
-            errors.append(f"Raw URL для поддиректории недоступен: {url}")
+        if CHECK_URLS:
+            print(f"Проверка доступности: {subdir}/...", end=' ')
+            if check_url_accessibility(url):
+                print("✓ Доступно")
+            else:
+                print("✗ Недоступно")
+                errors.append(f"Raw URL для поддиректории недоступен: {url}")
     
     # Рекурсивно проверяем поддиректории
     if os.path.exists(directory_path):
@@ -574,11 +585,25 @@ def validate_directory(directory_path, relative_path=""):
 
 def main():
     """Основная функция валидации"""
-    base_path = r"c:\DND\sync\Sync\Obsidian\PF2e\Кампейны\Азланти"
-    
     parser = argparse.ArgumentParser(add_help=True)
+    parser.add_argument(
+        '--path',
+        default=None,
+        help='Путь к корню проекта (по умолчанию папка рядом со скриптом)',
+    )
     parser.add_argument('--fix', action='store_true')
+    parser.add_argument(
+        '--check-urls',
+        action='store_true',
+        help='Проверять доступность raw URL (сетевые запросы, может быть медленно)',
+    )
     args = parser.parse_args()
+
+    # По умолчанию валидируем репозиторий, где лежит этот скрипт.
+    base_path = args.path or str(Path(__file__).resolve().parent)
+
+    global CHECK_URLS
+    CHECK_URLS = bool(args.check_urls)
 
     if args.fix:
         autofix_crosslinks(base_path)

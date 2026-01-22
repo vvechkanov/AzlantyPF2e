@@ -1,0 +1,13 @@
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+
+# Не трогаем хвостовые пробелы в Markdown: они могут быть значимы.
+[*.md]
+trim_trailing_whitespace = false
+
+[*.{py,json}]
+trim_trailing_whitespace = true

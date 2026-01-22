@@ -51,7 +51,7 @@
   - raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/%D0%9A%D1%83%D1%80%20%D0%94%D0%B6%D0%B5%D0%BA.md)
 - `Нур Вайл.md` — (TBA).  
   - raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/%D0%9D%D1%83%D1%80%20%D0%92%D0%B0%D0%B9%D0%BB.md)
-### Puddles — Апсалом, Лужи
+### Puddles — Абсалом, Лужи
 - `Хайген_Топкик.md` — фактический правитель Луж, глава Гильдии спасателей.  
   - raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/%D0%A5%D0%B0%D0%B9%D0%B3%D0%B5%D0%BD_%D0%A2%D0%BE%D0%BF%D0%BA%D0%B8%D0%BA.md)
 - `Леди_Сейчия.md` — владелица "Брина" и "Солевого картеля".  
