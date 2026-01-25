@@ -43,7 +43,7 @@
 
 - **Greenford (Гринфорд)** *(Greenford, Гринфорд)* — стартовая деревня у переправы, складов и леса; точка входа Арки 1 → local: [[Greenford__деревня|Greenford (Гринфорд)]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/Golarion/Greenford/Greenford__%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D0%BD%D1%8F.md)
 
-- **The Life and the Forest** *(The Life and the Forest)* — спокойная маленькая гостиница в Greenford (в отличие от шумной таверны) → local: [[The Life and the Forest|The Life and the Forest]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/Golarion/Greenford/The%20Life%20and%20the%20Forest.md)
+- **Лесная жизнь** *(The Life and the Forest)* — тихая маленькая гостиница в Greenford (в отличие от шумной таверны) → local: [[Лесная жизнь|Лесная жизнь]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/Golarion/Greenford/%D0%9B%D0%B5%D1%81%D0%BD%D0%B0%D1%8F%20%D0%B6%D0%B8%D0%B7%D0%BD%D1%8C.md)
 
 - **Continuum** *(Continuum)* — аспект проекта KAERETHAL, связанный с перемещением во времени и пространстве; ключевая концепция выживших → local: [[Проект_KAERETHAL__Continuum|Continuum]] → raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/%D0%A1%D1%8E%D0%B6%D0%B5%D1%82%20%D0%BA%D0%B0%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B8/%D0%9E%D0%B1%D1%89%D0%B0%D1%8F/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82_KAERETHAL__Continuum.md)
 
@@ -216,3 +216,11 @@
 ## PC
 
 - (пока нет)
+- **Война в тенях** *(The Shadow War)* — абсоломская политическая интрига и борьба влияний → local: [[Абсалом|Абсалом]]
+- **Война кукловодов** *(War of Strings)* — «игра нитей», где дергают людей, деньги и слухи → local: [[Абсалом|Абсалом]]
+- **Первая стража** *(First Guard)* — военная ветвь Абсолома, оборона от внешних угроз → local: [[Стража и войска Абсолома|Стража и войска Абсолома]]
+- **командир-милитант** *(Commander Militant)* — глава Первой стражи → local: [[Стража и войска Абсолома|Стража и войска Абсолома]]
+- **Сэлли-стража** *(Sally Guard)* — районная стража Сэлли-ворот (Вестгейт) → local: [[Стража и войска Абсолома|Стража и войска Абсолома]]
+- **Новый Абсалом** *(New Absalom)* — политический блок реформаторов → local: [[Война нитей (Теневая война)|Война кукловодов]]
+- **Лига Граждан** *(The Citizens' League)* — политический блок реформаторов (рабочие, моряки) → local: [[Война нитей (Теневая война)|Война кукловодов]]
+

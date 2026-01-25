@@ -73,3 +73,18 @@
 ## Что читать первым (entry points)
 - Если нужно понять **политику калигни и финальную точку Арки 1** → `Ширанна Тенеслух.md`
 - Если нужно понять **курс Ордена Азланти и общую стратегию** → `Валастир Каэрваль.md`
+
+### Greenford — ключевые NPC
+- `Керрен Тар-Крыло.md` — хозяин гостиницы «[[Лесная жизнь|Лесная жизнь]]»; стрикс-ветеран с повреждённым крылом.
+  - raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/%D0%9A%D0%B5%D1%80%D1%80%D0%B5%D0%BD%20%D0%A2%D0%B0%D1%80-%D0%9A%D1%80%D1%8B%D0%BB%D0%BE.md)
+- `Марна Вельс.md` — работница гостиницы; вдова/мать-одиночка (трое детей).
+  - raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/%D0%9C%D0%B0%D1%80%D0%BD%D0%B0%20%D0%92%D0%B5%D0%BB%D1%8C%D1%81.md)
+
+
+- Риан Вельс.md — старший ребёнок Марны (12); слишком рано стал взрослым.
+  - raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/%D0%A0%D0%B8%D0%B0%D0%BD%20%D0%92%D0%B5%D0%BB%D1%8C%D1%81.md)
+- Эли Вельс.md — средний ребёнок (9); тянется к Керрену как к отцу.
+  - raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/%D0%AD%D0%BB%D0%B8%20%D0%92%D0%B5%D0%BB%D1%8C%D1%81.md)
+- Ника Вельс.md — младшая (6); милая и наблюдательная.
+  - raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/%D0%9D%D0%B8%D0%BA%D0%B0%20%D0%92%D0%B5%D0%BB%D1%8C%D1%81.md)
+
