@@ -8,7 +8,8 @@
 - (пока нет)
 
 ## Файлы
-- (пока нет)
+- `Азланти` — [[Азланти|Словарик азланти (KAERETHAL)]]
+  - raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/Golarion/%D0%AF%D0%B7%D1%8B%D0%BA%D0%B8/%D0%90%D0%B7%D0%BB%D0%B0%D0%BD%D1%82%D0%B8)
 
 ## Поисковые якоря (anchors)
 - #языки #алфавиты #письменности

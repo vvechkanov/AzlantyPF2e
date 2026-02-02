@@ -18,7 +18,7 @@
 - `Языки/` — языки мира
   - raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/Golarion/%D0%AF%D0%B7%D1%8B%D0%BA%D0%B8/00__SUMMARY.md)
 ## Файлы в этой папке
-- (пока нет)
+- (файлов верхнего уровня пока нет)
 
 ## Поисковые якоря (anchors)
 - #Golarion #Голарион #мир #лор

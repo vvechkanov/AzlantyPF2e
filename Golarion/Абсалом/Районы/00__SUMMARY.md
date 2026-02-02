@@ -9,7 +9,7 @@
   - raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/Golarion/%D0%90%D0%B1%D1%81%D0%B0%D0%BB%D0%BE%D0%BC/%D0%A0%D0%B0%D0%B9%D0%BE%D0%BD%D1%8B/Puddles/00__SUMMARY.md)
 
 ## Файлы
-- (пока нет)
+- (файлов верхнего уровня пока нет)
 
 ## Поисковые якоря (anchors)
 - #Абсалом #районы #кварталы
