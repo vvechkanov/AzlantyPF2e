@@ -43,6 +43,10 @@
   - raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/%D0%A1%D0%B0%D0%B9%20%D0%9C%D0%BE%D1%80.md)
 - `Освальд Меррик.md` — заведующий складами и переправой Greenford; узел логистики и эскалации набегов.  
   - raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/%D0%9E%D1%81%D0%B2%D0%B0%D0%BB%D1%8C%D0%B4%20%D0%9C%D0%B5%D1%80%D1%80%D0%B8%D0%BA.md)
+- `Дариус Драгон.md` — ветеран-наёмник; ведёт альтернативное расследование после похищения; допускает жёсткие методы без убийств.  
+  - raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/%D0%94%D0%B0%D1%80%D0%B8%D1%83%D1%81%20%D0%94%D1%80%D0%B0%D0%B3%D0%BE%D0%BD.md)
+- `Борис Драгон.md` — напарник Дариуса; силовой якорь группы, контроль пространства (алебарда).  
+  - raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/%D0%91%D0%BE%D1%80%D0%B8%D1%81%20%D0%94%D1%80%D0%B0%D0%B3%D0%BE%D0%BD.md)
 - `Гаррен Кинсуик.md` — жрец Эрастила в Greenford; похищение сына — эмоциональная «точка невозврата».  
   - raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/%D0%93%D0%B0%D1%80%D1%80%D0%B5%D0%BD%20%D0%9A%D0%B8%D0%BD%D1%81%D1%83%D0%B8%D0%BA.md)
 - `Лиам Кинсуик.md` — сын Гаррена; похищение запускает кризис в деревне.  
@@ -111,9 +115,9 @@
 - [[Женщина, уходящая в лес]] — (TBA)
 - [[Семья женщины (лес)]] — (TBA)
 - [[Трусливая семья (погибший отец)]] — (TBA)
-- [[Тихий дознаватель]] — (TBA)
+- [[Дариус Драгон]] — (TBA)
 - [[Жена дознавателя]] — (TBA)
-- [[Друг дознавателя]] — (TBA)
+- [[Борис Драгон]] — (TBA)
 - [[Человек дознавателя (Яркие) (1)]] — (TBA)
 - [[Человек дознавателя (Яркие) (2)]] — (TBA)
 
