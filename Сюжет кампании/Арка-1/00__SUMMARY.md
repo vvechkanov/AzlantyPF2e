@@ -13,15 +13,10 @@
 
 ### Файлы
 - `Арка-1__описание.md` — полное описание арки, темы, конфликты и связи с глобальным сюжетом
-  - raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/%D0%A1%D1%8E%D0%B6%D0%B5%D1%82%20%D0%BA%D0%B0%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B8/%D0%90%D1%80%D0%BA%D0%B0-1/%D0%90%D1%80%D0%BA%D0%B0-1__%D0%BE%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5.md)
 - `01__Детектив__улики.md` — рабочие улики, списки подозреваемых и зацепки для расследования
-  - raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/%D0%A1%D1%8E%D0%B6%D0%B5%D1%82%20%D0%BA%D0%B0%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B8/%D0%90%D1%80%D0%BA%D0%B0-1/01__%D0%94%D0%B5%D1%82%D0%B5%D0%BA%D1%82%D0%B8%D0%B2__%D1%83%D0%BB%D0%B8%D0%BA%D0%B8.md)
 - `02__Слухи__таблица.md` — таблица слухов и улик для детективного расследования предателя (Освальд Меррик); система пересечения подозреваемых и побочные ложные следы
-  - raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/%D0%A1%D1%8E%D0%B6%D0%B5%D1%82%20%D0%BA%D0%B0%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B8/%D0%90%D1%80%D0%BA%D0%B0-1/02__%D0%A1%D0%BB%D1%83%D1%85%D0%B8__%D1%82%D0%B0%D0%B1%D0%BB%D0%B8%D1%86%D0%B0.md)
 - `Случайные Энкаунтеры — Immenwood d20.md` — таблица случайных энкаунтеров (d20) для леса Immenwood; партия 3-4 уровня, 5 игроков, градация Moderate–Extreme
-  - raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/%D0%A1%D1%8E%D0%B6%D0%B5%D1%82%20%D0%BA%D0%B0%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B8/%D0%90%D1%80%D0%BA%D0%B0-1/%D0%A1%D0%BB%D1%83%D1%87%D0%B0%D0%B9%D0%BD%D1%8B%D0%B5%20%D0%AD%D0%BD%D0%BA%D0%B0%D1%83%D0%BD%D1%82%D0%B5%D1%80%D1%8B%20%E2%80%94%20Immenwood%20d20.md)
 - `00__ART_TODO.md` — список задач по арту/портретам/визуалам для Арки-1
-  - raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/%D0%A1%D1%8E%D0%B6%D0%B5%D1%82%20%D0%BA%D0%B0%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B8/%D0%90%D1%80%D0%BA%D0%B0-1/00__ART_TODO.md)
 ## Поисковые якоря (anchors)
 - #Арка1 #Arc1 #Greenford #Гринфорд
 - #Эрастил #храм_Эрастила #ребёнок_жреца #похищение
@@ -31,3 +26,5 @@
 - #Орден_Азланти #KAERETHAL #Стандарт #мифический_шаг
 - #слухи #улики #детектив #предатель #Освальд
 - #энкаунтеры #Immenwood #случайные_встречи
+- `03__Данж_к_анклаву_калигни.md` — подсистема «Подземная Охота»: путь от шахт до анклава калигни. Механика тревоги, навигации, 7 препятствий с DC, болезнь Blueblisters, XP награды, покрытие скиллов пачки.
+- #данж #подземелье #навигация #тревога #шкуродёр #грибы #обвал #газ #логово #шахтный_ствол #затопленный_тоннель

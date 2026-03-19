@@ -1,8 +1,9 @@
 # Glossary — SUMMARY
 Путь: `Glossary`
 
-Это глоссарий **для ассистента**: короткий указатель “термин/имя → где читать канон”.
+Глоссарий **для ассистента**: указатель «термин/имя → где читать канон».
 
 ## Файлы
 - `00__GLOSSARY.md` — основной список терминов
-  - raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/Glossary/00__GLOSSARY.md)
+- `Transcription_Dictionary.md` — словарь транскрипции (имена и алиасы для очистки транскриптов)
+- `Absalom__official_translations__DRAFT.md` — черновик официальных переводов терминов Абсалома
