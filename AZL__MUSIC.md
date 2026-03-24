@@ -1,4 +1,4 @@
-# 🎵 Музыка Азланти
+ # 🎵 Музыка Азланти
 
 Файл для отслеживания треков по плейлистам. Обновляется по запросу.
 
@@ -108,6 +108,34 @@
 
 ---
 
+## 🌲 Forest Walk — прогулка по лесу
+
+> Спокойное путешествие по лесу. Группа идёт между деревнями, никакого напряжения, расслабленный поход. Флейты, струнные, фолк.
+> Папка: `ai_music/forest/`
+
+### 🎮 Elder Scrolls (Jeremy Soule)
+
+- ✅ Through the Valleys — Oblivion (4:22)
+- ✅ Sunrise of Flutes — Oblivion (2:59)
+- ✅ Far Horizons — Skyrim (5:34)
+- ✅ Ancient Stones — Skyrim (4:48)
+- ✅ Secunda — Skyrim (2:06)
+
+### 🎵 Vindsvept
+
+- ✅ Wanderlust — Vindsvept (4:18)
+- ✅ Call of the Forest — Vindsvept (4:25)
+- ✅ Crystal Forest — Vindsvept (4:28)
+
+### 🎵 Kevin MacLeod
+
+- ✅ Enchanted Valley — Kevin MacLeod (3:12)
+- ✅ Enchanted Journey — Kevin MacLeod (4:30)
+
+> **Итого: 10 треков, ~41 мин**
+
+---
+
 ## 🎵 Reflection — сборы, перерывы, рефлексия
 
 > Тихая инструментальная музыка для начала сессии (30 мин), перерывов и послесессионной рефлексии.
@@ -152,3 +180,62 @@
 - ✅ Debussy — Rêverie на арфе (4:16)
 - ✅ Debussy — Clair de Lune на арфе (4:32)
 - ✅ Renie — Légende for Harp (9:08)
+
+---
+
+## 🌑 Dark / Atmosphere — тёмные подземелья, шахты, набеги
+
+> Гнетущая, напрягающая атмосфера. Исследование подземелий Калигни, набеги, ощущение опасности без открытого боя.
+> Папка: `ai_music/dark/atmosphere/`
+
+| # | Трек | Источник | Длит. | Теги |
+|---|-------|----------|-------|------|
+| 1 | Explore the Ruins | Darkest Dungeon OST | 8:52 | `dark` `oppressive` `tense` `slow` `calm-scary` `exploration` `dungeon` |
+| 2 | Shadow-Cursed Lands (Version 2) | BG3 OST | 5:58 | `dark` `oppressive` `tense` `slow` `heavy` `exploration` |
+| 3 | Shadow-Cursed Lands (Camp) | BG3 OST | 6:17 | `dark` `oppressive` `tense` `slow` `lighter` `exploration` |
+| 4 | Underdark Theme 1 | BG3 OST | 3:31 | `dark` `ominous` `tense` `very-slow` `heavy` `exploration` |
+| 5 | Underdark Theme 2 | BG3 OST | 4:17 | `dark` `lighter` `mid` `pleasant` `exploration` |
+| 6 | Grymforge Exploration | BG3 (unofficial) | 3:30 | `dark` `lighter` `mid` `exploration` |
+| 7 | Beneath the Ice | Skyrim OST | 4:06 | `calm` `cold` `slow` `eerie` `exploration` |
+| 8 | Into Darkness | Skyrim OST | 2:50 | `dark` `descent` `exploration` |
+
+> **Итого: 8 треков, ~39 мин** ✅
+
+---
+
+## ⚔️🌑 Dark / Combat — бой с тёмными сущностями
+
+> Боевая музыка для боёв с Калигни, теневыми тварями, проклятыми существами. Тёмная, агрессивная.
+> Папка: `ai_music/dark/combat/`
+
+| # | Трек | Источник | Длит. | Теги |
+|---|-------|----------|-------|------|
+| 1 | Shadowcurse Combat (Extended) | BG3 OST | 8:59 | `dark` `shadow` `cursed` `combat` `high` |
+| 2 | Shadows, Curse And Death | BG3 OST | 4:31 | `dark` `dynamic-shifting` `combat-light` `borderline` `tense` |
+| 3 | Twisted Force | BG3 OST | 2:29 | `dark` `sustained` `combat` `mid-high` |
+| 4 | Combat in the Ruins | Darkest Dungeon OST | 3:36 | `dark` `shadow-creatures` `combat` `high` |
+| 5 | Foetor Combat | Darkest Dungeon II OST | 8:15 | `dark` `underground` `combat` `intense` `dynamic` |
+| 6 | Sprawl Battle | Darkest Dungeon II OST | 7:26 | `dark` `shadow` `borderline` `combat` |
+| 7 | Conflict in the Tangle | Darkest Dungeon II OST | 6:41 | `dark` `combat` `high` `aggressive` |
+| 8 | Battle of the Mountain | Darkest Dungeon II OST | 7:30 | `dark` `combat` `high` `aggressive` |
+| 9 | The Decisive Combat | Darkest Dungeon II OST | 5:22 | `dark` `combat` `high` `climactic` |
+| 10 | DA:I Descent Battle | DA:I Descent DLC OST | 4:18 | `dark` `combat` `cursed` `underground` |
+| 11 | Town in Chaos | Darkest Dungeon OST | 6:33 | `dark` `combat` `cursed` `raid` |
+| 12 | The Shroud of the Deep | Darkest Dungeon II OST | 8:33 | `combat` `classic-fantasy` `dynamic` `oceanic` `high` |
+| 13 | Rise of the Darkspawn | Dragon Age Origins OST | 5:03 | `dark` `combat` `building` `borderline` |
+
+> **Итого: 13 треков, ~79 мин** ✅
+
+---
+
+## 🔺 Dark / Tension Buildup — набор динамики, нагнетание
+
+> Короткие треки для нагнетания перед боем, ловушек, резкого подъёма напряжения. Не бой и не фон — переходный момент.
+> Папка: `ai_music/dark/tension_buildup/`
+
+| # | Трек | Источник | Длит. | Теги |
+|---|-------|----------|-------|------|
+| 1 | Torchless Hallway | Darkest Dungeon OST | 4:26 | `dark` `tension-spike` `pre-combat` `traps` `building` |
+| 2 | Descent Main Theme | DA:I Descent DLC OST | 3:03 | `light` `rising` `hope` `victory` `building` |
+
+> **Итого: 2 трека, ~7 мин** ✅
