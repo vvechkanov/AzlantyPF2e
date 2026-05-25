@@ -1,0 +1,5 @@
+# Claude Code worktrees — рабочие копии агентов, не должны быть в репозитории
+.claude/worktrees/
+
+# Локальные настройки/кеш Claude Code (skills оставляем, они часть проекта)
+.claude/local/

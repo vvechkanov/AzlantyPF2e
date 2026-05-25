@@ -1,0 +1,967 @@
+# Азланти — Абсалом, Арка 2
+# Запуск:  d2 -w 00__HUB.d2
+
+direction: right
+
+vars: {
+  d2-config: {
+    layout-engine: elk
+    pad: 60
+  }
+}
+
+classes: {
+  thread-plates: {
+    style.stroke: "#4a90a4"
+    style.stroke-width: 4
+  }
+  thread-plates-hidden: {
+    style.stroke: "#4a90a4"
+    style.stroke-width: 4
+    style.stroke-dash: 5
+  }
+  thread-anchanto: {
+    style.stroke: "#d4a017"
+    style.stroke-width: 4
+  }
+  thread-statue: {
+    style.stroke: "#9c6da8"
+    style.stroke-width: 4
+  }
+  thread-statue-hidden: {
+    style.stroke: "#9c6da8"
+    style.stroke-width: 4
+    style.stroke-dash: 5
+  }
+}
+
+# ============================================================
+# ROOT — ОБЗОР
+# ============================================================
+
+Sources: "🌱 Входные нити" {
+  style.fill: "#fdf6e3"
+  style.font-size: 26
+  style.bold: true
+
+  Tosha: "Учёный-старик\n(для Самума)" {
+    link: "obsidian://open?vault=PF2e&file=Кампейны/Азланти/PC/Самум (Тоша)"
+  }
+  Bell: "Бель — попаданка" {
+    link: "obsidian://open?vault=PF2e&file=Кампейны/Азланти/PC/Бель (Настя)"
+  }
+  Anchanto: "История Анканто\n(природа меча)" {
+    link: "obsidian://open?vault=PF2e&file=Кампейны/Азланти/PC/Анканто"
+  }
+  Luka: "Лука Блакрос\n(спасён партией;\nне знает что Блакрос)"
+  Kiran_statue: "Статуэтка 'Ирори'\n(на самом деле — реликвия\nХоломога, унесена в 4329 AR;\nв монастыре ~400 лет)\n🟪"
+  Plates: "Пластины Азланти\n(×2)"
+  Merra: "Мерра — Норгорберша\n(беженка из Гринфорда)"
+}
+
+# === БОЛЬШИЕ СУЩНОСТИ ===
+
+HouseOfHealing: "🕊️ Дом Исцеления\n(Ivy District)\n🟨" {
+  style.fill: "#fff3b0"
+  style.font-size: 30
+  style.bold: true
+  link: "obsidian://open?vault=PF2e&file=Кампейны/Азланти/Golarion/Абсалом/Районы/Плющевой квартал/Дом Исцеления"
+}
+
+Arcanamirium: "📚 Арканамириум\n🟦 🟨" {
+  style.fill: "#efe6f7"
+  style.font-size: 30
+  style.bold: true
+  link: layers.arcana
+}
+
+Library: "📖 Forae Logos\n(Wise Quarter)\n🟦 🟪" {
+  style.fill: "#efe6f7"
+  style.font-size: 30
+  style.bold: true
+  link: "obsidian://open?vault=PF2e&file=Кампейны/Азланти/Golarion/Абсалом/Районы/Wise Quarter/Локации/Forae Logos"
+}
+
+HouseOrmuz: "🏛️ Дом Ормуз\n🟨" {
+  style.fill: "#e8f1fb"
+  style.font-size: 30
+  style.bold: true
+  link: layers.ormuz
+}
+
+HouseBlakros: "🏛️ Дом Блакрос\n🟨" {
+  style.fill: "#e8f1fb"
+  style.font-size: 30
+  style.bold: true
+  link: "obsidian://open?vault=PF2e&file=Кампейны/Азланти/Сюжет кампании/Глобальные фракции/Дом Блакрос"
+}
+
+HouseDamak: "🏛️ Дом Дамак" {
+  style.fill: "#e8f1fb"
+  style.font-size: 30
+  style.bold: true
+  link: layers.damak
+}
+
+Pathfinders: "🗺️ Pathfinder Society\n🟦 🟨" {
+  style.fill: "#efe6f7"
+  style.font-size: 30
+  style.bold: true
+  link: layers.pathfinders
+}
+
+Syrvas: "🔴 Круг Syrvas\n🟦" {
+  style.fill: "#fde8e8"
+  style.font-size: 32
+  style.bold: true
+  link: layers.syrvas
+}
+
+Puddles: "🏘️ Лужи\n(район)\n🟪" {
+  style.fill: "#dde7d8"
+  style.font-size: 30
+  style.bold: true
+  link: layers.puddles
+}
+
+# === ЭКСПЕРТЫ ОТКРЫТИЯ ДВЕРИ (нить пластин) ===
+
+Sarel: "🧝 Сарел Тейваниэль\n(эльф-эксперт)\nPetal District\n🟦 🟪" {
+  style.fill: "#d3e8df"
+  style.font-size: 28
+  style.bold: true
+}
+
+Expert2: "📜 Эксперт-2\n(имя TBA)\nчерез Pathfinders\n🟦" {
+  style.fill: "#d3e8df"
+  style.font-size: 28
+  style.bold: true
+}
+
+# === ЭКСПЕРТЫ ПРИРОДЫ АНКАНТО (нить Анканто) ===
+
+CrazyScholar: "🧠 Безумный учёный\n(имя TBA, Coins/Petal)\n— тупик личный\nдля Кирана\n🟨" {
+  style.fill: "#f5e6c8"
+  style.font-size: 26
+  style.bold: true
+}
+
+SectAgent: "🎭 Представитель Секты\n(под прикрытием,\nимя TBA)\n🟨" {
+  style.fill: "#f5e6c8"
+  style.font-size: 26
+  style.bold: true
+}
+
+# === ДАЛЬНЯЯ ЗЕМЛЯ (нить статуэтки) ===
+
+Holomog: "🌍 Холомог\n(матриархат, юг Гарунда)\nдалёкая земля\n[Арка 3+]\n🟪" {
+  style.fill: "#e8d5a8"
+  style.stroke-dash: 5
+  style.font-size: 26
+  style.bold: true
+}
+
+# === СВЯЗИ НА ОБЗОРНОМ УРОВНЕ ===
+
+# Входные нити (общие)
+Sources.Tosha -> Arcanamirium
+Sources.Bell -> Library
+Sources.Merra -> Puddles
+
+# Покупатели пластин (продажа — другая нить)
+Sources.Plates -> HouseBlakros: "покупатель\n(в музей)"
+Sources.Plates -> HouseOrmuz: "покупатель"
+
+# === НИТЬ ОТКРЫТИЯ ДВЕРИ (лазурный) ===
+
+Sources.Plates -> Arcanamirium: "путь к эксперту" {class: thread-plates}
+Sources.Plates -> Library: "путь к эксперту" {class: thread-plates}
+Sources.Plates -> Pathfinders: "путь к эксперту" {class: thread-plates}
+Sources.Plates -> Syrvas: "через посредников\n(быстро / без лута)" {class: thread-plates-hidden}
+
+Arcanamirium -> Sarel: "через старика-Арклорда" {class: thread-plates}
+Library -> Sarel: "архивист знаком" {class: thread-plates}
+Library -> Expert2: "архивист знаком" {class: thread-plates}
+Pathfinders -> Expert2: "рекомендация" {class: thread-plates}
+
+# === НИТЬ ПРИРОДЫ АНКАНТО (золотой) ===
+
+Sources.Anchanto -> HouseOfHealing: "к Дорису от Варена" {class: thread-anchanto}
+
+HouseOfHealing -> CrazyScholar: "Дорис: 'есть\nстранный исследователь'" {class: thread-anchanto}
+HouseOfHealing -> HouseBlakros: "Дорис: 'у Блакросов\nколлекция'" {class: thread-anchanto}
+
+# Параллельные пути минуя Дориса
+Arcanamirium -> CrazyScholar: "бывший доцент" {class: thread-anchanto}
+Pathfinders -> SectAgent: "консультант по\nдревним оружиям" {class: thread-anchanto}
+HouseOrmuz -> HouseBlakros: "светский салон\n→ Хамария" {class: thread-anchanto}
+
+# === НИТЬ СТАТУЭТКИ (сиреневая) ===
+# Реликвия Холомога, ~400 лет в монастыре Mirror Water.
+# В Арке 2 — только зацепки. В Арке 3+ — полноценный поход.
+
+Sources.Kiran_statue -> Puddles: "беженка узнаёт\nстиль" {class: thread-statue}
+Sources.Kiran_statue -> Library: "архивы Forae Logos" {class: thread-statue}
+Sources.Kiran_statue -> Sarel: "видел узлы пояса\n(страховка)" {class: thread-statue}
+Puddles -> Holomog: "след → дальняя земля" {class: thread-statue-hidden}
+Library -> Holomog: "след → дальняя земля" {class: thread-statue-hidden}
+
+# Связи между большими сущностями
+HouseOfHealing -- HouseOrmuz: знакомство
+HouseOfHealing -- Puddles: "Дорис координирует;\nХоуп там работает"
+HouseOrmuz -- HouseBlakros: конкуренция
+HouseOrmuz -- Arcanamirium: меценат
+
+# Скрытое от партии
+HouseOrmuz -- Syrvas: донор {style.stroke-dash: 5}
+HouseDamak -- Syrvas: донор {style.stroke-dash: 5}
+Syrvas -- Puddles: "тихая витрина\nчерез Хоуп" {style.stroke-dash: 5}
+
+# ============================================================
+# LAYERS
+# ============================================================
+
+layers: {
+
+  ormuz: {
+    direction: down
+
+    Ormuz: "🏛️ Дом Ормуз" {
+      style.fill: "#e8f1fb"
+      style.font-size: 32
+      style.bold: true
+
+      Yamtar: "Лорд Ямтар\nмеценат / салоны" {
+        link: "obsidian://open?vault=PF2e&file=Кампейны/Азланти/NPC/Лорд Ямтар (Дом Ормуз)"
+      }
+      Kaisar: "Кайсар\nдолг 50 зм" {
+        link: "obsidian://open?vault=PF2e&file=Кампейны/Азланти/NPC/Кайсар Ормуз"
+      }
+      Yamtar -- Kaisar
+    }
+
+    PlatesIntel: "💡 Инсайт:\nподобные пластины открывают\nдоступы к механизмам\n(скажет Ямтару — кто?)" {
+      style.fill: "#fff8d0"
+      style.stroke: "#c9a227"
+    }
+
+    Doris_ext: "🕊️ Дорис Кай\n(Дом Исцеления) →" {
+      style.fill: "#fff3b0"
+      link: layers.house_of_healing
+    }
+    Blakros_ext: "🏛️ Дом Блакрос →" {
+      style.fill: "#e8f1fb"
+      link: layers.blakros
+    }
+    Arcana_ext: "📚 Арканамириум →" {
+      style.fill: "#efe6f7"
+      link: layers.arcana
+    }
+    Elarion_ext: "🔴 Эларион Меретис\n(Круг Syrvas) →" {
+      style.fill: "#fde8e8"
+      link: layers.syrvas
+    }
+
+    Ormuz.Yamtar -- Doris_ext: "знаком лично"
+    Ormuz.Yamtar -- Blakros_ext: "конкуренция за\nджистканские артефакты"
+    Ormuz.Yamtar -- Arcana_ext: "покровитель\nисследователей"
+    Ormuz.Yamtar -- Elarion_ext: "советник на салонах\n(скрыто)" {
+      style.stroke-dash: 5
+    }
+    Ormuz.Yamtar -- PlatesIntel: "новый интерес\n→ покупатель пластин"
+  }
+
+  blakros: {
+    direction: down
+
+    Blakros: "🏛️ Дом Блакрос\n(Wise Quarter / Petal District)" {
+      style.fill: "#e8f1fb"
+      style.font-size: 32
+      style.bold: true
+      link: "obsidian://open?vault=PF2e&file=Кампейны/Азланти/Сюжет кампании/Глобальные фракции/Дом Блакрос"
+
+      Hamaria: "👑 Хамария Блакрос\nScion Lady (~55)\n[высокая фигура]" {
+        style.fill: "#fff8d0"
+        style.bold: true
+        link: "obsidian://open?vault=PF2e&file=Кампейны/Азланти/NPC/Хамария Блакрос"
+      }
+      Nigel: "Найджел Олдейн\nкуратор Музея\nбывший Pathfinder\n[главный контакт партии]" {
+        link: "obsidian://open?vault=PF2e&file=Кампейны/Азланти/NPC/Найджел Олдейн"
+      }
+      Dhrami: "Lady Dhrami\nжена Найджела\nхудожница, owner of record" {
+        link: "obsidian://open?vault=PF2e&file=Кампейны/Азланти/NPC/Lady Dhrami Blakros"
+      }
+      Encarius: "Lord Encarius\nучитель рисунка\nсплетник Petal" {
+        link: "obsidian://open?vault=PF2e&file=Кампейны/Азланти/NPC/Lord Encarius Blakros"
+      }
+      Michellia: "Lady Michellia\nдочь Хамарии\nнаследница\n[резерв]" {
+        link: "obsidian://open?vault=PF2e&file=Кампейны/Азланти/NPC/Lady Michellia Blakros"
+      }
+      Oved: "Lord Oved\nлошадник Petal\n[резерв]" {
+        link: "obsidian://open?vault=PF2e&file=Кампейны/Азланти/NPC/Lord Oved Blakros"
+      }
+      Alkandros: "Лорд Алкандрос Блакрос\nфинансист и скупщик\nполуорк, ~39\n[кредитор Кайсера + отец Луки]" {
+        link: "obsidian://open?vault=PF2e&file=Кампейны/Азланти/NPC/Алкандрос Блакрос"
+      }
+
+      Museum: "📿 Blakros Museum\n(Wise Quarter)" {
+        style.fill: "#efe6f7"
+        link: "obsidian://open?vault=PF2e&file=Кампейны/Азланти/Golarion/Абсалом/Районы/Wise Quarter/Локации/Blakros Museum"
+      }
+      Castle: "🏰 Castle Blakros\n(Petal District)\n+ глефа в галерее" {
+        style.fill: "#efe6f7"
+        link: "obsidian://open?vault=PF2e&file=Кампейны/Азланти/Golarion/Абсалом/Районы/Petal District/Castle Blakros"
+      }
+
+      # Внутренние связи
+      Hamaria -> Michellia: "наследница" {style.stroke-dash: 3}
+      Hamaria -- Nigel: "куратор её Музея;\nдоверие, не дружба"
+      Hamaria -- Castle: "резиденция"
+      Hamaria -- Museum: "публичное лицо"
+      Hamaria -- Alkandros: "финансист дома"
+      Nigel -- Dhrami: "брак"
+      Nigel -- Museum: "управляет"
+      Dhrami -- Museum: "owner of record"
+      Dhrami -- Encarius: "наняла учителя"
+    }
+
+    # === Внешние сущности ===
+    Ormuz_ext: "🏛️ Дом Ормуз →" {
+      style.fill: "#e8f1fb"
+      link: layers.ormuz
+    }
+    Kaisar_ext: "Кайсар Ормуз →\nдолжник\n(одна из расписок)" {
+      style.fill: "#e8f1fb"
+      link: "obsidian://open?vault=PF2e&file=Кампейны/Азланти/NPC/Кайсар Ормуз"
+    }
+    Yamtar_ext: "🏛️ Лорд Ямтар →" {
+      style.fill: "#e8f1fb"
+      link: layers.ormuz
+    }
+    Pathfinders_ext: "🗺️ Pathfinder Society →\nстарые связи Найджела;\nХамария укрепляет" {
+      style.fill: "#efe6f7"
+      link: layers.pathfinders
+    }
+    Library_ext: "📖 Forae Logos →" {
+      style.fill: "#efe6f7"
+      link: layers.library
+    }
+    Anchanto_src: "Анканто (Сеня)\n[резонирует с молотом]" {
+      style.fill: "#fdf6e3"
+    }
+    Sect_ext: "🔴 Секта Визиря →\nХамария — невольная\nпокровительница (скрыто)" {
+      style.fill: "#fde8e8"
+    }
+    Plates_src: "Пластины Азланти" {
+      style.fill: "#fdf6e3"
+    }
+    EdnaLuka_src: "Эдна / Лука\n(Гринфорд, Арка 1)\n🟨" {
+      style.fill: "#fdf6e3"
+    }
+
+    # === Внешние связи ===
+    Blakros.Hamaria -- Yamtar_ext: "конкуренция за\nджистканские артефакты"
+    Blakros.Hamaria -- Pathfinders_ext: "укрепляет связь;\nможет дать рекомендацию\nв закрытую секцию Forae"
+    Blakros.Nigel -- Pathfinders_ext: "отстранён;\nтёплеет к младшим"
+    Blakros.Nigel -- Library_ext: "еженедельно у Кила"
+    Blakros.Alkandros -- Kaisar_ext: "кредитор\n(одна из расписок,\n300 gp с 4724 AR)"
+    Blakros.Alkandros -- EdnaLuka_src: "отец Луки\n(не знает; Эдна\nне знает имени)"
+    Anchanto_src -> Blakros.Museum: "резонанс с молотом" {class: thread-anchanto}
+    Blakros.Castle -- Sect_ext: "глефа = оригинал;\nцентральная сцена\nраскрытия" {class: thread-anchanto}
+    Plates_src -> Blakros.Museum: "покупатель;\nдля музея" {class: thread-plates}
+  }
+
+  damak: {
+    direction: down
+
+    Damak: "🏛️ Дом Дамак" {
+      style.fill: "#e8f1fb"
+      style.font-size: 32
+      style.bold: true
+
+      Head: "Глава (TBA)"
+      Money: "деньги"
+      Logistics: "логистика"
+      Head -- Money
+      Head -- Logistics
+    }
+
+    Syrvas_ext: "🔴 Круг Syrvas →" {
+      style.fill: "#fde8e8"
+      link: layers.syrvas
+    }
+
+    Damak.Head -- Syrvas_ext: "донор (скрыто)" {style.stroke-dash: 5}
+  }
+
+  arcana: {
+    direction: down
+
+    Arcanamirium: "📚 Арканамириум\n(Wise Quarter)" {
+      style.fill: "#efe6f7"
+      style.font-size: 32
+      style.bold: true
+      link: "obsidian://open?vault=PF2e&file=Кампейны/Азланти/Golarion/Абсалом/Районы/Wise Quarter/Локации/Арканамириум"
+
+      # === Двоевластие ===
+      Darchana: "👑 Леди Дархана\nАрхдекан, Second Spell Lord\nдом Мадинани\n[высокая фигура]" {
+        style.fill: "#fff8d0"
+        style.bold: true
+      }
+      Vannessir: "Метадама Ваннессир\nSergeant-at-Wands\nLE, Asmodean, House Tevineg\n[тёмный канал]" {
+        style.fill: "#fde8e8"
+      }
+
+      # === Совет Магистров (узлы) ===
+      Sornirella: "👑 Магистр Сорнирелла Венах\nMagical Theory\nэльф ~520, центр долгожителей\n[главный хаб партии]" {
+        style.fill: "#fff8d0"
+        style.bold: true
+        link: "obsidian://open?vault=PF2e&file=Кампейны/Азланти/NPC/Сорнирелла Венах"
+      }
+      Orikh: "Магистр Айм Калеш Орих\nRelic Studies, полу-куфирец ~45\n[Эксперт-2 для пластин]" {
+        style.fill: "#fff8d0"
+        link: "obsidian://open?vault=PF2e&file=Кампейны/Азланти/NPC/Айм Калеш Орих"
+      }
+      OtherMasters: "Прочие Магистры\nВелланир Ло (A&E)\nКуэнтис Дадар (Fab)\nХедрик Морраск (Trans)\nИзаэль Тенор (Perf)\nХестарий Брен (Battle, в тени Ваннессир)"
+
+      # === Стипендиатка-проводник ===
+      Timassa: "Тимасса Кенвар\nстипендиатка Сорниреллы\nполугнумка ~28\n[проводник партии]" {
+        link: "obsidian://open?vault=PF2e&file=Кампейны/Азланти/NPC/Тимасса Кенвар"
+      }
+
+      # === Параллельный аппарат ===
+      Dolmen: "Долмен Ивест\nХранитель Библиотеки\nполугном ~150\n[канал к Эньяру]"
+      Ogdyr: "Доцент Огдыр Свен\nпривратник у ворот\n[первая встреча партии]"
+      Captain: "Капитан Тира Морин\nСтража, подчинена Архдекану"
+      Bursar: "Силеста Кнар (Бурсар)\nЭверин Скалл (Прокуратор)\nАриса Топ (Регистратор)"
+
+      # === Фракция долгожителей ===
+      LongLived: "🟢 Тихая фракция долгожителей\nТейваль Колларис (~700, отставка)\nИора (~190, отставка)\n2-3 человека-маги с продлением"
+
+      # === Внутренние связи ===
+      Darchana -- Vannessir: "двоевластие;\nне могут снять друг друга"
+      Darchana -- Captain: "Капитан Стражи\nподчинена напрямую"
+      Darchana -- OtherMasters: "лоялисты\n(Велланир, Куэнтис, Хедрик)"
+      Vannessir -- Orikh: "дала tenure;\nформально лоялист"
+      Vannessir -- OtherMasters: "Хестарий — её ставленник"
+      Vannessir -- Bursar: "учебная вертикаль"
+      Sornirella -> LongLived: "центр фракции"
+      Sornirella -- Dolmen: "тайный канал к Эньяру"
+      Sornirella -- Timassa: "стипендиатка"
+      Sornirella -- Orikh: "коллеги по Совету,\nхолодное профуважение"
+    }
+
+    # === Внешние сущности ===
+    Ormuz_ext: "🏛️ Дом Ормуз →" {
+      style.fill: "#e8f1fb"
+      link: layers.ormuz
+    }
+    Hamaria_ext: "Хамария Блакрос →\nфинансовая патронесса\nОриха" {
+      style.fill: "#e8f1fb"
+      link: "obsidian://open?vault=PF2e&file=Кампейны/Азланти/NPC/Хамария Блакрос"
+    }
+    Pathfinders_ext: "🗺️ Pathfinder Society →\nVanissi Gaatan под крылом\nВаннессир" {
+      style.fill: "#efe6f7"
+      link: layers.pathfinders
+    }
+    Library_ext: "📖 Forae Logos →" {
+      style.fill: "#efe6f7"
+      link: layers.library
+    }
+    Sect_ext: "🔴 Onyx Alliance / Сарния →\nВаннессир играет в maze\nс Сарнией\n(скрыто, не Арка 2)" {
+      style.fill: "#fde8e8"
+    }
+    Salt_ext: "Соляной картель / Сейчия →\nобе с Ваннессир — челексиянки\n(косвенный мост)" {
+      style.fill: "#fde8e8"
+    }
+    Enyar_ext: "Эньяр Серравек →\nбывший доцент,\nрезонатор в Coins" {
+      style.fill: "#fde8e8"
+      link: "obsidian://open?vault=PF2e&file=Кампейны/Азланти/NPC/Эньяр Серравек"
+    }
+
+    # === Источники нитей партии ===
+    Plates_src: "Пластины Азланти" {
+      style.fill: "#fdf6e3"
+    }
+    Bel_src: "Бель — попаданчество" {
+      style.fill: "#fdf6e3"
+    }
+    Geldala_src: "Гельдала ~500\n[потенциальный канал в долгожителей]" {
+      style.fill: "#fdf6e3"
+    }
+    Anchanto_src: "Анканто (Сеня)\n[резонатор зовёт]" {
+      style.fill: "#fdf6e3"
+    }
+    Kiran_src: "Киран\n[зеркало-тупик Эньяра]" {
+      style.fill: "#fdf6e3"
+    }
+    Tosha_src: "Самум + пульт\n[азлантская технология]" {
+      style.fill: "#fdf6e3"
+    }
+
+    # === Внешние связи (нити партии) ===
+    Plates_src -> Arcanamirium.Orikh: "Эксперт-2;\nрек-я в Antiquities Forae" {class: thread-plates}
+    Bel_src -> Arcanamirium.Sornirella: "Continuum — её тема" {class: thread-statue}
+    Geldala_src -> Arcanamirium.Sornirella: "узнаёт долгожителя\nс первого взгляда"
+    Anchanto_src -> Enyar_ext: "резонатор зовёт;\nопасная сцена" {class: thread-anchanto}
+    Kiran_src -> Enyar_ext: "зеркало-тупик\nдиссоциации"
+    Tosha_src -> Arcanamirium.Orikh: "консультация\nпо пульту"
+
+    # === Внешние связи (политические) ===
+    Arcanamirium.Darchana -- Hamaria_ext: "Хамария поддерживает\nна Примархат"
+    Arcanamirium.Orikh -- Hamaria_ext: "финансирует экспедицию;\nрычаг"
+    Arcanamirium.Vannessir -- Sect_ext: "maze в Second Labyrinth\n(скрыто)"
+    Arcanamirium.Vannessir -- Salt_ext: "челексийский салон" {style.stroke-dash: 5}
+    Arcanamirium.Vannessir -- Pathfinders_ext: "Vanissi Gaatan,\nеё ученица в Pathfinder"
+    Arcanamirium.Sornirella -- Enyar_ext: "тайный канал книг\nчерез Долмена"
+    Arcanamirium.Orikh -- Library_ext: "рекомендация\nв Antiquities"
+    Ormuz_ext -- Arcanamirium.Darchana: "Ямтар — покровитель\nисследователей"
+  }
+
+  library: {
+    direction: down
+
+    Library: "📖 Библиотека\n(Forae Logos)" {
+      style.fill: "#efe6f7"
+      style.font-size: 32
+      style.bold: true
+
+      Librarian: "Кил Сандарил\n(Second Archivist)" {
+        link: "obsidian://open?vault=PF2e&file=Кампейны/Азланти/NPC/Кил Сандарил"
+      }
+      Access: "💡 Гейт доступа\nоткрытая секция / членство /\nспецсекция (репутация / связи / плата)"
+
+      Module_Travelers: "📕 Архив попаданчества\n(для Бель)"
+      Module_Azlanti: "📘 Архив Азланти / KAERETHAL\n🟦\n(для пластин — контекст;\nдля Бель — её родительство?)"
+      Module_DistantLands: "📗 Архив дальних земель Гарунда\n🟪\n(легаты Холомога,\nField of Maidens 4329 AR)"
+      Module_Experts: "📙 Каталог экспертов\n🟦\n(куда направят за пластинами)"
+
+      Librarian -- Access
+      Librarian -- Module_Travelers
+      Librarian -- Module_Azlanti
+      Librarian -- Module_DistantLands
+      Librarian -- Module_Experts
+    }
+
+    # Внешние источники нитей
+    Bell_src: "Бель — попаданка" {
+      style.fill: "#fdf6e3"
+    }
+    Plates_src: "Пластины Азланти" {
+      style.fill: "#fdf6e3"
+    }
+    Kiran_statue_src: "Статуэтка 'Ирори'\n(Киран)" {
+      style.fill: "#fdf6e3"
+    }
+
+    # Внешние получатели
+    Sarel_ext: "🧝 Сарел Тейваниэль →" {
+      style.fill: "#d3e8df"
+    }
+    Expert2_ext: "📜 Эксперт-2 →" {
+      style.fill: "#d3e8df"
+    }
+    Holomog_ext: "🌍 Холомог\n[Арка 3+] →" {
+      style.fill: "#e8d5a8"
+      style.stroke-dash: 5
+    }
+
+    # Нить Бель (пока без класса)
+    Bell_src -> Library.Module_Travelers: "архивы попаданчества"
+    Bell_src -> Library.Access: "вопрос: как пустят?"
+
+    # Нить пластин (лазурная)
+    Plates_src -> Library.Module_Experts: "путь к эксперту" {class: thread-plates}
+    Plates_src -> Library.Module_Azlanti: "контекст KAERETHAL" {class: thread-plates}
+    Library.Module_Experts -> Sarel_ext: "архивист знаком" {class: thread-plates}
+    Library.Module_Experts -> Expert2_ext: "архивист знаком" {class: thread-plates}
+
+    # Нить статуэтки (сиреневая)
+    Kiran_statue_src -> Library.Module_DistantLands: "поиск по\nХоломогу" {class: thread-statue}
+    Library.Module_DistantLands -> Holomog_ext: "след → дальняя земля" {class: thread-statue-hidden}
+  }
+
+  pathfinders: {
+    direction: down
+
+    # === БОКОВАЯ ССЫЛКА НА СПРАВОЧНИК ===
+    Reference: "📒  СПРАВОЧНИК  PFS\n\n→ Decemvirate, иерархия\n→ 3 школы обучения\n→ 6 фракций (полные)\n→ все спящие NPC\n→ Хроники, Миротворцы\n\n📖 клик для полного файла" {
+      style.fill: "#f4d03f"
+      style.stroke: "#2c3e50"
+      style.stroke-width: 5
+      style.font-size: 18
+      style.bold: true
+      link: "obsidian://open?vault=PF2e&file=Кампейны/Азланти/Сюжет кампании/Глобальные фракции/Pathfinder Society"
+    }
+
+    GrandLodge: "🗺️ Великая Ложа PFS\n(Foreign Quarter)\nкомплекс из 7 крепостей\nдоминирует Скайрич" {
+      style.fill: "#efe6f7"
+      style.font-size: 32
+      style.bold: true
+      link: "obsidian://open?vault=PF2e&file=Кампейны/Азланти/Golarion/Абсалом/Районы/Foreign Quarter/Великая Ложа"
+
+      # === ВХОД И ФИЛЬТРАЦИЯ ===
+      Hasjald: "🚪 Хасьялд\nпривратник на воротах\n(observant groundskeeper)\nрешает кого внутрь" {
+        style.fill: "#fff0d0"
+      }
+      Briga: "📋 Брига\nинициат-новичок (~18)\nдочь варизийских беженцев\nещё учится в школах PFS\nподработка в приёмной\n«сейчас позову Яниру»" {
+        style.fill: "#fff0d0"
+      }
+      Janira: "🎓 Янира Гавикс\nhead initiate\n(полу-эльф)\nпервый настоящий PFS-фильтр\nрешает что эскалировать"
+
+      # === РУКОВОДСТВО ЛОЖИ ===
+      Valsin: "★ Амбрус Валсин ★\nsteward Великой Ложи\n(LN человек, «Old Mutton Chops»)\nvets все входящие наводки\nformal primus inter pares" {
+        style.fill: "#5d3a7e"
+        style.font-color: "#ffffff"
+        style.stroke: "#3d2454"
+        style.stroke-width: 4
+        style.font-size: 20
+        style.bold: true
+      }
+      Zarta: "◆ Зарта Дралнин ◆\nChief Archivist\nof the Dark Archive\n(LN человек, бард 8)\nбывшая Grand Ambassador\nЧелиакса\nв туннелях под Скайричем" {
+        style.fill: "#5d3a7e"
+        style.font-color: "#ffffff"
+        style.stroke: "#d4a017"
+        style.stroke-width: 4
+        style.font-size: 18
+        style.bold: true
+      }
+      Nestor: "📜 Нестор Рис\nantiquities appraiser\n(под Зартой)\nпервый осмотр пластины"
+
+      # === ТРИ МАСТЕРА — см. справочник PFS.md ===
+      # Сейчас не в активных нитях; вернутся если кто-то из PC решит вступать
+
+
+
+      # === ЛИДЕРЫ ФРАКЦИЙ (постоянно в Скайриче) ===
+      ValaisDurant: "★ Valais Durant ★\nRadiant Oath\n(LG аасимар-ритуалист,\nпережила пытки и\nдемоническую\nтрансформацию)\nзащита от зла" {
+        style.fill: "#5d3a7e"
+        style.font-color: "#ffffff"
+        style.stroke: "#3d2454"
+        style.stroke-width: 3
+        style.font-size: 17
+        style.bold: true
+      }
+      FolaBarun: "★ Фола Барун ★\nEnvoy's Alliance\n(CG полу-эльфка Эчуджа\nиз Мванги, дипломат)\nблагополучие агентов" {
+        style.fill: "#5d3a7e"
+        style.font-color: "#ffffff"
+        style.stroke: "#3d2454"
+        style.stroke-width: 3
+        style.font-size: 17
+        style.bold: true
+      }
+      GormGreathammer: "★ Горм Гритхаммер ★\nGrand Archive\n(LN дварф)\nпри нём Зарта как\ngrand archivist" {
+        style.fill: "#5d3a7e"
+        style.font-color: "#ffffff"
+        style.stroke: "#3d2454"
+        style.stroke-width: 3
+        style.font-size: 17
+        style.bold: true
+      }
+      EandoKline: "★ Eando Kline ★\nVigilant Seal\nзапечатывание\nопасных артефактов\nи сущностей" {
+        style.fill: "#5d3a7e"
+        style.font-color: "#ffffff"
+        style.stroke: "#3d2454"
+        style.stroke-width: 3
+        style.font-size: 17
+        style.bold: true
+      }
+
+      # === Calisro Benarry (Horizon Hunters) и Urwal (Verdant Wheel)
+      # === см. справочник PFS.md — у них нет активных нитей с партией
+
+      # === VENTURE-CAPTAINS В ВЕЛИКОЙ ЛОЖЕ ===
+      DrandleDreng: "Драндл Дренг\nventure-captain в GL\nстарый друг Найджела\n(мост к Музею Блакрос)"
+      # Шевала Йорэ — спящая, см. справочник PFS.md
+
+      # === ВНУТРЕННИЕ СВЯЗИ — ПОТОК ВХОДА ===
+      Hasjald -> Briga: "ворота → приёмная"
+      Briga -> Janira: "проблема важная,\nсейчас позову Яниру"
+      Janira -> Valsin: "наводки / угрозы"
+      Janira -> Nestor: "артефакты"
+      Nestor -> Zarta: "серьёзный артефакт"
+
+      # === ВНУТРЕННИЕ СВЯЗИ — НАПРЯЖЕНИЕ ===
+      Valsin -- Zarta: "напряжение:\nон не доверяет её\nчелиаксскому прошлому;\nона обижена на\nторможение карьеры" {style.stroke-dash: 5}
+      Zarta -- GormGreathammer: "зам. лидера\nGrand Archive"
+
+      # === КЕЙС ГРИНФОРДА — РЕАЛИСТИЧНЫЙ СОВЕТ ===
+      # При кейсе пластина+Оуб приходят 3-4 человека, не все главы
+      Valsin -> GormGreathammer: "пластина+храм =\nтема Grand Archive"
+      Valsin -> EandoKline: "Оуб = опасная сущность,\nих профиль"
+      Valsin -> ValaisDurant: "если защита деревни\nкритична для партии"
+    }
+
+    # === ВНЕШНИЕ СУЩНОСТИ ===
+    Nigel_ext: "Найджел Олдейн →\n(Музей Блакрос,\nvisiting ally в GL,\nбывший Pathfinder)" {
+      style.fill: "#e8f1fb"
+      link: "obsidian://open?vault=PF2e&file=Кампейны/Азланти/NPC/Найджел Олдейн"
+    }
+    Library_ext: "📖 Forae Logos →\n(Antiquities — закрытая)" {
+      style.fill: "#efe6f7"
+      link: layers.library
+    }
+    Decemvirate_ext: "🎭 Decemvirate →\n(10 в масках, далёкие;\nЭлиза Петулангро\nбез маски)" {
+      style.fill: "#2d2d2d"
+      style.font-color: "#ffffff"
+    }
+    Arcanamirium_ext: "📚 Арканамириум →\n(Vanissi Gaatan —\nученица Ваннессир,\nидёт в Pathfinder)" {
+      style.fill: "#efe6f7"
+      link: layers.arcana
+    }
+
+    # === ИСТОЧНИКИ НИТЕЙ ПАРТИИ ===
+    Plates_src: "Пластины Азланти" {
+      style.fill: "#fdf6e3"
+    }
+    Tosha_src: "Самум + информация\nо подземелье калигни\nи Оубе" {
+      style.fill: "#fdf6e3"
+    }
+    Anchanto_src: "Анканто\n(природа меча)" {
+      style.fill: "#fdf6e3"
+    }
+    Geldala_src: "Гельдала\n(анафема:\nугнетение/рабство)" {
+      style.fill: "#fdf6e3"
+    }
+
+    # === НИТИ ПАРТИИ ===
+    Plates_src -> GrandLodge.Nestor: "артефакт →\nоценщик" {class: thread-plates}
+    GrandLodge.Zarta -> Library_ext: "рекомендация в\nAntiquities\n(услуга за услугу)" {class: thread-plates}
+
+    Tosha_src -> GrandLodge.Valsin: "наводка о месте\nи угрозе"
+    Anchanto_src -> GrandLodge.EandoKline: "консультант по\nдревним оружиям" {class: thread-anchanto}
+
+    Geldala_src -> GrandLodge.ValaisDurant: "философское\nрезонирование"
+
+    # === МОСТ ЧЕРЕЗ НАЙДЖЕЛА ===
+    Nigel_ext -- GrandLodge.DrandleDreng: "старые коллеги\n(мост в GL)"
+    Nigel_ext -- GrandLodge.GormGreathammer: "профильная фракция\n(бывшая)"
+
+    # === МОСТ С АРКАНАМИРИУМОМ ===
+    Arcanamirium_ext -- GrandLodge.Janira: "Vanissi Gaatan\nкак мост"
+
+    # === ВЕРТИКАЛЬ К DECEMVIRATE ===
+    GrandLodge.Valsin -> Decemvirate_ext: "регулярные доклады" {style.stroke-dash: 5}
+  }
+
+  house_of_healing: {
+    direction: down
+
+    HoH: "🕊️ Дом Исцеления\n(Ivy District)\nактивистская ветвь Саренры" {
+      style.fill: "#fff3b0"
+      style.font-size: 32
+      style.bold: true
+      link: "obsidian://open?vault=PF2e&file=Кампейны/Азланти/Golarion/Абсалом/Районы/Плющевой квартал/Дом Исцеления"
+
+      Zharichela: "👑 Жарикела\nhigh priestess\n(полу-эльф, ~70)" {
+        style.fill: "#fff8d0"
+        style.bold: true
+        link: "obsidian://open?vault=PF2e&file=Кампейны/Азланти/NPC/Жарикела"
+      }
+      Doris: "Дорис Кай (м.)\nlay priest\nкоординатор Луж\nветеран Мендева\n(талдан, Lion's Square)" {
+        link: "obsidian://open?vault=PF2e&file=Кампейны/Азланти/NPC/Дорис Кай"
+      }
+      Ileya: "Илейя Дамар\nзаведующая лечебницей\n(полу-эльф, ~55)\nдержит дверь Дома" {
+        link: "obsidian://open?vault=PF2e&file=Кампейны/Азланти/NPC/Илейя Дамар"
+      }
+      Keyin: "Кейин\nкоординатор работы\nс бывшими рабами\n(сама бывшая, ~38)" {
+        link: "obsidian://open?vault=PF2e&file=Кампейны/Азланти/NPC/Кейин"
+      }
+      HealingRaft: "⛵ Healing Raft\n(Плавучий храм)\nвыезд в Лужи\nкаждый второй день"
+
+      # Внутренние отношения
+      Zharichela -> Doris: "духовный\nнаследник\n(он не знает)" {style.stroke-dash: 3}
+      Zharichela -> Ileya: "административный\nнаследник\n(она догадывается)" {style.stroke-dash: 3}
+      Zharichela -> Keyin: "та, кто\nвпустила"
+      Doris -- Ileya: "друзья,\nспор: Лужи vs Дом\n(без злобы)"
+      Doris -- Keyin: "союзники-\nактивисты"
+      Ileya -- Keyin: "тихая\nзащитница"
+      Doris -- HealingRaft: "lay priest\nна плоту"
+    }
+
+    # === Внешние сущности ===
+    TempleShiningStar_ext: "☀️ Temple of the Shining Star\n(Ascendant Court) →\nформальная Саренра" {
+      style.fill: "#fff3b0"
+      style.stroke: "#c9a227"
+      link: "obsidian://open?vault=PF2e&file=Кампейны/Азланти/Golarion/Абсалом/Районы/Ascendant Court/Локации/Temple of the Shining Star"
+    }
+    Xerashir_ext: "Lady Xerashir\n(Bey of Sarenrae) →" {
+      style.fill: "#fff3b0"
+      link: "obsidian://open?vault=PF2e&file=Кампейны/Азланти/NPC/Lady Xerashir"
+    }
+    DawnstarAngels_ext: "Dawnstar Angels →\n(формальные миссионеры\nXerashir по городу)" {
+      style.fill: "#fff3b0"
+    }
+    LionsSquare_ext: "Lion's Square →\n(талданская диаспора,\nForeign Quarter)" {
+      style.fill: "#e8f1fb"
+    }
+    Yamtar_ext: "🏛️ Лорд Ямтар\n(Дом Ормуз) →" {
+      style.fill: "#e8f1fb"
+      link: layers.ormuz
+    }
+    Hope_ext: "Хоуп\n(приют, Лужи) →" {
+      style.fill: "#fff3b0"
+      link: layers.puddles
+    }
+    Puddles_ext: "🏘️ Лужи →" {
+      style.fill: "#dde7d8"
+      link: layers.puddles
+    }
+    Sechiya_ext: "⚔️ Леди Сейчия →\n(Соляной картель,\nЛужи)" {
+      style.fill: "#fde8e8"
+      link: layers.puddles
+    }
+    Anchanto_src: "Анканто (Сеня)" {
+      style.fill: "#fdf6e3"
+    }
+
+    # === Внешние связи ===
+    HoH.Zharichela -- Xerashir_ext: "давнее идеологическое\nрасхождение,\nличная обида (юность)" {style.stroke-dash: 5}
+    HoH -- TempleShiningStar_ext: "формальная иерархия,\nхолодно-вежливо"
+    TempleShiningStar_ext -- Xerashir_ext: "high priestess"
+    Xerashir_ext -- DawnstarAngels_ext: "командует"
+    HoH.HealingRaft -- DawnstarAngels_ext: "согласование\nмаршрутов в Лужах\n(чуть холодно)" {style.stroke-dash: 3}
+    HoH.Doris -- LionsSquare_ext: "корни\n(район детства)"
+    HoH -- LionsSquare_ext: "волонтёры,\nдонаты"
+    HoH.Doris -- Yamtar_ext: "лично знаком,\nможет познакомить"
+    HoH.Doris -- Hope_ext: "близкий друг,\nчай раз в неделю"
+    HoH.Keyin -- Hope_ext: "приёмы освобождённых\nдетей и подростков"
+    HoH.Keyin -- Sechiya_ext: "⚔️ прямой враг\n(личный счёт)"
+    HoH.HealingRaft -- Puddles_ext: "выезд каждый\nвторой день"
+    HoH.Doris -- Puddles_ext: "сухопутный\nобход"
+    Anchanto_src -> HoH.Doris: "от Варена\n(разгадать меч)"
+  }
+
+  syrvas: {
+    direction: down
+
+    Syrvas: "🔴 Круг Syrvas — Семёрка" {
+      style.fill: "#fde8e8"
+      style.font-size: 34
+      style.bold: true
+
+      Valastir: "Валастир Каэрваль\n(глава)" {
+        link: "obsidian://open?vault=PF2e&file=Кампейны/Азланти/NPC/Валастир Каэрваль"
+      }
+      Yoren: "Йорен Орувиэль\nсвязной с Хоуп" {
+        link: "obsidian://open?vault=PF2e&file=Кампейны/Азланти/NPC/Йорен Орувиэль"
+      }
+      Elarion: "Эларион Меретис\nпри Ямтаре" {
+        link: "obsidian://open?vault=PF2e&file=Кампейны/Азланти/NPC/Эларион Меретис"
+      }
+      Saviya: "Савийя Талорин\nстрогий учитель" {
+        link: "obsidian://open?vault=PF2e&file=Кампейны/Азланти/NPC/Савийя Талорин"
+      }
+      Maelis: "Маэлис Сот-Ану\nзащитница" {
+        link: "obsidian://open?vault=PF2e&file=Кампейны/Азланти/NPC/Маэлис Сот-Ану"
+      }
+      Doren: "Дорен Виракон\nщит в поле" {
+        link: "obsidian://open?vault=PF2e&file=Кампейны/Азланти/NPC/Дорен Виракон"
+      }
+      Lisera: "Лисера Кетхарин\nрешительность" {
+        link: "obsidian://open?vault=PF2e&file=Кампейны/Азланти/NPC/Лисера Кетхарин"
+      }
+
+      Valastir -- Yoren
+      Valastir -- Elarion
+      Valastir -- Saviya
+      Valastir -- Maelis
+      Valastir -- Doren
+      Valastir -- Lisera
+      Elarion -> Yoren: наставник
+    }
+
+    Ormuz_ext: "🏛️ Лорд Ямтар\n(Дом Ормуз) →" {
+      style.fill: "#e8f1fb"
+      link: layers.ormuz
+    }
+    Damak_ext: "🏛️ Дом Дамак →" {
+      style.fill: "#e8f1fb"
+      link: layers.damak
+    }
+    Puddles_ext: "🏘️ Лужи →" {
+      style.fill: "#dde7d8"
+      link: layers.puddles
+    }
+
+    Syrvas.Elarion -> Ormuz_ext: "советник на салонах\n(скрыто)" {style.stroke-dash: 5}
+    Syrvas.Yoren -> Puddles_ext: "связной с Хоуп\n(скрыто)" {style.stroke-dash: 5}
+    Damak_ext -> Syrvas: "донор (скрыто)" {style.stroke-dash: 5}
+  }
+
+  puddles: {
+    direction: down
+
+    Puddles: "🏘️ Лужи — район в точке перелома" {
+      style.fill: "#dde7d8"
+      style.font-size: 32
+      style.bold: true
+
+      Khaigen: "🏛️ Хайген Топкик\nформальная власть\n(теряет контроль,\nготовит атаку)" {
+        style.fill: "#e0e0e0"
+        link: "obsidian://open?vault=PF2e&file=Кампейны/Азланти/Golarion/Абсалом/Районы/Puddles/Силы/Хайген_Топкик__сила"
+      }
+      LadySeychia: "🩸 Леди Сейчия\nработорговля / Salt Cartel\n(Brine тонет,\nищет новый канал)" {
+        style.fill: "#d4c5e2"
+        link: "obsidian://open?vault=PF2e&file=Кампейны/Азланти/Golarion/Абсалом/Районы/Puddles/Силы/Леди_Сейчия__сила"
+      }
+      Skinsaw: "🗡️ Skinsaw Cult\nсекта Норгорбера\n(план: убить Лемарию Кумари)" {
+        style.fill: "#f8b4b4"
+        link: "obsidian://open?vault=PF2e&file=Кампейны/Азланти/Golarion/Абсалом/Районы/Puddles/Силы/Skinsaw_Cult__сила"
+      }
+      Zusgut: "🟢 Зусгут\nгоблинская коммуна\n(растёт; защищена пока мала)" {
+        style.fill: "#c8e6c9"
+        link: "obsidian://open?vault=PF2e&file=Кампейны/Азланти/Golarion/Абсалом/Районы/Puddles/Силы/Зусгут__сила"
+      }
+      SyrvasInPuddles: "🔴 Круг Syrvas в Лужах\nтихая витрина (через Хоуп)\nтолько добро в Арке 2" {
+        style.fill: "#fde8e8"
+        link: "obsidian://open?vault=PF2e&file=Кампейны/Азланти/Golarion/Абсалом/Районы/Puddles/Силы/Круг_Syrvas_в_Лужах__сила"
+      }
+      Annavi: "💰 Аннави\nэкономический узел\n(в петле, ищет защитника)" {
+        style.fill: "#fff9c4"
+        link: "obsidian://open?vault=PF2e&file=Кампейны/Азланти/Golarion/Абсалом/Районы/Puddles/Силы/Аннави__сила"
+      }
+
+      # Внутренние конфликты района
+      Khaigen -> Zusgut: "готовит атаку\n(2-3 мес)"
+      Skinsaw -> Khaigen: "убийство Лемарии\nдестабилизирует власть"
+      LadySeychia -> Annavi: "давление через долги"
+      SyrvasInPuddles -> Annavi: "может стать защитником"
+      SyrvasInPuddles -> Khaigen: "тихо подбирает\nкуски власти"
+    }
+
+    # Внешние узлы
+    Doris_ext: "🕊️ Дорис Кай\n(Дом Исцеления) →" {
+      style.fill: "#fff3b0"
+      link: layers.house_of_healing
+    }
+    Hope: "Хоуп\n(приют Чистой Воды)" {
+      style.fill: "#fff3b0"
+      link: "obsidian://open?vault=PF2e&file=Кампейны/Азланти/NPC/Хоуп"
+    }
+    Yoren_ext: "🔴 Йорен Орувиэль\n(Круг Syrvas) →" {
+      style.fill: "#fde8e8"
+      link: layers.syrvas
+    }
+    Merra_src: "Мерра\n(Норгорберша\nиз Гринфорда)" {
+      style.fill: "#fdf6e3"
+    }
+    Zahara: "👵 Захара ан-Холу\nпожилая, родилась в Абсаломе\n(семья из провинции Холу,\nбежали после Paroxsys)\n🟪" {
+      style.fill: "#e8d5a8"
+    }
+    Kiran_statue_src: "Статуэтка 'Ирори'\n(Киран)" {
+      style.fill: "#fdf6e3"
+    }
+    Holomog_ext: "🌍 Холомог\n[Арка 3+] →" {
+      style.fill: "#e8d5a8"
+      style.stroke-dash: 5
+    }
+
+    Doris_ext -- Puddles.SyrvasInPuddles: "координирует помощь"
+    Hope -- Puddles.SyrvasInPuddles: "лицо витрины"
+    Yoren_ext -> Hope: "связной (скрыто)" {style.stroke-dash: 5}
+    Merra_src -> Puddles.Skinsaw: "потенциальная нить\n(беженка-поклонница)"
+    Kiran_statue_src -> Zahara: "узнаёт легатскую\nиконографию" {class: thread-statue}
+    Zahara -> Holomog_ext: "родом из Холу" {class: thread-statue-hidden}
+  }
+}

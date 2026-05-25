@@ -1,0 +1,232 @@
+# Версия для D2 Studio с layers (zoom через уровни абстракции)
+# Главный board — обзор всех сущностей.
+# Под-layers — детали каждой организации.
+
+direction: right
+
+vars: {
+  d2-config: {
+    layout-engine: dagre
+    pad: 60
+  }
+}
+
+title: |md
+  # Абсалом — обзор арки 2
+| {near: top-center}
+
+# === ГЛАВНЫЙ BOARD: компактный обзор ===
+
+Sources: "🌱 Входные нити" {
+  style.fill: "#fdf6e3"
+  style.font-size: 24
+  style.bold: true
+  link: layers.sources
+}
+
+Doris: "🕊️ Дорис Кай" {
+  shape: hexagon
+  style.fill: "#fff3b0"
+  style.font-size: 22
+  style.bold: true
+  link: "obsidian://open?vault=PF2e&file=Кампейны/Азланти/NPC/Дорис Кай"
+}
+
+HouseOrmuz: "🏛️ Дом Ормуз" {
+  style.fill: "#e8f1fb"
+  style.font-size: 28
+  style.bold: true
+  link: layers.ormuz
+}
+
+HouseBlakros: "🏛️ Дом Блакрос" {
+  style.fill: "#e8f1fb"
+  style.font-size: 28
+  style.bold: true
+  link: layers.blakros
+}
+
+HouseDamak: "🏛️ Дом Дамак" {
+  style.fill: "#e8f1fb"
+  style.font-size: 28
+  style.bold: true
+  link: layers.damak
+}
+
+Arcanamirium: "📚 Арканамириум" {
+  style.fill: "#efe6f7"
+  style.font-size: 28
+  style.bold: true
+  link: layers.arcanamirium
+}
+
+Pathfinders: "🗺️ Pathfinder Society" {
+  style.fill: "#efe6f7"
+  style.font-size: 28
+  style.bold: true
+  link: layers.pathfinders
+}
+
+Syrvas: "🔴 Круг Syrvas" {
+  style.fill: "#fde8e8"
+  style.font-size: 30
+  style.bold: true
+  link: layers.syrvas
+}
+
+# Обзорные связи
+Sources -> Arcanamirium
+Sources -> Doris
+Sources -> Pathfinders
+Sources -> HouseOrmuz: "?"
+Sources -> HouseBlakros: "Лука"
+
+Doris -> HouseOrmuz: "учёные / артифайсеры"
+
+HouseOrmuz -> Syrvas: донор {style.stroke-dash: 5}
+HouseDamak -> Syrvas: донор {style.stroke-dash: 5}
+
+# === LAYERS: детали каждой сущности ===
+
+layers: {
+  sources: {
+    title: "Входные нити — детали"
+
+    Tosha: "Учёный-старик\n(для Самума)" {
+      link: "obsidian://open?vault=PF2e&file=Кампейны/Азланти/PC/Самум (Тоша)"
+    }
+    Bell: "Бель — попаданка\n(в библиотеку)" {
+      link: "obsidian://open?vault=PF2e&file=Кампейны/Азланти/PC/Бель (Настя)"
+    }
+    Varen: "Варен\n(для Анканто)" {
+      link: "obsidian://open?vault=PF2e&file=Кампейны/Азланти/NPC/Варен"
+    }
+    Tarven: "Тарвен\n(для Анканто)" {
+      link: "obsidian://open?vault=PF2e&file=Кампейны/Азланти/NPC/Тарвен"
+    }
+    Anchanto: "История Анканто\n(ангельское оружие)" {
+      link: "obsidian://open?vault=PF2e&file=Кампейны/Азланти/PC/Анканто"
+    }
+    Kiran: "Статуэтка Ирори\n(Киран)" {
+      link: "obsidian://open?vault=PF2e&file=Кампейны/Азланти/PC/Киран (Лиля)"
+    }
+    Luka: "Лука Блакрос\n(спасён партией)"
+
+    Tosha -> Arcanamirium: "→"
+    Bell -> Arcanamirium: "→"
+    Varen -> Doris: "→"
+    Tarven -> Pathfinders: "→"
+    Anchanto -> Doris: "природа меча"
+    Kiran -> "Дом Ормуз": "?"
+    Luka -> "Дом Блакрос": "→"
+  }
+
+  ormuz: {
+    title: "Дом Ормуз — детали"
+
+    Yamtar: "Лорд Ямтар\nмеценат / салоны" {
+      link: "obsidian://open?vault=PF2e&file=Кампейны/Азланти/NPC/Лорд Ямтар (Дом Ормуз)"
+    }
+    Kaisar: "Кайсар\nдолг 50 зм" {
+      link: "obsidian://open?vault=PF2e&file=Кампейны/Азланти/NPC/Кайсар Ормуз"
+    }
+    Elarion: "Эларион Меретис\n(на самом деле Круг)" {
+      style.fill: "#fde8e8"
+      link: "obsidian://open?vault=PF2e&file=Кампейны/Азланти/NPC/Эларион Меретис"
+    }
+
+    Yamtar -- Kaisar
+    Yamtar -- Elarion: "советник (скрыто)" {
+      style.stroke-dash: 5
+    }
+  }
+
+  blakros: {
+    title: "Дом Блакрос — детали"
+
+    Father: "Отец Луки\n(благодарен партии)" {
+      link: "obsidian://open?vault=PF2e&file=Кампейны/Азланти/NPC/Отец Луки (Блакрос)"
+    }
+    Hook: "Лука был спасён партией\n→ благодарность"
+    Note: "хорошо платит,\nбез вопросов"
+    Risk: "конкуренты\nначнут искать"
+
+    Hook -- Father
+    Father -- Note
+    Father -- Risk
+  }
+
+  damak: {
+    title: "Дом Дамак — детали"
+
+    Head: "Глава (TBA)"
+    Money: "деньги"
+    Logistics: "логистика"
+    DonorNote: "донор Круга Syrvas\n(скрыто)"
+
+    Head -- Money
+    Head -- Logistics
+    Head -- DonorNote: {style.stroke-dash: 5}
+  }
+
+  arcanamirium: {
+    title: "Арканамириум — детали"
+
+    Library: "Библиотека"
+    RelicStudies: "Кафедра\nRelic Studies"
+    Risk: "риск конфискации\n~20%"
+
+    Library -- RelicStudies
+    RelicStudies -- Risk
+  }
+
+  pathfinders: {
+    title: "Pathfinder Society — детали"
+
+    Lodge: "Ложа\nForeign Quarter"
+    Contact: "Контакт-приёмщик\n(TBA)"
+    Buy: "~500 зм за пульт"
+
+    Lodge -- Contact
+    Contact -- Buy
+  }
+
+  syrvas: {
+    title: "Круг Syrvas — Семёрка"
+
+    Valastir: "Валастир Каэрваль\n(глава)" {
+      link: "obsidian://open?vault=PF2e&file=Кампейны/Азланти/NPC/Валастир Каэрваль"
+    }
+    Yoren: "Йорен Орувиэль\nсвязной с Хоуп" {
+      link: "obsidian://open?vault=PF2e&file=Кампейны/Азланти/NPC/Йорен Орувиэль"
+    }
+    Elarion: "Эларион Меретис\nпри Ямтаре" {
+      link: "obsidian://open?vault=PF2e&file=Кампейны/Азланти/NPC/Эларион Меретис"
+    }
+    Saviya: "Савийя Талорин" {
+      link: "obsidian://open?vault=PF2e&file=Кампейны/Азланти/NPC/Савийя Талорин"
+    }
+    Maelis: "Маэлис Сот-Ану" {
+      link: "obsidian://open?vault=PF2e&file=Кампейны/Азланти/NPC/Маэлис Сот-Ану"
+    }
+    Doren: "Дорен Виракон" {
+      link: "obsidian://open?vault=PF2e&file=Кампейны/Азланти/NPC/Дорен Виракон"
+    }
+    Lisera: "Лисера Кетхарин" {
+      link: "obsidian://open?vault=PF2e&file=Кампейны/Азланти/NPC/Лисера Кетхарин"
+    }
+    Hope: "Хоуп\n(приют, Лужи)" {
+      style.fill: "#fff3b0"
+      link: "obsidian://open?vault=PF2e&file=Кампейны/Азланти/NPC/Хоуп"
+    }
+
+    Valastir -- Yoren
+    Valastir -- Elarion
+    Valastir -- Saviya
+    Valastir -- Maelis
+    Valastir -- Doren
+    Valastir -- Lisera
+    Elarion -> Yoren: наставник
+    Yoren -> Hope: связной {style.stroke-dash: 5}
+  }
+}

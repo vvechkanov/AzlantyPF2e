@@ -92,10 +92,18 @@
 
 ## 🔍 Tension — напряжение, детектив, подозрение
 
-> Для сцен расследования, слежки, допросов, ощущения опасности без открытого боя.
+> Для сцен расследования, слежки, допросов, ощущения опасности без открытого боя. Деревенский нуар, тикающие часы, кто-то следит.
 > Папка: `ai_music/tension/`
 
-*Треки ещё не подбирались*
+| # | Трек | Источник | Длит. | Теги |
+|---|-------|----------|-------|------|
+| 1 | Engwith | Pillars of Eternity OST | 5:41 | `mystery` `hidden-truth` `slow` `ominous` `investigation` |
+| 2 | Skaen | Pillars of Eternity OST | 4:09 | `dark` `conspiracy` `cult` `suspicion` `slow` |
+| 3 | Flooded Suspense | Dishonored OST | 3:06 | `tense` `surveillance` `someone-watching` `mid` |
+| 4 | Streets of Karnaca (Suspense) | Dishonored 2 OST | 3:45 | `urban` `stalking` `tension` `mid` `patrol` |
+| 5 | Aristocrats of Karnaca (Suspense) | Dishonored 2 OST | 2:47 | `confrontation` `pressure` `interrogation` `mid-high` |
+
+> **Итого: 5 треков, ~19 мин** ✅
 
 ---
 
@@ -239,3 +247,21 @@
 | 2 | Descent Main Theme | DA:I Descent DLC OST | 3:03 | `light` `rising` `hope` `victory` `building` |
 
 > **Итого: 2 трека, ~7 мин** ✅
+
+---
+
+## 🗺️ Pathfinders — Великая Ложа, архивы, совет
+
+> Музыка для сцен в Скайриче: совещания фракций, изучение карт Внутреннего моря, чтение в архивах, доклады стюарду, тихий институциональный фон. Созерцательная учёная атмосфера без боевого напряжения, лёгкая мистика. Эталон стиля — Tinker Tailor Soldier Spy + Rivendell + классика.
+> Папка: `ai_music/pathfinders/`
+
+| # | Трек | Источник | Длит. | Теги |
+|---|-------|----------|-------|------|
+| 1 | Sorcerous Sundries Archives | BG3 (unofficial, Slavov) | 3:25 | `magical-archive` `library` `quiet` `mid-slow` `mystical` `study` |
+| 2 | Many Meetings | LotR OST (Howard Shore) | 3:06 | `council` `welcome` `mid` `hopeful` `arrival` |
+| 3 | Rivendell | LotR OST (Howard Shore) | 3:27 | `council` `contemplative` `mid` `harp` `mild-grandeur` |
+| 4 | George Smiley | Tinker Tailor OST (Iglesias) | 5:19 | `cerebral` `investigation` `quiet` `intellectual` `slow` |
+| 5 | A Kind of Hope | Scott Buckley (CC-BY) | 5:43 | `neoclassical` `contemplative` `warm-building` `mid-slow` |
+| 6 | Air on the G String, BWV 1068 | J.S. Bach / Voices of Music | 5:20 | `classical` `baroque` `library` `timeless` `reading-room` |
+
+> **Итого: 6 треков, ~26 мин** ✅
