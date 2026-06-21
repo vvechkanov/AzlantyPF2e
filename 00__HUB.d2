@@ -189,12 +189,12 @@ Pathfinders -> Sarel: "Зарта знает" {class: thread-plates}
 
 # === НИТЬ ПРИРОДЫ АНКАНТО (золотой) ===
 
-Sources.Anchanto -> HouseOfHealing: "к Дорису от Варена" {class: thread-anchanto}
+Sources.Anchanto -> HouseOfHealing: "к Энису от Варена" {class: thread-anchanto}
 
-HouseOfHealing -> Enyar: "Дорис: 'есть\nстранный исследователь'" {class: thread-anchanto}
-HouseOfHealing -> HouseBlakros: "Дорис: 'у Блакросов\nколлекция'" {class: thread-anchanto}
+HouseOfHealing -> Enyar: "Энис: 'есть\nстранный исследователь'" {class: thread-anchanto}
+HouseOfHealing -> HouseBlakros: "Энис: 'у Блакросов\nколлекция'" {class: thread-anchanto}
 
-# Параллельные пути минуя Дориса
+# Параллельные пути минуя Эниса
 Arcanamirium -> Enyar: "бывший доцент" {class: thread-anchanto}
 Pathfinders -> SectAgent: "консультант по\nдревним оружиям" {class: thread-anchanto}
 HouseOrmuz -> HouseBlakros: "светский салон\n→ Хамария" {class: thread-anchanto}
@@ -220,7 +220,7 @@ Sources.Bell -> Sarel: "одинаковое произношение\n(Бель
 
 # Связи между большими сущностями
 HouseOfHealing -- HouseOrmuz: знакомство
-HouseOfHealing -- Puddles: "Дорис координирует;\nХоуп там работает"
+HouseOfHealing -- Puddles: "Энис координирует;\nХоуп там работает"
 HouseOrmuz -- HouseBlakros: конкуренция
 HouseOrmuz -- Arcanamirium: меценат
 
@@ -257,7 +257,7 @@ layers: {
       style.stroke: "#c9a227"
     }
 
-    Doris_ext: "🕊️ Дорис Кай\n(Дом Исцеления) →" {
+    Doris_ext: "🕊️ Энис Салар\n(Дом Исцеления) →" {
       style.fill: "#fff3b0"
       link: layers.house_of_healing
     }
@@ -790,8 +790,8 @@ layers: {
         style.bold: true
         link: "obsidian://open?vault=PF2e&file=Кампейны/Азланти/NPC/Жарикела"
       }
-      Doris: "Дорис Кай (м.)\nlay priest\nкоординатор Луж\nветеран Мендева\n(талдан, Lion's Square)" {
-        link: "obsidian://open?vault=PF2e&file=Кампейны/Азланти/NPC/Дорис Кай"
+      Doris: "Энис Салар (м.)\nlay priest\nкоординатор Луж\nветеран Мендева\n(талдан, Lion's Square)" {
+        link: "obsidian://open?vault=PF2e&file=Кампейны/Азланти/NPC/Энис Салар"
       }
       Ileya: "Илейя Дамар\nзаведующая лечебницей\n(полу-эльф, ~55)\nдержит дверь Дома" {
         link: "obsidian://open?vault=PF2e&file=Кампейны/Азланти/NPC/Илейя Дамар"
@@ -963,7 +963,7 @@ layers: {
     }
 
     # Внешние узлы
-    Doris_ext: "🕊️ Дорис Кай\n(Дом Исцеления) →" {
+    Doris_ext: "🕊️ Энис Салар\n(Дом Исцеления) →" {
       style.fill: "#fff3b0"
       link: layers.house_of_healing
     }
