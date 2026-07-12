@@ -102,8 +102,9 @@
 | 3 | Flooded Suspense | Dishonored OST | 3:06 | `tense` `surveillance` `someone-watching` `mid` |
 | 4 | Streets of Karnaca (Suspense) | Dishonored 2 OST | 3:45 | `urban` `stalking` `tension` `mid` `patrol` |
 | 5 | Aristocrats of Karnaca (Suspense) | Dishonored 2 OST | 2:47 | `confrontation` `pressure` `interrogation` `mid-high` |
+| 6 | Firelink Shrine | Dark Souls OST | 2:55 | `quiet-grief` `dignity` `moral-weight` `slow` `handover` |
 
-> **Итого: 5 треков, ~19 мин** ✅
+> **Итого: 6 треков, ~22 мин** ✅
 
 ---
 
@@ -206,8 +207,10 @@
 | 6 | Grymforge Exploration | BG3 (unofficial) | 3:30 | `dark` `lighter` `mid` `exploration` |
 | 7 | Beneath the Ice | Skyrim OST | 4:06 | `calm` `cold` `slow` `eerie` `exploration` |
 | 8 | Into Darkness | Skyrim OST | 2:50 | `dark` `descent` `exploration` |
+| 9 | Micolash, Nightmare Host | Bloodborne OST | 3:42 | `dissociation` `dread-in-warmth` `dark-academia` `slow` `personal-scene` |
+| 10 | Wolfstack Lights | Sunless Sea OST | 2:06 | `slum-port` `wet-cold` `bells` `oppressive-city` `slow` |
 
-> **Итого: 8 треков, ~39 мин** ✅
+> **Итого: 10 треков, ~45 мин** ✅
 
 ---
 
