@@ -1,7 +1,7 @@
-# Лужи — доска давления (Арка 2)
-# Один вопрос: какие силы в районе и кто на кого жмёт.
-# Кампанийные стыки и нити PC — в 00__HUB.d2.
-# Запуск:  cd "C:\DND\sync\Sync\Obsidian\PF2e\Кампейны\Азланти\Golarion\Абсалом\Районы\Puddles" && d2 -w 00__Лужи.d2
+# Лужи — доска давления (Арка 2, пересборка после С13)
+# Модель: 4 территориальные власти + 1 сила хаоса. Аннави = приз, гончая = событие.
+# Начинка сил — в 00__Силы_Луж__Арка2.md. Часы — в События/00__Часы_Луж__Арка2.md.
+# Запуск:  d2 -w 00__Лужи.d2
 
 direction: down
 
@@ -28,90 +28,94 @@ classes: {
   }
 }
 
-Legend: "🧭 ━━ открытое давление  ╌╌ скрытое/договор  🟧 вход партии" {
+Legend: "🧭 ━━ открытое давление  ╌╌ скрытое/договор  🟧 вход партии  ☑ выкинуто сознательно" {
   style.fill: "#fdf6e3"
   style.font-size: 16
   near: top-center
 }
 
 # ============================================================
-# 6 СИЛ
+# 4 ТЕРРИТОРИАЛЬНЫЕ ВЛАСТИ + 1 ХАОС
 # ============================================================
 
-Khaigen: "🏛️ ХАЙГЕН ТОПКИК\nформальная власть, теряет контроль\nштаб: Stilt House" {
+Khaigen: "🏛️ ХАЙГЕН (+ Муракаки)\nстарая власть, сжимается\nудержать пост любой ценой" {
   style.fill: "#e0e0e0"
   style.font-size: 20
   style.bold: true
 }
-Seychia: "🩸 ЛЕДИ СЕЙЧИЯ — Salt Cartel\nработорговля; Brine тонет → ищет канал\nштаб: Brine" {
+Seychia: "🩸 ЛЕДИ СЕЙЧИЯ (+ свои боевики)\nработорговля; Брайн тонет → экспансия\nбоится новых денег Круга" {
   style.fill: "#d4c5e2"
   style.font-size: 20
   style.bold: true
 }
-Skinsaw: "🗡️ SKINSAW CULT\nтеррор Норгорбера\nхрам: Razorhall" {
-  style.fill: "#f8b4b4"
-  style.font-size: 20
-  style.bold: true
-}
-Zusgut: "🟢 ЗУСГУТ\nгоблинская коммуна, растёт снизу\nдвор: Goblin King's Court" {
-  style.fill: "#c8e6c9"
-  style.font-size: 20
-  style.bold: true
-}
-Syrvas: "🔴 КРУГ SYRVAS\nтихая витрина — ТОЛЬКО ДОБРО [Арка 2]\nлицо: Хоуп / Приют Чистой Воды" {
+Syrvas: "🔴 КРУГ SYRVAS\nтихая витрина — ТОЛЬКО ДОБРО [Арка 2]\nлицо: Хоуп / приют + Healing Raft" {
   style.fill: "#fde8e8"
   style.font-size: 20
   style.bold: true
 }
-Annavi: "💰 АННАВИ\nэконом. узел в петле, ищет защитника\nрынок: Barque Bazaar" {
-  style.fill: "#fff9c4"
+Zusgut: "🟢 ЗУСГУТ / гоблины\nвласть снизу, растёт беженцами\nдвор: Goblin King's Court" {
+  style.fill: "#c8e6c9"
+  style.font-size: 20
+  style.bold: true
+}
+Warhounders: "🐕 СВОРА (Warhounders)\nХАОС — анархисты, внешняя\nрулит изнутри Дойл под монету Сейчии" {
+  style.fill: "#ececec"
   style.font-size: 20
   style.bold: true
 }
 
-Lemaria: "🎯 Лемария Кумари\n(мишень Skinsaw)" {
-  style.fill: "#ffe0e0"
+Annavi: "💰 АННАВИ — приз, не сила\nэконом. узел в петле, ищет защитника\nрынок: Barque Bazaar" {
+  style.fill: "#fff9c4"
+  style.font-size: 16
+}
+Hound: "🔥 ОГНЕННАЯ ГОНЧАЯ — событие\nпогоня; финал: гоблины / Грайма / партия" {
+  style.fill: "#ffe0cc"
   style.stroke-dash: 3
+  style.font-size: 16
+}
+Skinsaw: "☑ SKINSAW / Норгорберцы\nОФИЦ. КАНОН — ВЫВЕДЕН (не по тону)\nосколок → Кул; роль реформ-убийств → Сейчия" {
+  style.fill: "#efefef"
+  style.stroke-dash: 4
+  style.font-size: 13
 }
 
 # ============================================================
 # ДАВЛЕНИЕ
 # ============================================================
 
-Khaigen -> Zusgut: "штурм Двора (2-3 мес)" {class: pressure}
+Khaigen -> Zusgut: "штурм Двора (готовит)" {class: pressure}
 Khaigen -> Annavi: "'слияние' или утонешь" {class: pressure}
-Seychia -- Khaigen: "договор; молчание\nМукраккеров за долю" {class: pressure-soft}
-Seychia -> Annavi: "долги / 'деловая защита'" {class: pressure}
-Skinsaw -> Lemaria: "показательное убийство" {class: pressure}
-Skinsaw -> Khaigen: "хаос подрывает\nего 'порядок'" {class: pressure-soft}
-Zusgut -> Khaigen: "рост = угроза монополии" {class: pressure-soft}
-Syrvas -> Annavi: "может стать защитником" {class: pressure-soft}
-Syrvas -> Khaigen: "тихо подбирает власть" {class: pressure-soft}
-Syrvas -> Zusgut: "помощь, если\nХайген ударит" {class: pressure-soft}
+Seychia -- Khaigen: "договор: деньги + слепота\n+ совместно давят Круг" {class: pressure-soft}
+Seychia -> Annavi: "рынок как канал картеля" {class: pressure}
+Seychia -> Syrvas: "боится новых денег → нажим" {class: pressure}
+Khaigen -> Syrvas: "Круг тихо подбирает власть" {class: pressure-soft}
+Warhounders -> Syrvas: "осада приюта (SQ1)" {class: sq}
+Seychia -> Warhounders: "монета через Молвена→Дойла" {class: pressure-soft}
+Syrvas -> Zusgut: "нянчит как подопечных\n(если Хайген ударит)" {class: pressure-soft}
+Hound -> Zusgut: "гоблины хотят её себе" {class: pressure-soft}
 
 # ============================================================
-# ВХОД ПАРТИИ (только метка; начинка — в райтапе SQ1)
+# ВХОД ПАРТИИ
 # ============================================================
 
-SQ1: "🟧 SQ1 — «Щупальца у приюта»\n(клик — открыть райтап)" {
-  link: "obsidian://open?vault=PF2e&file=Кампейны/Азланти/Golarion/Абсалом/Районы/Puddles/События/SQ1__Щупальца_у_приюта"
+Party: "🟧 ПАРТИЯ\nвошла со стороны Круга (защита приюта)\nверхушкой помечена как 'люди Круга'" {
   style.fill: "#ffe8cc"
   style.stroke: "#e8730a"
   style.stroke-width: 3
   style.font-size: 16
   style.bold: true
 }
-Seychia -> SQ1: "сироты как 'товар'" {class: sq}
-SQ1 -> Syrvas: "угроза приюту" {class: sq}
+Party -> Syrvas: "две двери: Йоран + Валастир" {class: sq}
+Party -> Warhounders: "разбили группу Ярека (С11)" {class: sq}
 
 # ============================================================
-# ПРОГНОЗ: ЧЕРЕЗ 2-3 МЕС БЕЗ ПАРТИИ
+# ПРОГНОЗ БЕЗ ПАРТИИ (см. Часы Луж)
 # ============================================================
 
-Forecast: "⏳ ЧЕРЕЗ 2-3 МЕС БЕЗ ПАРТИИ\nХайген штурмует Зусгута • Сейчия → открытые хватания\nSkinsaw убивают Лемарию • Круг подбирает куски → власть" {
+Forecast: "⏳ БЕЗ ВМЕШАТЕЛЬСТВА\nСделка Сейчия+Хайген → открытые хваты • совместный нажим на Круг\nХайген штурмует Зусгута • Сейчия убирает Лемарию • Круг подбирает куски" {
   style.fill: "#fff0f0"
   style.stroke: "#c0392b"
-  style.font-size: 16
+  style.font-size: 15
   style.bold: true
   near: bottom-center
 }
