@@ -34,7 +34,7 @@ pdftotext -layout "C:\DND\sync\Sync\PF2e\Lost Omens (Lore)\Absalom, City of Lost
 | **Law Lords — состав, snap judgments, Неферпатра** | ~24 | `Law Lords`, `Neferpatra`, `First Law Lord` |
 | **Окружные суды, магистраты, ЮРИСДИКЦИЯ (ключевое)** | ~26 | `Each district has its own court`, `jurisdiction`, `which courthouse` |
 | **«Преступление против всего Абсалома» (Купол Совета)** | ~26 | `committed against all of Absalom`, `Conclave Dome` |
-| **District Watches (Lotus Guard / Sleepless Suns / Muckruckers / Graycloaks)** | ~27 | `District Watches`, `Lotus Guard`, `Muckruckers` |
+| **District Watches (Lotus Guard / Sleepless Suns / Muckrakers / Graycloaks)** | ~27 | `District Watches`, `Lotus Guard`, `Muckrakers` |
 | **Starwatch (общегородская стража межрайонных дел)** | ~27 | `Starwatch` |
 | **Varlokkur (spellcasting judges/ministers)** | ~27 | `varlokkur` |
 | **Brine / Брин — «крупнейшая и самая мерзкая тюрьма», Сейчия Warden, Solt Cartel** | ~56 | `the Brine`, `Seichya`, `Salt Cartel` |
@@ -69,7 +69,7 @@ pdftotext -layout "C:\DND\sync\Sync\PF2e\Lost Omens (Lore)\Absalom, City of Lost
 - `Glossary\Absalom__official_translations__DRAFT.md` — ⚠️ **СНАЧАЛА СВЕРЬСЯ С НИМ** по переводам терминов. Уже утверждено: `Sally Guard → Сэлли-стража`, `First Guard → Первая стража`. Новые термины (Law Lords, Starwatch, Varlokkur, Office of Prisons, Black Whale, Tomb of the Living, Token Guard) — **предложи перевод и занеси в этот лист как «не утверждено», не плоди разнобой.**
 
 **Похоже, отсутствует (вероятно битые ссылки [[…]] — проверь):**
-- Файлы стражи: `[[Солнца Без Сна]]`, `[[Стража Сэлли]]` / `[[Сэлли-стража]]`, `[[Утердом]]` (штаб Солнц Без Сна), Lotus Guard (Петал), Muckruckers (Лужи), Graycloaks, **Starwatch**.
+- Файлы стражи: `[[Солнца Без Сна]]`, `[[Стража Сэлли]]` / `[[Сэлли-стража]]`, `[[Утердом]]` (штаб Солнц Без Сна), Lotus Guard (Петал), Muckrakers (Лужи), Graycloaks, **Starwatch**.
 - NPC: `[[Шристи Мелипдра]]` (капитан Sleepless Suns), Леди Неферпатра (First Law Lord), Лерефис (Law Lord / Sea Lord / Дом Кетлин).
 - Отдельные файлы тюрем (Black Whale, Tomb of the Living, Brine как локация).
 - Сводного файла судебной системы города — нет.
