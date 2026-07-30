@@ -4,7 +4,7 @@ tags: [NPC, Абсалом, Puddles, Warhounders, Арка2, SQ1, антагон
 
 # Warhounder — громила (рядовой банды)
 
-![Warhounder громила|300](https://vlad-vechkanov.link/azlanti/portarits/warhounder_thug.webp)
+![Warhounder громила|300](https://vlad-vechkanov.com/azlanti/portarits/warhounder_thug.webp)
 
 > [!warning] АКТИВНЫЙ ХУК (SQ1)
 > **Рядовой состав налётов [[Warhounders]] на [[Приют Чистой Воды|Purewater Home]].** В первом налёте — **3 громилы + 1 командир ([[Warhounder_командир|«Зубчик» Кром]])**. Громилы — пушечное мясо банды, мобы; командир раздаёт приказы и держит сигнал отхода.

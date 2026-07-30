@@ -4,7 +4,7 @@ tags: [NPC, Абсалом, Puddles, Warhounders, Арка2, SQ1, антагон
 
 # Зубчик Кром — лейтенант Warhounders («зубчик»)
 
-![Зубчик Кром|300](https://vlad-vechkanov.link/azlanti/portarits/warhounder_lieutenant.webp)
+![Зубчик Кром|300](https://vlad-vechkanov.com/azlanti/portarits/warhounder_lieutenant.webp)
 
 > [!warning] АКТИВНЫЙ ХУК (SQ1)
 > **Командир уличных налётов [[Warhounders]] на [[Приют Чистой Воды|Purewater Home]].** Лидер банды [[Nessian|Нессиан]] сидит в логове (Пирамида Пса, разрушенный осадный замок за стенами). На улицу выходят «зубчики» — командиры налётов, носящие зачарованный **зуб адской гончей** на шнурке. Зуб = опознавательный знак Warhounders → ниточка к Нессиану → ниточка к [[Леди_Сейчия|Сейчии]].

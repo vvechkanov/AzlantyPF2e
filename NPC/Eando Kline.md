@@ -1,6 +1,6 @@
 # Eando Kline — Лидер фракции Vigilant Seal
 
-![Eando Kline|300](https://vlad-vechkanov.link/azlanti/portarits/eando-kline.webp)
+![Eando Kline|300](https://vlad-vechkanov.com/azlanti/portarits/eando-kline.webp)
 
 > [!warning] АКТИВНЫЙ ХУК
 > **Прямой профильный интерес к Оубу (опасная сущность) и потенциально к [[Анканто]] (ангельская природа меча).** Маршрут: эскалация от [[Амбрус Валсин|Валсина]] (если он направит дело Гринфорда в Vigilant Seal как профильно «опасная сущность») или прямой выход в его зал в северной башне Скайрича.
