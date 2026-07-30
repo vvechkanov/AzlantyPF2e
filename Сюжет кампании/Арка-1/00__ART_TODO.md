@@ -32,21 +32,21 @@ STYLE BLOCK (paste into prompts): • clean fantasy character illustration, not 
 - Охотничий дом: Serene Hunter
 
 ## NPC без портрета (имя + raw)
-- **Гаррен Кинсуик.md** — raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/%D0%93%D0%B0%D1%80%D1%80%D0%B5%D0%BD%20%D0%9A%D0%B8%D0%BD%D1%81%D1%83%D0%B8%D0%BA.md)
-- **Освальд Меррик.md** — raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/%D0%9E%D1%81%D0%B2%D0%B0%D0%BB%D1%8C%D0%B4%20%D0%9C%D0%B5%D1%80%D1%80%D0%B8%D0%BA.md)
-- **Курзаир.md** — raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/%D0%9A%D1%83%D1%80%D0%B7%D0%B0%D0%B8%D1%80.md)
-- **Варх Кет.md** — raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/%D0%92%D0%B0%D1%80%D1%85%20%D0%9A%D0%B5%D1%82.md)
-- **Иш Сарра.md** — raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/%D0%98%D1%88%20%D0%A1%D0%B0%D1%80%D1%80%D0%B0.md)
-- **Лиш Тен.md** — raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/%D0%9B%D0%B8%D1%88%20%D0%A2%D0%B5%D0%BD.md)
-- **Сай Мор.md** — raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/%D0%A1%D0%B0%D0%B9%20%D0%9C%D0%BE%D1%80.md)
-- **Керрен Тар-Крыло.md** — raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/%D0%9A%D0%B5%D1%80%D1%80%D0%B5%D0%BD%20%D0%A2%D0%B0%D1%80-%D0%9A%D1%80%D1%8B%D0%BB%D0%BE.md)
-- **Марна Вельс.md** — raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/%D0%9C%D0%B0%D1%80%D0%BD%D0%B0%20%D0%92%D0%B5%D0%BB%D1%8C%D1%81.md)
-- **Риан Вельс.md** — raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/%D0%A0%D0%B8%D0%B0%D0%BD%20%D0%92%D0%B5%D0%BB%D1%8C%D1%81.md)
-- **Эли Вельс.md** — raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/%D0%AD%D0%BB%D0%B8%20%D0%92%D0%B5%D0%BB%D1%8C%D1%81.md)
-- **Ника Вельс.md** — raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/NPC/%D0%9D%D0%B8%D0%BA%D0%B0%20%D0%92%D0%B5%D0%BB%D1%8C%D1%81.md)
+- **Гаррен Кинсуик.md** — raw: [[Гаррен Кинсуик]]
+- **Освальд Меррик.md** — raw: [[Освальд Меррик]]
+- **Курзаир.md** — raw: [[Курзаир]]
+- **Варх Кет.md** — raw: [[Варх Кет]]
+- **Иш Сарра.md** — raw: [[Иш Сарра]]
+- **Лиш Тен.md** — raw: [[Лиш Тен]]
+- **Сай Мор.md** — raw: [[Сай Мор]]
+- **Керрен Тар-Крыло.md** — raw: [[Керрен Тар-Крыло]]
+- **Марна Вельс.md** — raw: [[Марна Вельс]]
+- **Риан Вельс.md** — raw: [[Риан Вельс]]
+- **Эли Вельс.md** — raw: [[Эли Вельс]]
+- **Ника Вельс.md** — raw: [[Ника Вельс]]
 
 ## Ссылки на ключевые страницы Арки 1
-- Деревня: raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/Golarion/Greenford/Greenford__%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D0%BD%D1%8F.md)
-- Гостиница: raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/Golarion/Greenford/%D0%9B%D0%B5%D1%81%D0%BD%D0%B0%D1%8F%20%D0%B6%D0%B8%D0%B7%D0%BD%D1%8C.md)
-- Сводка папки Greenford: raw: [RAW](https://raw.githubusercontent.com/vvechkanov/AzlantyPF2e/master/Golarion/Greenford/00__SUMMARY.md)
+- Деревня: raw: [[Greenford__деревня]]
+- Гостиница: raw: [[Лесная жизнь]]
+- Сводка папки Greenford: `Golarion/Greenford/` (файла 00__SUMMARY.md не существует)
 
