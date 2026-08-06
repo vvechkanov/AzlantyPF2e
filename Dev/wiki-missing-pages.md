@@ -60,7 +60,7 @@
 | Мудрый квартал | 1 | npc-liseng.html | Абсалом | href="#" |
 | Муж Хелены | 1 | npc-helena.html | погиб ~год назад от рук калигни; имя в игре не звучало | href="#" |
 | Норгорбер | 1 | art-norgorber-mask.html | бог тайн; четыре аспекта: Blackfingers, Father Skinsaw, The Gray Master, Reaper of Reputation | href="#" |
-| Отец Унгвенура | 1 | npc-ungvenur.html | человек, бросивший Гельдалу; цель сына | href="#" |
+| Отец Унгвинора | 1 | npc-ungvenur.html | человек, бросивший Гельдалу; цель сына | href="#" |
 | Паутинщики | 1 | loc-mine.html | три сторожа у ворот; договор на Акло | href="#" |
 | Племя Самум | 1 | art-ketha-vara.html | кочевники-предсказательницы бурь; место первой пластины | href="#" |
 | Похищение Лиама | 1 | loc-grinford.html | 11 Газрана; набег калигни | href="#" |

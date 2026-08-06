@@ -3,3 +3,19 @@
 
 # Локальные настройки/кеш Claude Code (skills оставляем, они часть проекта)
 .claude/local/
+
+# Python-мусор
+__pycache__/
+*.pyc
+
+# Obsidian и облачная синхронизация
+.obsidian/
+.trash/
+*.bak
+*.orig
+~$*
+
+# Мусор ОС
+.DS_Store
+Thumbs.db
+desktop.ini
