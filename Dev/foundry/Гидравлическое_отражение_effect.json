@@ -1,0 +1,57 @@
+{
+  "name": "Эффект: Гидравлическое отражение",
+  "type": "effect",
+  "img": "icons/magic/water/barrier-shield-water-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>Забирая влагу из окружающей атмосферы, азаркет создаёт диск из парящей воды, отражающей входящие атаки.</p><p><strong>+1 бонус обстоятельства к КБ</strong> до начала следующего хода.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "selector": "ac",
+        "type": "circumstance",
+        "value": 1,
+        "label": "Гидравлическое отражение"
+      }
+    ],
+    "slug": "effect-hydraulic-deflection",
+    "traits": {
+      "otherTags": [],
+      "value": ["water"],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Азланти — кампания",
+      "authors": "Влад",
+      "license": "OGL",
+      "remaster": true
+    },
+    "level": {
+      "value": 2
+    },
+    "duration": {
+      "value": 1,
+      "unit": "rounds",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "unidentified": false,
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}
