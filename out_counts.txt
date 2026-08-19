@@ -1,0 +1,5 @@
+Сеня utterances=0 chars=0 ooc=0
+Настя utterances=170 chars=8365 ooc=6
+Егорушка utterances=226 chars=19608 ooc=4
+Лиля utterances=155 chars=16148 ooc=2
+Тоша utterances=109 chars=12548 ooc=11

@@ -1,0 +1,58 @@
+{
+  "name": "Ракушка гниль",
+  "type": "effect",
+  "img": "icons/magic/unholy/strike-body-explode-disintegrate.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Ракушка гниль (Barnacles Rot)</strong> — инфекция стоп и лодыжек. Разносится грязной водой Малого Внутреннего Моря и затопленных улиц Луж.</p><p><strong>Спасбросок:</strong> Стойкость КС 16</p><hr /><p><strong>Стадия 1</strong> (1 день) — покраснение, зуд, лёгкая отёчность.</p><p><strong>Стадия 2</strong> (1 день) — болезненные узлы, боль при ходьбе. @UUID[Compendium.pf2e.conditionitems.Item.MIZjGNAKfmSNzUmP]{Ослаблен 1}</p><p><strong>Стадия 3</strong> (1 день) — узел вскрылся, инфицирование, лихорадка. @UUID[Compendium.pf2e.conditionitems.Item.MIZjGNAKfmSNzUmP]{Ослаблен 2}</p><p><strong>Стадия 4</strong> — некроз тканей, заражение идёт вверх по конечности (красная полоса). Ослаблен 2 + Замедление 1. Без вмешательства — потеря конечности, затем смерть.</p><hr /><p><strong>Лечение.</strong> Treat Disease (8 ч) работает только до стадии 3 и не убирает мёртвую ткань. На стадии 4 нужна хирургия: вскрыть, вычистить некроз, дренировать — <strong>Медицина КС 20, 10 минут</strong> + 10 минут перевязки.</p><p><strong>Крит-успех:</strong> стадия падает до 2, полоса уходит за час.<br /><strong>Успех:</strong> стадия падает до 3, полоса останавливается.<br /><strong>Провал:</strong> без изменений, можно повторить.<br /><strong>Крит-провал:</strong> кровотечение, стадия держится.</p><hr /><p><em>Счётчик стадии — в бейдже эффекта, переключается стрелками.</em></p>"
+    },
+    "rules": [],
+    "slug": "barnacles-rot",
+    "traits": {
+      "otherTags": [],
+      "value": ["disease"],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Азланти — кампания",
+      "authors": "Влад",
+      "license": "OGL",
+      "remaster": true
+    },
+    "level": {
+      "value": 3
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null,
+      "sustained": false
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "unidentified": false,
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "badge": {
+      "type": "counter",
+      "value": 4,
+      "labels": [
+        "Стадия 1 — зуд и покраснение",
+        "Стадия 2 — узлы, Ослаблен 1",
+        "Стадия 3 — вскрылся, Ослаблен 2",
+        "Стадия 4 — некроз, Ослаблен 2 + Замедление 1"
+      ]
+    },
+    "context": null
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}
