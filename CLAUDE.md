@@ -71,14 +71,13 @@ GM: Влад. Игра онлайн (Foundry + Discord). 5 игроков. Те�
 
 Эти процессы пока без скилла, описание в гайдах:
 
-- Книга (голос Тироса) — `Assistant Guides/Книга__*` (старый слой) + `Assistant Guides/Автописатель_Книги/` (актуальный конвейер, июнь 2026) ⚠️ на пересмотр
 - Локации Foundry — `Assistant Guides/13__Генерация_локаций.md` ⚠️ на пересмотр
 - Портреты NPC — `Assistant Guides/10__Генерация_портретов.md` ⚠️ на пересмотр
 - Вики / хроники — детали в `reference_wiki_site`, `reference_chronicles_site` (автопамять)
 - Библиотекарь (разнести факты руками вне пайплайна) — NPC-шаблон + `feedback_npc_files_first`
 
 Скиллы триггерятся сами по фразам, описаны в своих манифестах. Лежат в двух местах:
-- **В волте** (`.claude/skills/`, версионируются): `session-pipeline`, `session-to-wiki`.
+- **В волте** (`.claude/skills/`, версионируются): `session-pipeline`, `session-to-wiki`, `book-chapter`.
 - **На уровне юзера** (`~/.claude/skills/`, вне git — при потере машины исчезнут без следа): `session-clean`, `session-recap`, `session-distribute`, `npc-forge`, `npc-portrait-set`.
 
 ## Автопамять
