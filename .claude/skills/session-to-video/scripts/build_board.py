@@ -64,6 +64,29 @@ def esc(t):
 
 # ---------------------------------------------------------------- сбор ассетов
 
+def collect_reuse(dirs):
+    """имя файла без расширения -> путь. Для кадров, помеченных [АРТ ↺ shotNN]."""
+    pool = {}
+    for d in dirs:
+        if not d or not os.path.isdir(d):
+            continue
+        for f in sorted(glob.glob(os.path.join(d, "shot*"))):
+            if os.path.isdir(f) or f.lower().endswith(".mp4"):
+                continue
+            pool.setdefault(os.path.splitext(os.path.basename(f))[0], f)
+    return pool
+
+
+def find_reuse(pool, name):
+    """[АРТ ↺ shot00a] должен находить shot00a_folder_closed.jpg"""
+    if not name:
+        return None
+    if name in pool:
+        return pool[name]
+    hits = sorted(k for k in pool if k.startswith(name))
+    return pool[hits[0]] if hits else None
+
+
 def collect_assets(assets_dir):
     """кадр -> путь к картинке, кадр -> [(файл озвучки, секунды)]"""
     pics, auds = {}, {}
@@ -148,7 +171,7 @@ def parse_board(md_text):
             if not hm:
                 continue
             shot = {"num": hm.group(1), "plan": hm.group(2), "badge": hm.group(3),
-                    "rows": [], "say": [], "hints": []}
+                    "rows": [], "say": [], "hints": [], "art": "", "reuse": None}
             mode = None
             for ln in lines[1:]:
                 t = ln.strip()
@@ -161,7 +184,14 @@ def parse_board(md_text):
                     tag, txt = tm.group(1), tm.group(2).strip()
                     if tag.startswith("ТЕКСТ"):
                         mode = "say"; continue
-                    if tag == "ЗВУК" or tag.startswith("АРТ") or tag == "КЛИП":
+                    if tag.startswith("АРТ") or tag == "КЛИП":
+                        mode = None
+                        shot["art"] = txt
+                        rm = re.search(r'↺\s*(\S+)', tag)
+                        if rm:
+                            shot["reuse"] = rm.group(1)
+                        continue
+                    if tag == "ЗВУК":
                         mode = None; continue
                     mode = None
                     if txt:
@@ -225,7 +255,10 @@ font-variant-numeric:tabular-nums;margin-left:auto}
 .row{display:grid;grid-template-columns:82px 1fr;gap:12px;align-items:start}
 .tag{font-family:"JetBrains Mono",monospace;font-size:10px;font-weight:700;letter-spacing:.1em;
 text-transform:uppercase;color:var(--muted);padding-top:5px;text-align:right}
-.tag.cam{color:var(--teal)}.tag.snd{color:#8A6BAF}
+.tag.cam{color:var(--teal)}.tag.snd{color:#8A6BAF}.tag.art{color:var(--amber)}
+.row p.todo{color:var(--ink)}
+.fact .of{font-size:14px;font-weight:400;color:var(--muted)}
+.frame.reused{border-style:dashed}
 @media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .tag.snd{color:#B49BD6}}
 :root[data-theme="dark"] .tag.snd{color:#B49BD6}
 .row p{margin:0;font-size:15.5px;line-height:1.55}
@@ -264,8 +297,10 @@ HEAD = ('<title>{title}</title>\n'
         '&family=JetBrains+Mono:wght@400;500;700&display=swap">\n<style>{css}</style>\n')
 
 
-def build(parts, pics, auds, title, subtitle):
+def build(parts, pics, auds, title, subtitle, reuse=None):
+    reuse = reuse or {}
     out, navs, total = [], [], 0.0
+    n_recorded = n_drawn = 0
     tagcls = {"КАМЕРА": "cam", "СИНХРОН": "cam", "СКОРОСТЬ": "cam", "ВХОД": "cam",
               "ПЕРЕХОД": "cam"}
 
@@ -279,16 +314,32 @@ def build(parts, pics, auds, title, subtitle):
             key = str(int(s["num"])) if s["num"].isdigit() else s["num"]
             files = auds.get(key, [])
             fact = round(sum(d for _, d in files), 1)
-            part_time += fact
-            total += fact
-            img = b64(pics.get(key))
+            plan = float(s["plan"].replace(",", "."))
+            shown = fact if fact else plan
+            if files:
+                n_recorded += 1
+            part_time += shown
+            total += shown
+
+            src = pics.get(key) or find_reuse(reuse, s["reuse"])
+            img = b64(src)
+            if img:
+                n_drawn += 1
 
             h = ['<div class="shot"><div class="rail"><div class="num">%s</div>'
-                 '<div class="dur">%s с</div>%s</div><div class="rows">'
-                 % (esc(s["num"]), ("%.0f" % fact) if fact else s["plan"],
+                 '<div class="dur">%s%.0f с</div>%s</div><div class="rows">'
+                 % (esc(s["num"]), "" if fact else "~", shown,
                     ('<div class="badge">%s</div>' % esc(s["badge"].lower())) if s["badge"] else "")]
-            h.append('<div class="frame"><img src="%s" alt="кадр %s"></div>' % (img, esc(s["num"]))
-                     if img else '<p class="miss">арта нет</p>')
+            if img:
+                h.append('<div class="frame%s"><img src="%s" alt="кадр %s"></div>'
+                         % (" reused" if not pics.get(key) else "", img, esc(s["num"])))
+            if s["art"]:
+                h.append('<div class="row"><span class="tag art">%s</span><p class="%s">%s</p></div>'
+                         % ("Арт ↺" if s["reuse"] else "Арт",
+                            "tech" if img else "todo", esc(s["art"])))
+            if not img:
+                h.append('<div class="row"><span class="tag"></span>'
+                         '<p class="miss">арт не нарисован</p></div>')
             for tag, txt in s["rows"]:
                 cls = tagcls.get(tag.split()[0], "")
                 h.append('<div class="row"><span class="tag %s">%s</span>'
@@ -319,18 +370,16 @@ def build(parts, pics, auds, title, subtitle):
                       ('<p class="note">%s</p>' % esc(note)) if note else "", "".join(blocks)))
 
     n_shots = sum(len(p[2]) for p in parts)
-    n_art = sum(1 for p in parts for s in p[2]
-                if (str(int(s["num"])) if s["num"].isdigit() else s["num"]) in pics)
-    n_vo = len(auds)
-    mm, ss = divmod(int(total), 60)
+    mm, ss = divmod(int(round(total)), 60)
     header = ('<header><p class="eyebrow">Орден Азланти · реестр аномалий</p>'
               '<h1>%s</h1><p class="sub">%s</p><dl class="facts">'
               '<div class="fact"><dt>Хронометраж</dt><dd>%d:%02d</dd></div>'
               '<div class="fact"><dt>Кадров</dt><dd>%d</dd></div>'
-              '<div class="fact"><dt>Артов</dt><dd>%d</dd></div>'
-              '<div class="fact"><dt>Озвучено</dt><dd>%d</dd></div>'
+              '<div class="fact"><dt>Нарисовано</dt><dd>%d<span class="of">/%d</span></dd></div>'
+              '<div class="fact"><dt>Озвучено</dt><dd>%d<span class="of">/%d</span></dd></div>'
               '<div class="fact"><dt>Формат</dt><dd>1080p</dd></div></dl></header>'
-              % (esc(title), esc(subtitle), mm, ss, n_shots, n_art, n_vo))
+              % (esc(title), esc(subtitle), mm, ss, n_shots,
+                 n_drawn, n_shots, n_recorded, n_shots))
 
     return (HEAD.format(title=esc(title), css=CSS) + '<div class="wrap">\n' + header
             + '<nav>%s</nav>' % "".join(navs) + "\n".join(out) + "\n</div>\n"), total
@@ -343,6 +392,8 @@ def main():
     ap.add_argument("--session", type=int, help="номер сессии, задаёт пути по умолчанию")
     ap.add_argument("--md", help="путь к раскадровке")
     ap.add_argument("--assets", help="папка проекта с кадрами и озвучкой")
+    ap.add_argument("--reuse", action="append", default=[],
+                    help="папка прошлого ролика, откуда брать кадры [АРТ ↺ shotNN]")
     ap.add_argument("--out", default="board.html")
     ap.add_argument("--title", default=None)
     ap.add_argument("--subtitle",
@@ -361,10 +412,12 @@ def main():
     md = open(a.md, encoding="utf-8").read()
     parts = parse_board(md)
     pics, auds = collect_assets(a.assets)
-    html_text, total = build(parts, pics, auds, a.title or "Монтажный лист", a.subtitle)
+    reuse = collect_reuse(a.reuse)
+    html_text, total = build(parts, pics, auds, a.title or "Монтажный лист",
+                             a.subtitle, reuse)
     open(a.out, "w", encoding="utf-8", newline="\n").write(html_text)
 
-    mm, ss = divmod(int(total), 60)
+    mm, ss = divmod(int(round(total)), 60)
     print("%s — %.1f MB, хронометраж %d:%02d, кадров с артом %d, кадров с озвучкой %d"
           % (a.out, os.path.getsize(a.out) / 1e6, mm, ss, len(pics), len(auds)))
     for f in glob.glob("_still_*.png"):
