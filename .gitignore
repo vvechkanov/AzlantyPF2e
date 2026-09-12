@@ -19,3 +19,7 @@ __pycache__/
 .DS_Store
 Thumbs.db
 desktop.ini
+
+# Отладочный выхлоп скриптов статистики в корне
+/out.txt
+/out_*.txt
