@@ -197,6 +197,115 @@
 - **Музей — общественное лицо дома Блакрос.** Если партия испортит отношения с Найджелом — закроется и Castle Blakros. Если **подружится** — открывается и **глефа**, и **Хамария**, и (по слабому каналу) контакты в Pathfinder Society через старые связи Найджела.
 - **Учёная Стража внутрь не лезет.** В случае инцидента — оцепление и ожидание. Партия может **этим пользоваться**: то, что началось внутри Музея, **остаётся** внутри Музея. Никаких официальных протоколов не будет.
 
+## Арты
+
+Промпты готовы, генерация не запускалась. Стиль и якоря по `Assistant Guides/13__Генерация_локаций.md`. Формат — горизонтальный, 16:9. Слаги — латиницей, префикс `blakros-museum-`.
+
+| Сцена | Slug | Статус |
+|---|---|---|
+| Фасад снаружи | `blakros-museum-facade` | промпт готов, не сгенерено |
+| Вестибюль | `blakros-museum-vestibule` | промпт готов, не сгенерено |
+| Главный зал (общий вид) | `blakros-museum-main-hall` | промпт готов, не сгенерено |
+| Стенд масок Мванги (в Главном зале) | `blakros-museum-masks-cabinet` | промпт готов, не сгенерено |
+| Зал Глубин | `blakros-museum-depths-hall` | промпт готов, не сгенерено |
+| Тихий салон | `blakros-museum-quiet-parlor` | промпт готов, не сгенерено |
+| Ателье Lady Dhrami | `blakros-museum-dhrami-atelier` | промпт готов, не сгенерено |
+| Реставрационная / подвал (ночь) | `blakros-museum-restoration-cellar` | промпт готов, не сгенерено |
+| Молот Тораги — в витрине | `blakros-museum-hammer-case` | промпт готов, не сгенерено |
+| Молот Тораги — чистый предметный вид | `blakros-museum-hammer-object` | промпт готов, не сгенерено |
+
+### Промпты
+
+**1. Фасад снаружи**
+```
+Exterior of a squat black fortress-like museum building on a stately city square, fantasy RPG location art in the style of Dungeons & Dragons official artwork. A low, perfectly square structure carved as one seamless piece of glossy dark volcanic basalt, almost windowless — only a few narrow barred slits on the upper floor, flat roof lined with carved stone waterspouts shaped like unrecognizable beasts, seven worn stone steps leading up to a single heavy oak door bound in iron and left slightly ajar, an iron lamp bracket above the door burning steadily, a weathered bronze plaque and a smaller enamel plaque mounted beside the doorframe, a sliver of an elegant pale stone building with tall windows visible at the far edge of the square for contrast.
+Cool overcast daylight, the lamp above the door burning even by day, no other light sources.
+Heavy, silent, deliberately unwelcoming for a building everyone still visits — old power carved rather than built.
+No text, no signs, no writing. No people, no characters, no figures.
+Wide panoramic view, 16:9 aspect ratio.
+```
+
+**2. Вестибюль**
+```
+Interior of a grand museum entrance hall, fantasy RPG location art in the style of Dungeons & Dragons official artwork. A rectangular hall with a vaulted ceiling far higher than the building's exterior should allow, black marble floor threaded with white veining, a round bronze disk inlaid in the center of the floor depicting the Starstone seen from above surrounded by a carved wave pattern, a ticket booth behind an ornate wrought-iron grille to one side, a curtained cloakroom alcove on the other, a wide archway draped with a heavy cobalt velvet curtain leading deeper into the museum, dark wood-framed portraits of stern old-fashioned nobles lining the walls.
+Cold pale light from unseen high sources, no warm lamps, faint sheen on the polished marble.
+Formal, hushed, faintly watchful — a room that seems to know when it is being looked at.
+No text, no signs, no writing. No people, no characters, no figures.
+Wide panoramic view, 16:9 aspect ratio.
+```
+
+**3. Главный зал (общий вид)**
+```
+Interior of the grand main gallery of a museum, fantasy RPG location art in the style of Dungeons & Dragons official artwork. A long hall under a semicircular vaulted ceiling, walls upholstered in dark heavy velvet, a raised glass display case at the center of the room holding a single war hammer on a velvet pedestal beneath a bronze plaque, several other pedestals and glass cases arranged along the walls with ceremonial weapons and a ship captain's open logbook under glass, polished dark floor, a couple of unremarkable visitors seen from behind at a distance studying the cases, no visible faces.
+Cold light from frosted-glass oil lamps mixed with a soft unexplained glow from above with no visible fixture, deep shadow between the pools of light.
+Reverent, museum-still, quietly strange — the single room that never changes shape.
+No text, no signs, no writing. No recognizable faces, no close figures.
+Wide panoramic view, 16:9 aspect ratio.
+```
+
+**4. Стенд масок Мванги**
+```
+Close interior view of a museum display cabinet built into a velvet-walled gallery, fantasy RPG location art in the style of Dungeons & Dragons official artwork. A tall cabinet with two layers of thick glass set apart from each other, eleven carved wooden ceremonial masks arranged in a shallow arc inside, dark wood grain and faded paint on the masks, a small brass warding amulet mounted discreetly at the base of the case, dark velvet backdrop fading into shadow beyond the case, a bronze identification plaque below.
+Tight focused lamplight on the masks themselves, the surrounding gallery falling into near-darkness.
+Quiet and faintly unsettling, museum reverence with an undercurrent of something watching back.
+No text, no signs, no writing. No people, no characters, no figures.
+Wide panoramic view, 16:9 aspect ratio.
+```
+
+**5. Зал Глубин**
+```
+Interior of a themed museum gallery devoted to ancient subterranean civilizations, fantasy RPG location art in the style of Dungeons & Dragons official artwork. Dark stone-toned walls, glass cases holding strange asymmetrical weapons of unfamiliar design, cases of bleached bones and skeletal fragments arranged like specimens, pedestals with artifacts of unclear purpose in worked black stone and dull grey metal, low ceiling with rough-hewn stone ribs suggesting a cave rather than a hall, narrow spacing between displays.
+Dim cool light with a faint greenish cast, pools of light isolating each case, deep shadow overhead.
+Claustrophobic and alien, a gallery that feels older and colder than the rest of the museum.
+No text, no signs, no writing. No people, no characters, no figures.
+Wide panoramic view, 16:9 aspect ratio.
+```
+
+**6. Тихий салон**
+```
+Interior of a small private parlor inside a grand museum, fantasy RPG location art in the style of Dungeons & Dragons official artwork. Warm dark wood paneling on every wall, a thick patterned carpet, two low upholstered armchairs facing each other across a low wooden table, a copper tea service with a steaming pot laid out on the table, a single narrow window with heavy drapes half drawn, a small side cabinet with porcelain, soft shadows in the corners.
+Warm amber lamplight, no cold museum light here, a single shaft of daylight through the drapes.
+Intimate and deliberately calming, a room built for conversations no one else should hear.
+No text, no signs, no writing. No people, no characters, no figures.
+Wide panoramic view, 16:9 aspect ratio.
+```
+
+**7. Ателье Lady Dhrami**
+```
+Interior of a painter's atelier tucked inside a museum's impossible upper floor, fantasy RPG location art in the style of Dungeons & Dragons official artwork. Several wooden easels holding half-finished canvases, low stools arranged in a loose semicircle facing a central teaching lectern, jars of pigment and brushes on a paint-spattered side table, bare plank floor dusted with dry pigment, a single tall north-facing window dominating one wall that should look into a neighboring building's stone wall but instead opens onto an empty sea stretching to the horizon under an overcast sky, no other buildings in that view at all.
+Cool even natural light pouring through the impossible window, the rest of the room lit softly by contrast.
+Serene and creative on the surface, quietly wrong at the edges — a room that should not have a view.
+No text, no signs, no writing. No people, no characters, no figures.
+Wide panoramic view, 16:9 aspect ratio.
+```
+
+**8. Реставрационная / подвал (ночь)**
+```
+Interior of an underground museum restoration workshop at night, fantasy RPG location art in the style of Dungeons & Dragons official artwork. A stone-vaulted cellar chamber reached by a narrow stair, rough-hewn walls forming a maze of passages beyond the workbench, a heavy wooden workbench cluttered with restoration tools, small pots of solvent, brushes and a half-restored artifact clamped in place, shelves of thick leather-bound catalog ledgers along one wall, alchemical glassware bubbling faintly on a side table, a hunched indistinct figure bent over the workbench absorbed in the work, face turned away and unseen.
+A single oil lamp casting a warm pool of light over the workbench, the surrounding stone labyrinth fading into near-total darkness.
+Late, solitary, quietly obsessive — the one part of the museum that never really closes.
+No text, no signs, no writing. No visible faces, no readable figures.
+Wide panoramic view, 16:9 aspect ratio.
+```
+
+**9. Молот Тораги — в витрине**
+```
+Close interior view of a museum glass display case, fantasy RPG location art in the style of Dungeons & Dragons official artwork. A single war hammer mounted upright on a velvet-lined pedestal inside a raised glass case, dark polished oak haft, a head of dark grey iron with a gold-inlaid anvil sigil on one face, a ring at the base of the haft where gold and silver metal blend seamlessly into each other with no visible seam, a small bronze identification plaque mounted at the base of the case, dark velvet gallery wall visible faintly behind the glass.
+A single focused spotlight from above catching the metal, faint warm glint along the gold inlay and the fused ring, the rest of the case in shadow.
+Reverent and still, an ordinary-looking relic that somehow holds the eye too long.
+No text, no signs, no writing. No people, no characters, no figures.
+Wide panoramic view, 16:9 aspect ratio.
+```
+
+**10. Молот Тораги — чистый предметный вид**
+```
+A single war hammer presented as an isolated object study, fantasy RPG item illustration in the style of Dungeons & Dragons official artwork, set against a plain dark neutral background with no case, pedestal, or room visible. A weathered dark oak haft of later workmanship, a head of dark grey iron bearing a gold-inlaid anvil-and-hammer sigil, a ring at the butt end of the haft where molten gold and silver flow into each other with no visible seam between the two metals, faint golden light gathering along the inlay and the ring as if the weapon is quietly aware of being looked at.
+Directional studio-style lighting from one side, deep shadow on the other, a subtle warm magical glow along the metal inlays.
+Still, weighty, quietly magical — an object study of a relic that is not as sleeping as its plaque claims.
+No text, no signs, no writing. No people, no characters, no figures, no background scenery.
+Wide panoramic view, 16:9 aspect ratio.
+```
+
 ## Связи
 
 - [[Мудрый квартал (Wise Quarter)]] — район
