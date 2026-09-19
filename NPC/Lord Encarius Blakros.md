@@ -1,6 +1,6 @@
 # Lord Encarius Blakros — Учитель рисунка, Сплетник Petal District
 
-![Lord Encarius Blakros|300](TBA)
+![Lord Encarius Blakros|300](https://vlad-vechkanov.com/azlanti/portarits/encarius-blakros.webp)
 
 > [!info]- Краткая карточка
 > Дальний кузен [[Хамария Блакрос|Хамарии]] (третье колено), художник-репетитор в **Ателье** [[Blakros Museum|Музея]]. Преподаёт пять-семь дочерей богатых семей. Сам пишет — никто не покупает. Знает **всех** в художественной среде Petal District и кто кому изменяет. **Источник лёгких слухов** для партии, если разговорить.
