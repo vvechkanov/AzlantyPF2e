@@ -1,6 +1,6 @@
 # Blakros Museum (Музей Блакросов)
 
-![Blakros Museum|300](TBA)
+![Blakros Museum|300](https://vlad-vechkanov.com/azlanti/Arts/blakros-museum-facade.webp)
 
 Самый знаменитый музей Абсалома — известный, впрочем, не столько коллекцией, сколько постоянными катастрофами в стенах. За последнее десятилетие сюда вторгался Теневой план дважды; экспонаты Мванги поднимали служителей; металлические големы перекраивали залы своими ходами; маски в зале Крестовых походов поют ночами — иногда хором. Учёная Стража **отказывается** заходить внутрь во время инцидентов — оцепляет периметр и ждёт, пока куратор разберётся сам.
 
@@ -89,6 +89,12 @@
 То, что **видит** партия с Анканто: молот тих, как и табличка обещает. Анканто **чувствует другое**. Подавленную боль. Сдавленное сознание. Если стоять рядом дольше минуты — головокружение, тошнота, иногда **обрывок чужой мысли** через связь Микаэля. Найджел и Lady Dhrami оба видели, как у Анканто-эйдолонов в зале «**подкашивались ноги**» — относят это к «магической чувствительности» и **не**связывают с тем, что они **знают**, что молот разумен.
 
 См. [[Секта_Визиря__Абсалом#Музейное — переделанное|Секту Визиря — Музейное оружие]] для полного сюжетного контекста.
+
+> [!danger] Только для ГМа — что это на самом деле (закреплено 19.09.2026)
+> Внутри молота — **архон Абадара**, живой и подавленный. Это **переделанный оригинал** мастерской Основателя: сделан в Фазе 1 по добровольному согласию, позже перехвачен сектой и сломан. Дубовая рукоять 4690-х — след переделки, родную уничтожил процесс.
+> **Табличка врёт дважды.** Наковальня — символ **Торага**, доставшийся от носителя-дварфа, и музей записал экспонат по железу. «Работа неизвестного мастера» — работа Основателя, испорченная Визирем.
+> **Ирония:** небожитель бога собственности стал собственностью — законно, с дарственной и номером по каталогу. Партии это даёт третий путь помимо кражи и уговоров: **доказать, что экспонат — лицо, а не вещь**, через церковь Абадара.
+> **Парный предмет** — глефа в [[Castle Blakros]]: оригинал той же мастерской, внутри **ангел Иомедай по имени Медель**, целый и в сознании. Двадцать лет они стоят в разных концах города, и Хамария считает их «двумя методами одного мастера».
 
 > [!important] Наводка Витольда (С19) — партия узнала о молоте, ещё не увидев его
 > **20 Газрана 4726 AR** [[Анканто]] и [[Микаэль]] говорили у иомедаитов с ветераном [[Витольд|Витольдом]], который прошёл поход и **лично дважды виделся с [[Силион|Силионом]]** — тем самым бойцом со светящимся копьём.
@@ -203,26 +209,30 @@
 
 | Сцена | Slug | Статус |
 |---|---|---|
-| Фасад снаружи | `blakros-museum-facade` | промпт готов, не сгенерено |
-| Вестибюль | `blakros-museum-vestibule` | промпт готов, не сгенерено |
-| Главный зал (общий вид) | `blakros-museum-main-hall` | промпт готов, не сгенерено |
+| Фасад снаружи | `blakros-museum-facade` | ✅ [залит](https://vlad-vechkanov.com/azlanti/Arts/blakros-museum-facade.webp) (19.09.2026) |
+| Вестибюль | `blakros-museum-vestibule` | ✅ [залит](https://vlad-vechkanov.com/azlanti/Arts/blakros-museum-vestibule.webp) (19.09.2026) |
+| Главный зал (общий вид) | `blakros-museum-main-hall` | ✅ [залит](https://vlad-vechkanov.com/azlanti/Arts/blakros-museum-main-hall.webp) (19.09.2026) |
 | Стенд масок Мванги (в Главном зале) | `blakros-museum-masks-cabinet` | промпт готов, не сгенерено |
 | Зал Глубин | `blakros-museum-depths-hall` | промпт готов, не сгенерено |
-| Тихий салон | `blakros-museum-quiet-parlor` | промпт готов, не сгенерено |
+| Тихий салон | `blakros-museum-quiet-parlor` | ✅ [залит](https://vlad-vechkanov.com/azlanti/Arts/blakros-museum-quiet-parlor.webp) (19.09.2026) |
 | Ателье Lady Dhrami | `blakros-museum-dhrami-atelier` | промпт готов, не сгенерено |
 | Реставрационная / подвал (ночь) | `blakros-museum-restoration-cellar` | промпт готов, не сгенерено |
-| Молот Тораги — в витрине | `blakros-museum-hammer-case` | промпт готов, не сгенерено |
-| Молот Тораги — чистый предметный вид | `blakros-museum-hammer-object` | промпт готов, не сгенерено |
+| Молот Тораги — в витрине | `blakros-museum-hammer-case` | ✅ [залит](https://vlad-vechkanov.com/azlanti/Arts/blakros-museum-hammer-case.webp) (19.09.2026) |
+| Молот Тораги — чистый предметный вид | `blakros-museum-hammer-object` | ✅ [залит](https://vlad-vechkanov.com/azlanti/Arts/blakros-museum-hammer-object.webp) (19.09.2026) |
 
 ### Промпты
 
-**1. Фасад снаружи**
+**1. Фасад снаружи** *(рабочая версия, 19.09.2026: первая давала будку-склеп — «low, square» модель понимает буквально; вторая — чёрное как смола с потёками, лечилось правкой по референсу)*
 ```
-Exterior of a squat black fortress-like museum building on a stately city square, fantasy RPG location art in the style of Dungeons & Dragons official artwork. A low, perfectly square structure carved as one seamless piece of glossy dark volcanic basalt, almost windowless — only a few narrow barred slits on the upper floor, flat roof lined with carved stone waterspouts shaped like unrecognizable beasts, seven worn stone steps leading up to a single heavy oak door bound in iron and left slightly ajar, an iron lamp bracket above the door burning steadily, a weathered bronze plaque and a smaller enamel plaque mounted beside the doorframe, a sliver of an elegant pale stone building with tall windows visible at the far edge of the square for contrast.
-Cool overcast daylight, the lamp above the door burning even by day, no other light sources.
-Heavy, silent, deliberately unwelcoming for a building everyone still visits — old power carved rather than built.
-No text, no signs, no writing. No people, no characters, no figures.
+Exterior of an ancient wizard's fortress turned into a famous museum, fantasy RPG location art in the style of Dungeons & Dragons official artwork, painted illustration, NOT photorealistic. A massive monolithic building filling an entire city block, carved as ONE seamless piece of black volcanic basalt with no bricks, no mortar, no joints anywhere — surfaces smooth and faintly glossy like cooled obsidian, subtle carved geometric bands running along the top edge. The building is wide and heavy rather than tall: only two storeys high but enormous in footprint, with sheer blank walls, a few narrow barred window slits high up, a flat roof whose corners end in large carved stone waterspouts shaped like strange unknown beasts. A broad flight of seven stone steps rises to a tall iron-bound oak double door standing slightly ajar, a single lantern on an iron pole above the door glowing steadily. Low camera angle from across a busy paved square, looking up, so the black mass looms over the viewer. On the opposite side of the square, partly visible at the frame edge, an elegant pale marble library with tall columns and a long high staircase — bright and airy, the exact opposite of the black museum. A few tiny distant silhouettes of passersby at the foot of the steps only to show the building's scale, no faces, no detail.
+Late afternoon light raking across the square, the pale library catching warm sun while the basalt museum drinks the light and stays dark, the lantern the only warm point on its face.
+Ancient, monumental, quietly menacing — old magic carved rather than built, a building that has outlived everyone who ever owned it.
+No text, no signs, no writing, no posters, no plaques.
 Wide panoramic view, 16:9 aspect ratio.
+```
+Правка материала (картинка предыдущего шага — референсом):
+```
+Keep this exact composition, camera angle, building shape, lighting direction, library on the right and tiny passersby unchanged. Change ONLY the material of the black museum building: it must read as real carved volcanic basalt stone, not painted or tarred wood. Very dark charcoal-black stone with visible fine granular texture, subtle cool grey sheen where the late afternoon light grazes the edges and corners, faint natural tonal variation across the surfaces, crisp sharp carved edges on the cornice bands and waterspouts, weathering as slight dulling and grime near the ground, NOT vertical paint streaks or drips. Still clearly the darkest thing on the square, heavy and monolithic, one seamless mass of stone. Fantasy RPG location art in the style of Dungeons & Dragons official artwork, painted illustration, NOT photorealistic. No text, no signs.
 ```
 
 **2. Вестибюль**
