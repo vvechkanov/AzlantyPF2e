@@ -1,6 +1,6 @@
 # Blakros Museum (Музей Блакросов)
 
-![Blakros Museum|300](TBA)
+![Blakros Museum|300](https://vlad-vechkanov.com/azlanti/Arts/blakros-museum-facade.webp)
 
 Самый знаменитый музей Абсалома — известный, впрочем, не столько коллекцией, сколько постоянными катастрофами в стенах. За последнее десятилетие сюда вторгался Теневой план дважды; экспонаты Мванги поднимали служителей; металлические големы перекраивали залы своими ходами; маски в зале Крестовых походов поют ночами — иногда хором. Учёная Стража **отказывается** заходить внутрь во время инцидентов — оцепляет периметр и ждёт, пока куратор разберётся сам.
 
@@ -209,7 +209,7 @@
 
 | Сцена | Slug | Статус |
 |---|---|---|
-| Фасад снаружи | `blakros-museum-facade` | промпт готов, не сгенерено |
+| Фасад снаружи | `blakros-museum-facade` | ✅ [залит](https://vlad-vechkanov.com/azlanti/Arts/blakros-museum-facade.webp) (19.09.2026) |
 | Вестибюль | `blakros-museum-vestibule` | промпт готов, не сгенерено |
 | Главный зал (общий вид) | `blakros-museum-main-hall` | промпт готов, не сгенерено |
 | Стенд масок Мванги (в Главном зале) | `blakros-museum-masks-cabinet` | промпт готов, не сгенерено |
@@ -222,13 +222,17 @@
 
 ### Промпты
 
-**1. Фасад снаружи**
+**1. Фасад снаружи** *(рабочая версия, 19.09.2026: первая давала будку-склеп — «low, square» модель понимает буквально; вторая — чёрное как смола с потёками, лечилось правкой по референсу)*
 ```
-Exterior of a squat black fortress-like museum building on a stately city square, fantasy RPG location art in the style of Dungeons & Dragons official artwork. A low, perfectly square structure carved as one seamless piece of glossy dark volcanic basalt, almost windowless — only a few narrow barred slits on the upper floor, flat roof lined with carved stone waterspouts shaped like unrecognizable beasts, seven worn stone steps leading up to a single heavy oak door bound in iron and left slightly ajar, an iron lamp bracket above the door burning steadily, a weathered bronze plaque and a smaller enamel plaque mounted beside the doorframe, a sliver of an elegant pale stone building with tall windows visible at the far edge of the square for contrast.
-Cool overcast daylight, the lamp above the door burning even by day, no other light sources.
-Heavy, silent, deliberately unwelcoming for a building everyone still visits — old power carved rather than built.
-No text, no signs, no writing. No people, no characters, no figures.
+Exterior of an ancient wizard's fortress turned into a famous museum, fantasy RPG location art in the style of Dungeons & Dragons official artwork, painted illustration, NOT photorealistic. A massive monolithic building filling an entire city block, carved as ONE seamless piece of black volcanic basalt with no bricks, no mortar, no joints anywhere — surfaces smooth and faintly glossy like cooled obsidian, subtle carved geometric bands running along the top edge. The building is wide and heavy rather than tall: only two storeys high but enormous in footprint, with sheer blank walls, a few narrow barred window slits high up, a flat roof whose corners end in large carved stone waterspouts shaped like strange unknown beasts. A broad flight of seven stone steps rises to a tall iron-bound oak double door standing slightly ajar, a single lantern on an iron pole above the door glowing steadily. Low camera angle from across a busy paved square, looking up, so the black mass looms over the viewer. On the opposite side of the square, partly visible at the frame edge, an elegant pale marble library with tall columns and a long high staircase — bright and airy, the exact opposite of the black museum. A few tiny distant silhouettes of passersby at the foot of the steps only to show the building's scale, no faces, no detail.
+Late afternoon light raking across the square, the pale library catching warm sun while the basalt museum drinks the light and stays dark, the lantern the only warm point on its face.
+Ancient, monumental, quietly menacing — old magic carved rather than built, a building that has outlived everyone who ever owned it.
+No text, no signs, no writing, no posters, no plaques.
 Wide panoramic view, 16:9 aspect ratio.
+```
+Правка материала (картинка предыдущего шага — референсом):
+```
+Keep this exact composition, camera angle, building shape, lighting direction, library on the right and tiny passersby unchanged. Change ONLY the material of the black museum building: it must read as real carved volcanic basalt stone, not painted or tarred wood. Very dark charcoal-black stone with visible fine granular texture, subtle cool grey sheen where the late afternoon light grazes the edges and corners, faint natural tonal variation across the surfaces, crisp sharp carved edges on the cornice bands and waterspouts, weathering as slight dulling and grime near the ground, NOT vertical paint streaks or drips. Still clearly the darkest thing on the square, heavy and monolithic, one seamless mass of stone. Fantasy RPG location art in the style of Dungeons & Dragons official artwork, painted illustration, NOT photorealistic. No text, no signs.
 ```
 
 **2. Вестибюль**
