@@ -281,3 +281,6 @@
 - ✅ Skyloft — The Legend of Zelda: Skyward Sword (3:11) — крыша под навесами
 - ⬜ Kamiki Village — Okami (4:11) — запасной к входу
 - ⬜ Kaer Morhen — The Witcher 3, Marcin Przybyłowicz (2:36) — запасной, тёплое и домашнее
+- ✅ Gaur Plain (Night) — Xenoblade Chronicles (3:20) — лежаки под грушей, вечер
+- ⬜ Reprise (Again) — Spirited Away, Joe Hisaishi (3:33) — запасной, пар / комната покоя
+- ⬜ Greenpath — Hollow Knight (3:38) — запасной, оранжерея и бассейны
