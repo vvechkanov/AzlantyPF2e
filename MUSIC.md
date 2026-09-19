@@ -268,3 +268,16 @@
 | 6 | Air on the G String, BWV 1068 | J.S. Bach / Voices of Music | 5:20 | `classical` `baroque` `library` `timeless` `reading-room` |
 
 > **Итого: 6 треков, ~26 мин** ✅
+
+---
+
+## ♨️ Spa — баня, оранжерея, отдых в тепле
+
+> Тёплое, зелёное, безопасное: [[Первоцвет]] в Плющевом квартале. Не мистика и не таверна — покой после тяжёлых недель.
+> Папка: `ai_music/spa/`
+
+- ✅ One Summer's Day — Spirited Away, Joe Hisaishi (4:06) — вход, оранжерея
+- ✅ Near Light — Ólafur Arnalds (3:30) — парная, комната покоя
+- ✅ Skyloft — The Legend of Zelda: Skyward Sword (3:11) — крыша под навесами
+- ⬜ Kamiki Village — Okami (4:11) — запасной к входу
+- ⬜ Kaer Morhen — The Witcher 3, Marcin Przybyłowicz (2:36) — запасной, тёплое и домашнее
