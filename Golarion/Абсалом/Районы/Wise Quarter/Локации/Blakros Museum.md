@@ -210,15 +210,15 @@
 | Сцена | Slug | Статус |
 |---|---|---|
 | Фасад снаружи | `blakros-museum-facade` | ✅ [залит](https://vlad-vechkanov.com/azlanti/Arts/blakros-museum-facade.webp) (19.09.2026) |
-| Вестибюль | `blakros-museum-vestibule` | промпт готов, не сгенерено |
-| Главный зал (общий вид) | `blakros-museum-main-hall` | промпт готов, не сгенерено |
+| Вестибюль | `blakros-museum-vestibule` | ✅ [залит](https://vlad-vechkanov.com/azlanti/Arts/blakros-museum-vestibule.webp) (19.09.2026) |
+| Главный зал (общий вид) | `blakros-museum-main-hall` | ✅ [залит](https://vlad-vechkanov.com/azlanti/Arts/blakros-museum-main-hall.webp) (19.09.2026) |
 | Стенд масок Мванги (в Главном зале) | `blakros-museum-masks-cabinet` | промпт готов, не сгенерено |
 | Зал Глубин | `blakros-museum-depths-hall` | промпт готов, не сгенерено |
-| Тихий салон | `blakros-museum-quiet-parlor` | промпт готов, не сгенерено |
+| Тихий салон | `blakros-museum-quiet-parlor` | ✅ [залит](https://vlad-vechkanov.com/azlanti/Arts/blakros-museum-quiet-parlor.webp) (19.09.2026) |
 | Ателье Lady Dhrami | `blakros-museum-dhrami-atelier` | промпт готов, не сгенерено |
 | Реставрационная / подвал (ночь) | `blakros-museum-restoration-cellar` | промпт готов, не сгенерено |
-| Молот Тораги — в витрине | `blakros-museum-hammer-case` | промпт готов, не сгенерено |
-| Молот Тораги — чистый предметный вид | `blakros-museum-hammer-object` | промпт готов, не сгенерено |
+| Молот Тораги — в витрине | `blakros-museum-hammer-case` | ✅ [залит](https://vlad-vechkanov.com/azlanti/Arts/blakros-museum-hammer-case.webp) (19.09.2026) |
+| Молот Тораги — чистый предметный вид | `blakros-museum-hammer-object` | ✅ [залит](https://vlad-vechkanov.com/azlanti/Arts/blakros-museum-hammer-object.webp) (19.09.2026) |
 
 ### Промпты
 
