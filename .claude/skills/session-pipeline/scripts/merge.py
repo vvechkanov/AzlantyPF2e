@@ -25,6 +25,13 @@ from pathlib import Path
 # Anything BEFORE the marker in chunk[i+1] is overlap with chunk[i] and is dropped.
 # Key = chunk index (1-based) where dedup is applied (i.e., MARKERS[2] applies to chunk 0002).
 SESSION_MARKERS = {
+    21: {
+        2: "*[ЧАТ] Гельдала: «Гельдала скрутит небольшой косяк и закурит».*",
+        3: "**Егорушка (Гельдала):** Ну ничего, в другой раз.",
+        4: "**Егорушка (Гельдала):** «Что ж, вы входите в сени».",
+        5: "**Сеня (Анканто):** А также цветочный запах сирени.",
+        6: None,  # post-session OOC only, no overlap
+    },
     8: {
         2: "### Визит Микаэля к Борису Вальку",
         3: "**Егорушка (Гельдала, IC — голос духа):** Ты опозорил меня",
