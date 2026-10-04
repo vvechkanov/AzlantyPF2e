@@ -10,7 +10,7 @@
 
 ### Снаружи
 
-Здание выглядит **неправильно** для Мудрого квартала. Соседи — изящный Forae Logos с тридцатью тремя ступенями и галереи Авангарда с лепниной — а Музей **квадратный**, **низкий**, **глухо-чёрный**. Ralzeros the Overwatched построил его в незапамятные времена как крепость и обсерваторию: он использовал артефакт под названием **Shadow Obelisk**, чтобы **вырезать** здание из единого куска вулканического базальта. Окон у фасада почти нет — узкие щели на втором этаже, забранные решётками. Крыша плоская, по углам — каменные водоотводы в форме зверей, которых никто из живых не видел. Здание стоит **на здании**, не в нём; время не оставило на нём заметного следа.
+Здание выглядит **неправильно** для Мудрого квартала. Соседи — изящный Forae Logos с тридцатью тремя ступенями и галереи Авангарда с лепниной — а Музей **квадратный**, **низкий**, **глухо-чёрный**. Ralzeros the Overwatched, астролог и маг, построил его в незапамятные времена как крепость, лабораторию и обсерваторию — поставил приборы для наблюдения за далёкими мирами и, как говорят, привлёк их внимание в ответ. После дуэли с архимагом Beldrin'ом он исчез, и здание веками стояло брошенным, пока его не купили Блакросы. Он использовал артефакт под названием **Shadow Obelisk**, чтобы **вырезать** здание из единого куска вулканического базальта. Окон у фасада почти нет — узкие щели на втором этаже, забранные решётками. Крыша плоская, по углам — каменные водоотводы в форме зверей, которых никто из живых не видел. Здание стоит **на здании**, не в нём; время не оставило на нём заметного следа.
 
 Над входом — **бронзовая табличка** с именем дома Блакрос и годом приобретения. Под ней — **более новая** табличка, эмалевая: *«В случае инцидента — оставайтесь у входа. Куратор найдёт вас.»* Эту табличку обновляли уже трижды.
 
@@ -32,13 +32,16 @@
 
 **Главный зал.** Сердце экспозиции и единственный зал, не меняющийся через Shadow Obelisk — здесь стоят самые ценные публичные экспонаты, и Найджел не рискует их перетряхивать. Длинный зал с полукруглым потолком, стены обиты тёмным бархатом, освещение **холодное** — масляные лампы за матовым стеклом, дополняемые непонятным верхним светом, источник которого не виден. Каждый экспонат — на отдельном пьедестале или в стеклянной витрине, под бронзовой табличкой с латунным номером.
 
-Здесь стоят: **молот неизвестного мастера 4-го Крестового похода** (центральная витрина зала); набор азлантского ритуального оружия из частной экспедиции Блакросов 4615 AR; маски из Мванги (выставлены за толстым стеклом, после прошлогоднего инцидента); зеркало Beldrin'а — единственный публичный артефакт, оставшийся от мага, убившего Ralzeros'а в дуэли. Зеркало **матовое**, ничего в нём не отражается. К нему не подходят близко — не по запрету, а **сами**.
+Центр зала пуст — широкий проход, экспонаты идут вдоль стен. Здесь стоят: набор азлантского ритуального оружия из частной экспедиции Блакросов 4615 AR; маски из Мванги (выставлены за толстым стеклом, после прошлогоднего инцидента); судовой журнал капитана Тираниса; три сабли дома; зеркало Beldrin'а — единственный публичный артефакт, оставшийся от мага, после дуэли с которым Ralzeros исчез. *(Молот 4-го Крестового похода стоит не здесь, а в Зале Великих Походов — решение ГМа 03.10.2026.)* Зеркало **матовое**, ничего в нём не отражается. К нему не подходят близко — не по запрету, а **сами**.
 
-**Тематические залы.** Из главного зала ведут шесть дверей. Геометрия за ними — не та, что снаружи. Каждый зал посвящён теме и **меняется** под текущую выставку:
+**Тематические залы.** Из главного зала ведут двери. Геометрия за ними — не та, что снаружи. Каждый зал посвящён теме и **меняется** под текущую выставку.
+
+> 🗂 **Рабочие листы залов для игры (03.10.2026):** папка `Музей Блакросов — залы/` — [[Музей — обзор и маршрут]] и по файлу на зал: 2–3 места, текст вслух, реплики Найджела, строка ГМу. В Foundry у каждого зала своя сцена с пином на журнал «Музей Блакросов».
 
 | Зал | Тема | Что часто стоит |
 |---|---|---|
-| **Зал Великих Походов** | Крестовые походы, реликвии Мендева | оружие, доспехи, знамёна, дневники |
+| **Зал Далёких Миров** *(добавлен 03.10.2026)* | наследие Ralzeros'а, чужие небеса | **белый каменный собор** в центре, каменное кресло Ralzeros'а напротив, рисунки чужих небес, мёртвый зонд |
+| **Зал Великих Походов** | Крестовые походы, реликвии Мендева | оружие, доспехи, знамёна, дневники; **молот 4-го Крестового похода** — рядовая витрина у правой стены, один из многих |
 | **Зал Сокрытых Земель** | Гарунд, Касмарон, дальний Тиань-Ся | маски, идолы, тексты на мёртвых языках |
 | **Зал Звёздного Камня** | Старстоун, Ароден, Тестирование | реликвии, фрагменты текстов, каменные осколки |
 | **Зал Глубин** | Шиберы, Орвиан, древние подземные расы | оружие, кости, артефакты неизвестного назначения |
@@ -78,7 +81,9 @@
 
 ## Коллекция: что важно для партии
 
-### Молот Тораги *(центральная витрина Главного зала)*
+### Молот Тораги *(Зал Великих Походов, рядовая витрина у правой стены)*
+
+> Перенесён из центра Главного зала решением ГМа 03.10.2026: это не главный экспонат музея, а один из многих в зале Крестовых походов. По механике резонанса Анканто начинает чувствовать его ещё из Главного зала — раньше, чем кто-то найдёт глазами нужную витрину.
 
 Боевой молот вторичной работы, без рукояти-оригинала: новая рукоять — дубовая, обновлённая в 4690-х. Голова — тёмное серое железо с **золотым** инкрустированным символом Тораги (наковальня под молотом). **На конце древка — кольцо**, в котором золото с серебром перетекают друг в друга, словно слили два металла; шов между ними не находится, сколько ни ищи. Аура читается как **сильно магическая**, без видимой школы. Табличка под витриной:
 
@@ -108,11 +113,26 @@
 
 ### Прочие реликвии Главного зала *(быстрый справочник для ГМ)*
 
-- **Зеркало Beldrin'а** — матовое, ничего не отражает. Артефакт мага-победителя Ralzeros'а в дуэли. Спорное приобретение — Блакросы купили у внуков Beldrin'а за бесценок, поговаривают что нечисто.
+- **Каменный собор Ralzeros'а** — см. отдельный раздел ниже.
+- **Зеркало Beldrin'а** — матовое, ничего не отражает. Артефакт архимага Beldrin'а, после дуэли с которым Ralzeros **исчез** (канон CoLO, стр. 232; тела никто не видел). Спорное приобретение — Блакросы купили у потомков Beldrin'а за бесценок *(было «у внуков» — не сходится: после дуэли здание веками стояло брошенным)*, поговаривают что нечисто.
 - **Азлантское ритуальное оружие** *(набор)* — копья, церемониальные ножи, серебряный круг. Из экспедиции 4615 AR в подводный Илизмагорту. Эзотерический интерес для Самум, если она увидит.
 - **Маски из Мванги** *(за толстым стеклом)* — одиннадцать масок из частной коллекции. После прошлогоднего инцидента, когда **семь** из них поднимали служителей на ночные шествия, переоформлены в новый стенд с двойным стеклом и амулетом-сдерживателем работы Pathfinder Society. Найджел этого амулета **не любит** — это работа знакомых, с которыми он в ссоре.
 - **Сабли дома Блакрос** — три семейных клинка, по одному на каждое поколение последних трёх Scion Lady. Простые на вид. Ни одна не магическая.
 - **Дневник Капитана Тираниса** *(под стеклом)* — судовой журнал капитана корабля Блакросов 4400-х AR, тувийская экспедиция в дальние южные воды. Открыт на середине, страница с эскизом неизвестного животного.
+
+### Каменный собор Ralzeros'а *(Зал Далёких Миров, открытый постамент)*
+
+Модель строения высотой по грудь, вырезанная из **белого камня** — одним куском, без швов, как и само здание. В чёрном музее это единственная белая вещь. Девять тесно составленных башен на общем основании: в середине высокий гранёный шатёр, вокруг него восемь башен пониже, и на каждой — витая луковичная глава, ни одна не повторяет другую (рёбра, шишки, спирали, чешуя). Галерея с крыльцами по низу. Камень некрашеный, белый. Стоит без стекла. Табличка:
+
+> ***Модель неизвестного строения. Работа Ralzeros'а Поднадзорного, по собственным наблюдениям.***
+
+Что знает музей: Ralzeros держал в здании приборы для наблюдения за далёкими мирами (канон CoLO) и вырезал модель сам, тем же обелиском, каким вырезал здание. Какой это мир и что это за строение — не знает никто. Приборы не сохранились: здание простояло брошенным веками.
+
+> [!danger] Только для ГМа (решение 03.10.2026)
+> Это **собор Василия Блаженного** — без пёстрой раскраски: главы фигурные, а цвета нет вовсе, потому что это резьба по белому камню. Узнаётся по силуэту, не сразу. Ralzeros **не был** на Земле — только **видел** её. Он окно, а не дверь: в его наследии есть, *что* он видел, и нет, *как туда попасть*.
+> - **Связи «азланты ↔ Земля» в каноне кампании нет.** Модель и бумаги Ralzeros'а — на обычном старом письме, не на азлантском.
+> - Привязка времени Paizo (Земля и Голарион идут вровень) **оставлена** — «перемещение в пространстве и времени случается забавно».
+> - Для [[Бель (Настя)|Бель]] это первое доказательство с этой стороны, что дом настоящий и что его отсюда видно.> - Замысел дальнейшего хода — в [[S22__Подготовка]] и [[00__СОСТОЯНИЕ]].
 
 ### Что в коллекции, но не выставлено
 
@@ -211,7 +231,11 @@
 |---|---|---|
 | Фасад снаружи | `blakros-museum-facade` | ✅ [залит](https://vlad-vechkanov.com/azlanti/Arts/blakros-museum-facade.webp) (19.09.2026) |
 | Вестибюль | `blakros-museum-vestibule` | ✅ [залит](https://vlad-vechkanov.com/azlanti/Arts/blakros-museum-vestibule.webp) (19.09.2026) |
-| Главный зал (общий вид) | `blakros-museum-main-hall` | ✅ [залит](https://vlad-vechkanov.com/azlanti/Arts/blakros-museum-main-hall.webp) (19.09.2026) |
+| Главный зал (общий вид) | `blakros-museum-main-hall` | ⚠️ [залит](https://vlad-vechkanov.com/azlanti/Arts/blakros-museum-main-hall.webp) (19.09.2026), **устарел**: на нём молот в центре |
+| Главный зал без молота | `blakros-museum-main-hall-v2` | ✅ [залит](https://vlad-vechkanov.com/azlanti/Arts/blakros-museum-main-hall-v2.webp) (03.10.2026, арт Влада) — стоит на сцене |
+| Зал Великих Походов | `blakros-museum-crusades-hall` | ✅ [залит](https://vlad-vechkanov.com/azlanti/Arts/blakros-museum-crusades-hall.webp) (03.10.2026, арт Влада) |
+| Каменный собор Ralzeros'а | `blakros-museum-stone-cathedral` | ✅ [залит](https://vlad-vechkanov.com/azlanti/Arts/blakros-museum-stone-cathedral.webp) (03.10.2026) |
+| Остальные залы и места (30 артов) | см. [[S22__Музей_арты]] | ✅ все залиты 03.10.2026; промпты и ссылки — в том файле |
 | Стенд масок Мванги (в Главном зале) | `blakros-museum-masks-cabinet` | промпт готов, не сгенерено |
 | Зал Глубин | `blakros-museum-depths-hall` | промпт готов, не сгенерено |
 | Тихий салон | `blakros-museum-quiet-parlor` | ✅ [залит](https://vlad-vechkanov.com/azlanti/Arts/blakros-museum-quiet-parlor.webp) (19.09.2026) |
@@ -250,6 +274,33 @@ Interior of the grand main gallery of a museum, fantasy RPG location art in the 
 Cold light from frosted-glass oil lamps mixed with a soft unexplained glow from above with no visible fixture, deep shadow between the pools of light.
 Reverent, museum-still, quietly strange — the single room that never changes shape.
 No text, no signs, no writing. No recognizable faces, no close figures.
+Wide panoramic view, 16:9 aspect ratio.
+```
+
+**3а. Главный зал — без молота (03.10.2026)**
+```
+Interior of the grand main gallery of a museum, fantasy RPG location art in the style of Dungeons & Dragons official artwork. A long hall under a semicircular vaulted ceiling, walls upholstered in dark heavy velvet, NO central exhibit — the middle of the hall is an open aisle of polished dark floor. Along both walls, evenly spaced pedestals and glass cases: a rack of ancient ceremonial spears and ritual knives with a silver ring, a tall cabinet of carved wooden masks behind double glass, three plain family sabres on a stand, a ship captain's open logbook under glass, a chest-high architectural model carved from pure white stone standing on an open plinth with no glass, the only white object in the dark hall, and at the far end a tall matte grey mirror in a dark frame that reflects nothing, standing alone with empty space around it. Six closed doors along the walls leading to side galleries.
+Cold light from frosted-glass oil lamps mixed with a soft unexplained glow from above with no visible fixture, deep shadow between the pools of light.
+Reverent, museum-still, quietly strange — the single room that never changes shape.
+No text, no signs, no writing. No people, no characters, no figures.
+Wide panoramic view, 16:9 aspect ratio.
+```
+
+**11. Зал Великих Походов**
+```
+Interior of a museum gallery devoted to holy crusades against demons, fantasy RPG location art in the style of Dungeons & Dragons official artwork. A long narrow hall with dark stone walls hung with faded, scorched war banners, rows of glass cases along both sides holding dented plate armour, notched swords, cracked shields and soldiers' open diaries, a full suit of battered knightly armour on a stand near the entrance. Among the cases on the right wall, not centred and not emphasised, one ordinary glass case holds a single war hammer upright on dark velvet, no different in size from its neighbours.
+Dim warm lamplight on the cases, cold stone gloom above, long shadows from the hanging banners.
+Solemn, heavy, a room of things that came back when their owners did not.
+No text, no signs, no writing. No people, no characters, no figures.
+Wide panoramic view, 16:9 aspect ratio.
+```
+
+**12. Каменный собор Ralzeros'а**
+```
+Close interior view of a museum exhibit on an open stone plinth, fantasy RPG location art in the style of Dungeons & Dragons official artwork. A chest-high architectural model carved from a single seamless block of pure white stone, unpainted, matte: nine tightly clustered towers on one shared base, a tall faceted tent-shaped spire in the centre surrounded by eight lower towers, each tower topped with an onion-shaped dome and every dome carved with a different pattern — twisted spirals, ribs, studs, scales — a low arcaded gallery with covered porches running around the base. No colour anywhere, only white stone. A small bronze plaque on the plinth, dark velvet gallery wall behind.
+A single focused lamp from above, crisp shadows in the carved domes, the rest of the gallery in near-darkness.
+Still and foreign — a careful portrait of a building nobody here has ever seen.
+No text, no signs, no writing. No people, no characters, no figures.
 Wide panoramic view, 16:9 aspect ratio.
 ```
 
