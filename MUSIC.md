@@ -284,3 +284,18 @@
 - ✅ Gaur Plain (Night) — Xenoblade Chronicles (3:20) — лежаки под грушей, вечер
 - ⬜ Reprise (Again) — Spirited Away, Joe Hisaishi (3:33) — запасной, пар / комната покоя
 - ⬜ Greenpath — Hollow Knight (3:38) — запасной, оранжерея и бассейны
+
+---
+
+## 🕯️ Допрос (Брайн) — допрос в Блакросе, давление без боя
+
+> Плейлист Foundry «Допрос (Брайн)» (папка «Абсалом», `Playlist.YhdxZS2mFP7cdyaW`). Сцена допроса: тема допрашивающего (Уртокс) и длинный ровный фон под разговор. Режим — последовательный, громкость как у Tension (0.16–0.25), оба трека с повтором.
+> Папка на сервере: `azlanti/music/` (запись в `ai_music/` через MCP закрыта — разрешены только `azlanti/` и `assistant/`).
+
+| # | Трек | Источник | Длит. | Теги |
+|---|-------|----------|-------|------|
+| 1 | Insane Family | Olivier Deriviere, Vampyr OST | 3:47 | `interrogator-theme` `unsettling` `mid` `Urtox` |
+| 2 | Maleficus | Scott Buckley (CC-BY) | 6:26 | `dark-ambient` `steady-pressure` `slow` `long-conversation` |
+
+> **Итого: 2 трека, ~10 мин** ✅
+> Maleficus — CC-BY: при публичном использовании указывать «Music: Scott Buckley — www.scottbuckley.com.au».

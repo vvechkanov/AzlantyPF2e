@@ -130,6 +130,14 @@ def collect_assets(assets_dir):
             key = str(int(m.group(1)))
         auds.setdefault(key, []).append((b, round(dur(f), 1)))
 
+    # длинные дубли: один файл на несколько кадров. audio/_дубли.json = {"кадр": [["дубль 1 · 0:04–0:08", 3.7]]}
+    takes = os.path.join(adir, "_дубли.json")
+    if os.path.exists(takes):
+        with open(takes, encoding="utf-8") as fh:
+            for key, rows in json.load(fh).items():
+                if key not in auds:
+                    auds[key] = [(r[0], float(r[1])) for r in rows]
+
     # интро в раскадровке нумеруется 0a/0b/0c, файлы — 00a/00b/00c
     for a, b in (("00a", "0a"), ("00b", "0b"), ("00c", "0c")):
         if a in pics and b not in pics:
