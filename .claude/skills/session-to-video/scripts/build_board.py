@@ -94,10 +94,11 @@ def collect_assets(assets_dir):
     for f in sorted(glob.glob(os.path.join(assets_dir, "shot*"))):
         if os.path.isdir(f):
             continue
-        m = re.match(r'shot(00[abc]|\d+)', os.path.basename(f))
+        # буква после номера — вставной кадр (shot27a_…), см. ролик 3
+        m = re.match(r'shot(00[abc]|\d+[a-z](?=_)|\d+)', os.path.basename(f))
         if not m:
             continue
-        key = m.group(1).lstrip("0") or "0" if m.group(1).isdigit() else m.group(1)
+        key =m.group(1).lstrip("0") or "0" if m.group(1).isdigit() else m.group(1)
         if f.lower().endswith(".mp4"):
             s = still(f)
             if s:
